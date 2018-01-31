@@ -1,0 +1,929 @@
+<html lang="en-US">
+
+<head>
+ <script async src="/resources/js/jquery-3.1.1.slim.min.js" ></script>
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@javapediaNet" />
+   <meta charset='utf-8'>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--    <meta name="alexaVerifyID" content="RiGSkOO8bec-4tHULVBpt5nEHhY"/> -->
+   <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
+   <meta name="robots" content="index, nofollow"/>
+   <meta name="googlebot" content="index, nofollow"/>
+   <meta name="keywords" content="Spring, Spring Boot">
+<!--    <base href="http://javapedia.net/" /> -->
+   <meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="author" content="https://www.javapedia.net/">
+<link rel="canonical" href="https://www.javapedia.net/Spring-Boot">
+   <link rel="shortcut icon" href="/resources/img/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/resources/img/favicon.ico" type="image/x-icon">
+<link href="/resources/css/bootstrap.min.css" rel="stylesheet">
+   <meta name="description" content="Spring Boot">
+          <meta name="twitter:description" content="Spring Boot" />
+    <style type="text/css">
+/*    font-family: Georgia,Cambria,"Times New Roman",Times,serif; */
+@import "https://fonts.googleapis.com/css?family=Open+Sans:400,600,300";#menuUL li{font-size:12px}p{text-align:justify;font-family: verdana,arial,helvetica,sans-serif;color:#212121;font-size:15px}.tableCls,.trCls,.tdCls{border-collapse:collapse;line-height:40px;font-family: Georgia,Cambria,"Times New Roman",Times,serif;color:#212121;font-size:17px}ol li,ul li{font-family: verdana,arial,helvetica,sans-serif;color:#212121!important;font-size:15px}.footer,.push{width:100%;float:left;background:#A3CFB2}.error{color:red;font-weight:700}.wrapper{min-height:100%;height:auto!important;height:100%;margin:0 auto -4em}#cssmenu{font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,Sans-Serif;font-size:10px;line-height:15px;text-transform:uppercase;text-align:left;color:#25714C}#cssmenu > ul{width:auto;list-style-type:none;padding:0;margin:0;background:#3ECC87;border:1px solid #ece6e8;border-bottom:1px solid #ece6e8;-webkit-border-radius:2px;-moz-border-radius:2px;-o-border-radius:2px;border-radius:2px}#cssmenu > ul li#responsive-tab{display:none}#cssmenu > ul li{display:inline-block;*display:inline;zoom:1}#cssmenu > ul li.right{float:right}#cssmenu > ul li.has-sub{position:relative}#cssmenu > ul li.has-sub:hover ul{display:block}#cssmenu > ul li.has-sub ul{display:none;width:250px;position:absolute;margin:0;padding:0;list-style-type:none;background:#3ECC87;border:1px solid #ece6e8;border-bottom:1px solid #d9ced2;border-top:0 none}#cssmenu > ul li.has-sub ul li{display:block}#cssmenu > ul li.has-sub > a{background-image:url(images/caret.png);background-repeat:no-repeat;background-position:90% -95%}#cssmenu > ul li.has-sub > a.active,#cssmenu > ul li.has-sub > a:hover{background:#d80041 url(images/caret.png) no-repeat;background-position:90% 195%}#cssmenu > ul li a{display:block;padding:12px 24px 11px;text-decoration:none;color:#fff}#cssmenu > ul li a.active,#cssmenu > ul li a:hover{background:#747474;color:#fff;text-shadow:0 1px 0 #000}@media (max-width: 600px){#cssmenu > ul{width:100%}#cssmenu > ul li#responsive-tab{display:block}#cssmenu > ul li#responsive-tab a{background:url(/resources/css/images/menu.png) no-repeat;background-position:95% -35%}#cssmenu > ul li#responsive-tab a:hover{background-color:#25714C:;background-position:95% 135%}#cssmenu > ul li{display:none}#cssmenu > ul li.right{float:none}#cssmenu > ul li.has-sub{position:relative}#cssmenu > ul li.has-sub ul{display:block;position:static;width:100%;background:#fff;border:0 none}#cssmenu > ul li.has-sub ul li{display:block!important}#cssmenu > ul li.has-sub ul li a span{display:block;padding-left:24px}#cssmenu > ul li.has-sub > a{background-image:none}}@media (min-width: 600px){#cssmenu > ul > li.collapsed{display:inline-block!important;*display:inline;zoom:1}#cssmenu > ul ul li.collapsed{display:block!important}}
+</style>
+<script defer src="/resources/js/bootstrap.min.js" ></script>
+   <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-76214173-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+   <style type="text/css">
+      span.align-right { text-align:right; }
+   div#sticker {
+    padding:0px;
+    margin:5px 0;
+    background:#AAA;
+    width:100px;
+}
+.stick {
+    position:fixed;
+    top:70px;
+    left: 633px;
+}
+     #nav {
+/*    width: 27%; */
+/*     float: right; */
+}
+#rightFiller{
+   width: 1%;
+    float: right;
+}
+
+#leftFiller{
+   width: 1%;
+    float: left;
+}
+
+#advPanel {
+/*     width: 27%; */
+/*     float: left; */
+ 
+}
+
+#content {
+/*     width: 45%; */
+/*     float: left; */
+/*     position: relative; */
+      LINE-HEIGHT:30px; 
+     
+  
+}
+ h2 {font-family:Roboto,"Helvetica Neue",Helvetica,sans-serif;color:#886f6f; }
+/*  color:#735858;}  */
+/* h1 {font-family:logoFontFace;color:#735858;} */
+  .questionStyle { 
+  font-family: verdana,arial,helvetica,sans-serif;color:#212121; 
+/*   font-family: Georgia,Cambria,"Times New Roman",Times,serif;color:#212121; */
+     font-size: 14px;
+    display: inline-table;
+    background: #d5f9f2;
+    
+    background:rgba(222, 243, 240, 0.73);
+    width: 100%;
+/*           font-weight: bold;  */
+     } 
+
+span#contentH2,#commentHeader {    padding-top: 10px; text-align: center; font-family: "Tahoma", "Geneva", sans-serif;font-size: 17px;color: #717D99;display: inline-block;
+float:center;width:80%;text-align:center;}
+
+  a {text-decoration: none; }
+ul#topicsList
+{
+    list-style-type: none; paddng: 0;
+}
+
+ul#topicsList li a:hover,ul#topicsList li.active a{
+ color:  #D1D0CE ;
+text-decoration:none;
+}
+
+ .selectedLi {
+/*   background:#D1D0CE;  */
+  background:#A3CFB2;
+  color: white;
+  border-bottom: purple solid 3px;
+}
+
+.selectedLi .subtopicslist {
+  background:#D1D0CE; 
+  
+  list-style-type: circle;  
+	margin-left:15px; 
+	border-bottom:1px solid #e0e0d1;
+font-style: italic;
+
+}
+.subtopicslist {
+ 	list-style-type: circle;  
+	margin-left:15px; 
+/* 	background-color:e6f3f7; */
+	border-bottom:1px solid #e0e0d1;
+font-style: italic;
+}
+#topicsList li {margin: 0 0 3px 0;font-size:12px;  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, Sans-Serif;  color: #747474;
+  text-shadow: 0px 1px 0px #fff;}
+  
+  
+   #Menu
+    {
+        padding:0; 
+        list-style-type:none;
+        font-size:13px;
+        color:#717171;
+  background-color:#E7F0E9;
+    }
+
+    #Menu li
+    {
+        border-bottom:1px solid #f5f5f0;
+        padding:10px 10px 7px 2px;
+        font-size: 15px;
+    }
+
+    #Menu li:hover
+    {
+        background-color:#D1D0CE;
+    }
+#Menu li:hover a
+    {
+        color:White;
+    }
+    #Menu a:link
+    {
+        color:#717171;
+        text-decoration:none;
+    }
+    #Menu a:hover
+    {
+        color:White;
+    }
+hr {
+border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
+}
+
+
+/* @media screen and (min-width: 0px) and (max-width: 400px) { */
+/*   #nav { display: none; width:0% }  /* show it on small screens */ */
+/*   #advPanel{ display: none; } */
+/*   #content{width:99%;!} */
+/*   #commentTable{width:50%;!} */
+/*   #leftFiller{ display: none; width:0% } */
+/*   #rightFiller{ display: none; width:0% } */
+ 
+/* } */
+
+/* @media screen and (min-width: 401px) and (max-width: 1024px) { */
+/*   #nav { display: none; width:0% }  /* show it on small screens */ */
+/*   #advPanel{ display: none; } */
+/*   #content{width:99%;!} */
+  
+/* } */
+
+ @media all and (min-width: 721px) { 
+  #expandTitleDiv{display: none;} 
+
+ } 
+
+/*  @media all and (max-width: 720px) {  */
+
+/*      #expandTitleDiv{display: block;}  */
+
+/*  }  */
+
+ @media all and (max-width: 479px) {
+  #expandTitleDiv{display: block;} 
+ } 
+.comment-list li {
+	list-style-type: none;
+	margin-top: 24px;
+  	padding-left: 1px; 
+  		width:99%;
+}
+.comment-list li li {
+	margin-right: -32px;
+}
+li.comment {
+background-color: #F5F5F0;  /* 	#f5f5f5; */
+	border: 1px solid #e3e3e3;
+	border-right: none;
+	padding-left: 7px;
+	padding-top: 10px;
+	
+
+}
+
+body {
+    overflow-x:hidden;
+    width:99%;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+table:not(#headerTab):not(.gsc-search-box):not(.gstl_50):not(#logoTab) ,tr:not(#headerTabRow),td
+{
+ border: 1px dotted #99C68E;
+}
+/* table.gsc-search-box { */
+/* border:none; */
+/* } */
+table.gsc-search-box, table.gsc-search-box tr, table.gsc-search-box td{
+border:none !important;
+}
+
+table#logoTab, table#logoTab tr, table#logoTab td{
+border:none !important;
+}
+   </style>
+   
+   <title> Spring Boot interview questions</title>
+              <meta name="twitter:title" content=" Spring Boot interview questions" />
+    </head>
+<!-- <body onload=' displaySubTitles(1, registerEvents);'> -->
+
+<!-- Commenting the below line to stop logSession -->
+<!-- <body onload='logSession();'> -->
+  <body>
+  
+<!--  body start  -->  
+<!--  <div class="wrapper"> -->
+
+
+<!-- </span> -->
+
+
+
+<script>
+function logSession() {
+	var browserForm = document.forms["browserInfo"];
+	browserForm.scrHeight.value = window.screen.height;
+	browserForm.scrWidth.value = window.screen.width;
+	browserForm.httpUrl.value = window.location.href;
+	
+	$('.adiv').on('click', function(e) {
+		var browserForm = document.forms["browserInfo"];
+		browserForm.scrHeight.value = window.screen.height;
+		browserForm.scrWidth.value = window.screen.width;
+		browserForm.httpUrl.value = window.location.href;
+		
+		$.ajax({
+			type : "GET",
+			url  :  "/logsessionDiv",
+			data :$('#browserInfo').serialize(),
+			success: function (response) {
+				
+			}
+		});
+	
+		});
+		
+	$.ajax({
+		type : "GET",
+		url  :  "/logsession",
+		data :$('#browserInfo').serialize(),
+		success: function (response) {
+			
+		}
+	});
+	
+}
+</script>
+
+<style>
+@font-face {
+    font-family: 'logoFontFace';
+    src: url('/Javapedia2/resources/css/SAMARN__.TTF'); /*URL to font*/
+}
+.logoFontClass {
+    font-family: Roboto,"Helvetica Neue",Helvetica,sans-serif,logoFontFace;color:#f7a4bb;
+/*      font-size: 100%; */
+/*      font-weight:bold; */
+}
+
+
+.navbar-nav > li{
+  padding-left:15px;
+  padding-right:15px;
+}
+.navbar-default {
+    background-color: #F8F8F8;
+    border-color: #E7E7E7;
+}
+/* title */
+.navbar-default .navbar-brand {
+    color: #777;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #5E5E5E;
+}
+/* link */
+.navbar-default .navbar-nav > li > a {
+    color: #777;
+}
+</style>
+<!-- <span style='float:right;font-size: 12px;'> -->
+
+
+
+
+<!-- <script type='text/javascript' src='//clksite.com/adServe/banners?tid=130967_224261_4&tagid=9'></script> -->
+ <!--googleoff: all-->
+
+
+<nav class="navbar navbar-toggleable-md  navbar-inverse bg-inverse">
+ 
+     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+      <a class="navbar-brand" href="#" align='center'><img class="hidden-sm-up" style="padding-bottom: .1cm;" src="/resources/img/favicon.ico" /><font  class="logoFontClass"> Javapedia.net</font></a>
+<!--     <a class="navbar-brand" href="#">Javapedia</a> -->
+    </div>
+  <div class="collapse navbar-collapse" id="navbarText">
+  <ul class="navbar-nav ">
+ 
+ 		 <li class="nav-item" > 
+		 <a  class="nav-link" href='/module/Java'><span>Java</span></a></li>
+  
+ 		 <li class="nav-item" > 
+		 <a  class="nav-link" href='/module/Hibernate'><span>Hibernate</span></a></li>
+  
+ 		 <li class="nav-item" > 
+		 <a  class="nav-link" href='/module/Spring'><span>Spring</span></a></li>
+  
+ 		 <li class="nav-item" > 
+		 <a  class="nav-link" href='/module/Maven'><span>Maven</span></a></li>
+  
+ 		 <li class="nav-item" > 
+		 <a  class="nav-link" href='/module/JUnit'><span>JUnit</span></a></li>
+  
+ 		 <li class="nav-item" > 
+		 <a  class="nav-link" href='/module/TOSCA'><span>TOSCA</span></a></li>
+  
+ 		 <li class="nav-item" > 
+		 <a  class="nav-link" href='/module/AngularJS'><span>AngularJS</span></a></li>
+  
+ 		 <li class="nav-item" > 
+		 <a  class="nav-link" href='/module/BigData'><span>BigData</span></a></li>
+  
+ 		 <li class="nav-item" > 
+		 <a  class="nav-link" href='/module/DataStructures'><span>DataStructures</span></a></li>
+  
+ 		 <li class="nav-item" > 
+		 <a  class="nav-link" href='/module/MongoDB'><span>MongoDB</span></a></li>
+  
+ 		 <li class="nav-item" > 
+		 <a  class="nav-link" href='/module/MuleESB'><span>MuleESB</span></a></li>
+  
+ 		 <li class="nav-item" > 
+		 <a  class="nav-link" href='/module/Servlet'><span>Servlet</span></a></li>
+  
+
+   <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            <span class="glyphicon glyphicon-menu-hamburger"></span>
+        </a>
+        <ul class="dropdown-menu">
+           
+
+
+
+<li><a href="/login?returnurl=/module/Spring/Spring-Boot">Login</a></li>
+<li><a href = '/module/user/register'>Register</a></li> 
+ <li><a href="/AskAQuestion/list/96?returnurl=/module/Spring/Spring-Boot">Submit a Question</a></li>
+
+
+        </ul>
+    </li>
+
+</ul>
+
+</div>
+
+ 
+
+
+</nav>
+
+<!-- </td> -->
+<!-- <p></p> -->
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script async  type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-576369c321f97cf2"></script>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<!-- <script async  type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-576369c321f97cf2"></script> -->
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<!-- <script async  type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-576369c321f97cf2"></script> -->
+
+ <!--googleon: all--><div class="container-fluid">
+<div class ="row">
+  <div class="hidden-md-down col-lg-3"  id= "advPanel">
+  
+<p> </p>
+<p> </p>
+<div class='adiv' style="text-align:center">
+
+<script id="mNCC" language="javascript">
+   medianet_width = "160";
+   medianet_height = "600";
+   medianet_crid = "188703471";
+   medianet_versionId = "111299";
+   (function() {
+       var isSSL = 'https:' == document.location.protocol;
+       var mnSrc = (isSSL ? 'https:' : 'http:') + '//contextual.media.net/nmedianet.js?cid=8CUBFNX25' + (isSSL ? '&https=1' : '');
+       document.write('<scr' + 'ipt  type="text/javascript" id="mNSC" src="' + mnSrc + '"></scr' + 'ipt>');
+   })();
+</script>
+</div>
+<p></p>
+<p></p>
+<div style="text-align:center">
+<a class="twitter-timeline" data-width="220" data-height="450" href="https://twitter.com/javapediaNet">Tweets by javapedia.net</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+  <p></p>
+  </div>
+
+<div class="col-xs-12 col-sm-12  col-md-12 col-lg-6 .col-12" id="content">
+
+
+<div class="row"><div class ="centered"> 
+ <script> 
+   (function() {
+     var cx = '008066287521233018291:9a9mj4fdy1q';
+     var gcse = document.createElement('script');
+     gcse.type = 'text/javascript';
+     gcse.async = true;
+     gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+     var s = document.getElementsByTagName('script')[0];
+     s.parentNode.insertBefore(gcse, s);
+   })();
+</script> 
+ <gcse:search></gcse:search></div></div> 
+
+  <!--googleoff: all-->
+
+    
+<!--   <div> -->
+ <span title = "Web services" style='float:left;width:10%;'>
+ <a  href="/Web-services" style ='padding-left: 8px;'>Prev</a>  </span>
+
+ <span title = "Java Transactions (JTA)" style='float:right;width:10%'>
+ <a  href="/Java-Transactions-(JTA)" >Next</a>  </span>
+<!--  </div> -->
+<h3  style='text-align:center;width:99%;'><a class ='hidden-md-up' id='expandTitleDiv' title="Display all the sub-topics" href ="#" onclick = " $('#titlesDiv').css('display', 'block');return false;   ">
+  Spring / </a>Spring Boot</h3>	
+<!--   <div class ='col-xs-12' id='titlesDiv' style = 'align:center;display:none;border: 1px solid #3ECC87;padding-bottom: 5cm;    background: rgba(255, 231, 231, 0.729412);'> -->
+<!--      	Click on one of the sub-topics to navigate! -->
+<!-- <h6 style='text-align:center;width:99%;'> -->
+ <select  id='titlesDiv'  style="text-align:center;width:100%;display:none;"  class="selectpicker" name="forma" onchange="location = this.value;" >
+ <option value ="/Spring-interview-questions">Spring interview questions (21) </option>
+<option value ="/Spring-module-questions">Spring module questions (10) </option>
+<option value ="/Spring-Beans">Spring Beans (42) </option>
+<option value ="/Spring-Interview-questions-II">Spring Interview questions II (34) </option>
+<option value ="/Spring-batch-Interview-questions">Spring batch Interview questions (56) </option>
+<option value ="/Spring-MVC-Interview-questions">Spring MVC Interview questions (49) </option>
+<option value ="/Spring-Data-Access">Spring Data Access (51) </option>
+<option value ="/Spring-AOP">Spring AOP (16) </option>
+<option value ="/Spring-Integration">Spring Integration (4) </option>
+<option value ="/Web-services">Web services (69) </option>
+<option selected value ="/Spring-Boot">Spring Boot  (15)</option>
+<option value ="/Java-Transactions-(JTA)">Java Transactions (JTA) (18) </option>
+<option value ="/JMS">JMS (36) </option>
+</select>
+<!-- </h4> -->
+
+<!--   </div> -->
+  
+   <div>
+
+  
+<!-- <span style="float:right;"> -->
+</div>
+<!--googleoff: all-->
+
+<p></p>
+<div style = 'border: 1px solid #f5f5f5;   background: rgba(247, 247, 247, 0.73);'>
+<UL STYLE ='list-style-type:square;'>
+<LI> <A style= ' color:#180a8c;font-size: 16px;' HREF = '#qanda1247' > <span>  What is Spring Boot?</span></A> </LI>
+<LI> <A style= ' color:#180a8c;font-size: 16px;' HREF = '#qanda1248' > <span>  Advantages of using Spring Boot.</span></A> </LI>
+<LI> <A style= ' color:#180a8c;font-size: 16px;' HREF = '#qanda1249' > <span>  What are the limitations of Spring Boot?</span></A> </LI>
+<LI> <A style= ' color:#180a8c;font-size: 16px;' HREF = '#qanda1250' > <span>  Can we use spring boot for applications that are not built using Spring framework?</span></A> </LI>
+<LI> <A style= ' color:#180a8c;font-size: 16px;' HREF = '#qanda1251' > <span>  What is the latest version of Spring Boot?</span></A> </LI>
+<LI> <A style= ' color:#180a8c;font-size: 16px;' HREF = '#qanda1252' > <span>  Explain CommandLineRunner interface in Spring boot.</span></A> </LI>
+<LI> <A style= ' color:#180a8c;font-size: 16px;' HREF = '#qanda1253' > <span>  Difference between CommandLineRunner and ApplicationRunner in Spring Boot.</span></A> </LI>
+<LI> <A style= ' color:#180a8c;font-size: 16px;' HREF = '#qanda2044' > <span>  What are microservices?</span></A> </LI>
+<LI> <A style= ' color:#180a8c;font-size: 16px;' HREF = '#qanda2064' > <span>  What are the components of Spring Boot?</span></A> </LI>
+<LI> <A style= ' color:#180a8c;font-size: 16px;' HREF = '#qanda2065' > <span>  What is name of the configuration file that you use in Spring boot?</span></A> </LI>
+<LI> <A style= ' color:#180a8c;font-size: 16px;' HREF = '#qanda2066' > <span>  What is actuator in Spring boot?</span></A> </LI>
+<LI> <A style= ' color:#180a8c;font-size: 16px;' HREF = '#qanda2067' > <span>  What are the embedded containers supported by Spring Boot?</span></A> </LI>
+<LI> <A style= ' color:#180a8c;font-size: 16px;' HREF = '#qanda2068' > <span>  Explain spring boot initializr.</span></A> </LI>
+<LI> <A style= ' color:#180a8c;font-size: 16px;' HREF = '#qanda2069' > <span>  How to write Test cases using Spring Boot?</span></A> </LI>
+<LI> <A style= ' color:#180a8c;font-size: 16px;' HREF = '#qanda2070' > <span>  How do I add custom JS code with Spring Boot?</span></A> </LI>
+</UL>
+<div style = "font-size:14px;">
+    Could not find what you were looking for? <a href="/AskAQuestion/list/96?returnurl=/Spring-Boot">send us the question</a> and we would be happy to answer your question.
+</div>
+</div>
+<p></p> 
+  <span class='questionStyle' id='qanda1247'> <span style = "font-size:12px;">1</span>. What is Spring Boot?</span><span style='float:right'></span>
+		
+		<!-- 		<div style= 'border-bottom: 1px dashed #f5f5f0;'> -->
+		<div id='ansId1247'><p>Spring Boot is a framework for building and running Spring applications by providing defaults for code and annotation configuration to quick start new Spring projects within no time. It follows "Opinionated Defaults Configuration" Approach to avoid lot of boilerplate code and configuration to improve Development, Unit Test and Integration Test Process.</p> <p> One of the biggest challenges faced by the Spring developers is that amount of time they spent on configuring and bootstarting their spring applications.With growing number of frameworks with Spring community, it is necessary to have a common framework that solves the configurations. Spring Boot simply scan the classpath and add the required libraries from various repositories. This improves the productivity and saves lot of time for the developers.</p></div>
+		
+<span class='questionStyle' id='qanda1248'> <span style = "font-size:12px;">2</span>. Advantages of using Spring Boot.</span><span style='float:right'></span>
+		
+		<!-- 		<div style= 'border-bottom: 1px dashed #f5f5f0;'> -->
+		<div id='ansId1248'><p> To ease the Java-based applications Development, Unit Test and Integration Test Process.</p><p> 
+To reduce Development, Unit Test and Integration Test time by providing some defaults.</p><p> 
+To increase Productivity. </p><p> 
+
+It avoids writing lots of boilerplate Code, Annotations and XML Configuration.</p><p> 
+It is very easy to integrate Spring Boot Application with its Spring Ecosystem like Spring JDBC, Spring ORM, Spring Data, Spring Security etc.
+It follows ?Opinionated Defaults Configuration? Approach to reduce Developer effort.</p><p> 
+It provides Embedded HTTP servers like Tomcat, Jetty etc. to develop and test our web applications very easily.</p><p> 
+It provides CLI (Command Line Interface) tool to develop and test Spring Boot(Java or Groovy) Applications from command prompt very easily and quickly.</p><p> 
+It provides lots of plugins to develop and test Spring Boot Applications very easily using Build Tools like Maven and Gradle.</p><p> 
+It provides lots of plugins to work with embedded and in-memory Databases very easily.</p></div>
+		
+<span class='questionStyle' id='qanda1249'> <span style = "font-size:12px;">3</span>. What are the limitations of Spring Boot?</span><span style='float:right'></span>
+		
+		<!-- 		<div style= 'border-bottom: 1px dashed #f5f5f0;'> -->
+		<div id='ansId1249'><p> We can convert all kinds of spring projects into Spring Boot Applications however it is time consuming process to convert existing or legacy Spring Framework projects into Spring Boot Applications.</p></div>
+		
+<span class='questionStyle' id='qanda1250'> <span style = "font-size:12px;">4</span>. Can we use spring boot for applications that are not built using Spring framework?</span><span style='float:right'></span>
+		
+		<!-- 		<div style= 'border-bottom: 1px dashed #f5f5f0;'> -->
+		<div id='ansId1250'><p> No. Spring Boot is limited to work with Spring based applications (Java/groovy).  </p></div>
+		
+<span class='questionStyle' id='qanda1251'> <span style = "font-size:12px;">5</span>. What is the latest version of Spring Boot?</span><span style='float:right'></span>
+		
+		<!-- 		<div style= 'border-bottom: 1px dashed #f5f5f0;'> -->
+		<div id='ansId1251'><p> 1.4.2 is the latest version.  </p></div>
+		
+<div class='adiv' style="text-align:center">
+<script id="mNCC" language="javascript">
+   medianet_width = "300";
+   medianet_height = "250";
+   medianet_crid = "852532746";
+   medianet_versionId = "111299";
+   (function() {
+       var isSSL = 'https:' == document.location.protocol;
+       var mnSrc = (isSSL ? 'https:' : 'http:') + '//contextual.media.net/nmedianet.js?cid=8CUBFNX25' + (isSSL ? '&https=1' : '');
+       document.write('<scr' + 'ipt  type="text/javascript" id="mNSC" src="' + mnSrc + '"></scr' + 'ipt>');
+   })();
+</script>
+</div>
+<p> </p>
+		<span class='questionStyle' id='qanda1252'> <span style = "font-size:12px;">6</span>. Explain CommandLineRunner interface in Spring boot.</span><span style='float:right'></span>
+		
+		<!-- 		<div style= 'border-bottom: 1px dashed #f5f5f0;'> -->
+		<div id='ansId1252'><p> CommandLineRunner Interface is used to indicate that a bean should run when it is contained within a Spring application. Multiple CommandLineRunner beans can be defined within the same application context and can be ordered using the Ordered interface or @Order annotation. </p></div>
+		
+<span class='questionStyle' id='qanda1253'> <span style = "font-size:12px;">7</span>. Difference between CommandLineRunner and ApplicationRunner in Spring Boot.</span><span style='float:right'></span>
+		
+		<!-- 		<div style= 'border-bottom: 1px dashed #f5f5f0;'> -->
+		<div id='ansId1253'><p> Both are similar in terms of functionality and the difference is that If you need access to ApplicationArguments instead of the raw String array consider using ApplicationRunner than CommandLineRunner.</p></div>
+		
+<span class='questionStyle' id='qanda2044'> <span style = "font-size:12px;">8</span>. What are microservices?</span><span style='float:right'></span>
+		
+		<!-- 		<div style= 'border-bottom: 1px dashed #f5f5f0;'> -->
+		<div id='ansId2044'><p> Micro service is an architectural style that structures an application as a collection of loosely coupled services, which implement business capabilities. The microservice architecture enables the continuous delivery/deployment of large, complex applications. It also enables an organization to evolve its technology stack.  </p></div>
+		
+<span class='questionStyle' id='qanda2064'> <span style = "font-size:12px;">9</span>. What are the components of Spring Boot?</span><span style='float:right'></span>
+		
+		<!-- 		<div style= 'border-bottom: 1px dashed #f5f5f0;'> -->
+		<div id='ansId2064'><p> The components are, </p>
+<ul><Li>Spring Boot Starter,</Li><Li>
+Spring Boot AutoConfigurator,</Li><Li>
+Spring Boot Actuator,</Li><Li>
+Spring Boot CLI,</Li><Li>
+Spring Boot IDE,</Li><Li>
+ and Spring Boot Initilizr.</Li></ul></div>
+		
+<span class='questionStyle' id='qanda2065'> <span style = "font-size:12px;">10</span>. What is name of the configuration file that you use in Spring boot?</span><span style='float:right'></span>
+		
+		<!-- 		<div style= 'border-bottom: 1px dashed #f5f5f0;'> -->
+		<div id='ansId2065'><p> Configuration file used in Spring boot projects is application.properties. It is used to override all default configurations.</p></div>
+		
+<div class='adiv' style="text-align:center">
+<script id="mNCC" language="javascript">
+   medianet_width = "300";
+   medianet_height = "250";
+   medianet_crid = "852532746";
+   medianet_versionId = "111299";
+   (function() {
+       var isSSL = 'https:' == document.location.protocol;
+       var mnSrc = (isSSL ? 'https:' : 'http:') + '//contextual.media.net/nmedianet.js?cid=8CUBFNX25' + (isSSL ? '&https=1' : '');
+       document.write('<scr' + 'ipt  type="text/javascript" id="mNSC" src="' + mnSrc + '"></scr' + 'ipt>');
+   })();
+</script>
+</div>
+<p> </p>
+		<span class='questionStyle' id='qanda2066'> <span style = "font-size:12px;">11</span>. What is actuator in Spring boot?</span><span style='float:right'></span>
+		
+		<!-- 		<div style= 'border-bottom: 1px dashed #f5f5f0;'> -->
+		<div id='ansId2066'><p> Spring boot actuator is one of the important features of Spring boot. It is used to access current state of running application in production environment. There are various metrics which you can use to check current state of the application.</p><p>
+
+Spring boot actuator provides restful web services end points which you can simply use and check various metrics. For example, /metrics end point will display metrics such as free memory, processors, uptime and other properties,</p></div>
+		
+<span class='questionStyle' id='qanda2067'> <span style = "font-size:12px;">12</span>. What are the embedded containers supported by Spring Boot?</span><span style='float:right'></span>
+		
+		<!-- 		<div style= 'border-bottom: 1px dashed #f5f5f0;'> -->
+		<div id='ansId2067'><p> Spring boot supports embedded containers such as Tomcat, Jetty and undertow servers.</p></div>
+		
+<span class='questionStyle' id='qanda2068'> <span style = "font-size:12px;">13</span>. Explain spring boot initializr.</span><span style='float:right'></span>
+		
+		<!-- 		<div style= 'border-bottom: 1px dashed #f5f5f0;'> -->
+		<div id='ansId2068'><p> Spring Boot Initilizr is a Spring Boot tool to bootstrap Spring Boot or Spring Applications easily.
+</p>
+Spring Boot Initilizr is available in the below forms:</p>
+<ul><li>
+Spring Boot Initilizr With Web Interface,</li><li>
+Spring Boot Initilizr With IDEs/IDE Plugins,</li><li>
+Spring Boot Initilizr With Spring Boot CLI,</li><li>
+Spring Boot Initilizr With ThirdParty Tools.</li></ul></div>
+		
+<span class='questionStyle' id='qanda2069'> <span style = "font-size:12px;">14</span>. How to write Test cases using Spring Boot?</span><span style='float:right'></span>
+		
+		<!-- 		<div style= 'border-bottom: 1px dashed #f5f5f0;'> -->
+		<div id='ansId2069'><p> Spring Boot provides the @SpringBootTest annotation for writing Unit Test Cases.</p></div>
+		
+<span class='questionStyle' id='qanda2070'> <span style = "font-size:12px;">15</span>. How do I add custom JS code with Spring Boot?</span><span style='float:right'></span>
+		
+		<!-- 		<div style= 'border-bottom: 1px dashed #f5f5f0;'> -->
+		<div id='ansId2070'><p> Create a folder called static under resources folder and put your static content in that folder. For your example the path to myStatic.js would be resources\static\js\myStatic.js.</p>
+
+<p>You may refer to it in jsp as shown below.</p>
+
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .1em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #007700">&lt;script</span> <span style="color: #0000CC">src=</span><span style="background-color: #fff0f0">&quot;/js/myStatic.js&quot;</span><span style="color: #007700">&gt;&lt;/script&gt;</span>
+</pre></div>
+</div>
+		
+<div class='adiv' style="text-align:center">
+<script id="mNCC" language="javascript">
+   medianet_width = "300";
+   medianet_height = "250";
+   medianet_crid = "852532746";
+   medianet_versionId = "111299";
+   (function() {
+       var isSSL = 'https:' == document.location.protocol;
+       var mnSrc = (isSSL ? 'https:' : 'http:') + '//contextual.media.net/nmedianet.js?cid=8CUBFNX25' + (isSSL ? '&https=1' : '');
+       document.write('<scr' + 'ipt  type="text/javascript" id="mNSC" src="' + mnSrc + '"></scr' + 'ipt>');
+   })();
+</script>
+</div>
+<p> </p>
+		<hr>
+ <div>
+ <div title = "Web services" style='float:left;width:10%;padding-left: 8px;'>
+ <a  href="/Web-services" >Prev</a>  </div>
+<!-- <span id="contentH2" style='float:center;width:80%;text-align:center;'></span>	 -->
+ <div title = "Java Transactions (JTA)" style='float:right;width:10%'>
+ <a  href="/Java-Transactions-(JTA)" >Next</a>  </div>
+ </div>
+ <div style ='font-color:green;background-color:#FFE87A;LINE-HEIGHT: 30px;TEXT-ALIGN:CENTER;'>
+<a  href="/Java-Transactions-(JTA)"> <b>Next: </b>Java Transactions (JTA)</a>
+ </div>
+ <p></p>
+<h5 style='text-align:center;width:99%;'>Comments & Discussions </h4>
+<!--  <span style ='width: 99%;' id = 'commentHeader' >Comments.</span>	 -->
+ <hr>
+ 
+ 
+<!--  comment code -->
+ 
+<!--  comment code -->
+
+ <div id="disqus_thread"></div>
+<script>
+
+var disqus_config = function () {
+	this.page.url = 'https://www.javapedia.net/Spring-Boot'; 
+	this.page.identifier = ''; 
+	
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://javapedia.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+ 
+
+ 
+ <!--  /comment code --><!--  /comment code -->
+  <!--googleon: all-->
+</div>  
+<!-- <footer class="footer"> -->
+<!--     <p>This is my footer</p> -->
+<!-- </footer> -->
+<!-- <div id="leftFiller"></div> -->
+<!-- <div id="rightFiller"></div> -->
+
+
+ <span id="nav"  class="hidden-md-down col-md-3 ">
+  <p></p><p></p>
+    <ul id='Menu'>
+ <!--googleoff: all-->   
+    
+
+		 <li   ><a href="/Spring-interview-questions">Spring interview questions <sup title="Number of questions and answers." style ='font-size:small; font-style: italic;color:brown;' > 21</sup></a></li>
+  
+
+		 <li   ><a href="/Spring-module-questions">Spring module questions <sup title="Number of questions and answers." style ='font-size:small; font-style: italic;color:brown;' > 10</sup></a></li>
+  
+
+		 <li   ><a href="/Spring-Beans">Spring Beans <sup title="Number of questions and answers." style ='font-size:small; font-style: italic;color:brown;' > 42</sup></a></li>
+  
+
+		 <li   ><a href="/Spring-Interview-questions-II">Spring Interview questions II <sup title="Number of questions and answers." style ='font-size:small; font-style: italic;color:brown;' > 34</sup></a></li>
+  
+
+		 <li   ><a href="/Spring-batch-Interview-questions">Spring batch Interview questions <sup title="Number of questions and answers." style ='font-size:small; font-style: italic;color:brown;' > 56</sup></a></li>
+  
+
+		 <li   ><a href="/Spring-MVC-Interview-questions">Spring MVC Interview questions <sup title="Number of questions and answers." style ='font-size:small; font-style: italic;color:brown;' > 49</sup></a></li>
+  
+
+		 <li   ><a href="/Spring-Data-Access">Spring Data Access <sup title="Number of questions and answers." style ='font-size:small; font-style: italic;color:brown;' > 51</sup></a></li>
+  
+
+		 <li   ><a href="/Spring-AOP">Spring AOP <sup title="Number of questions and answers." style ='font-size:small; font-style: italic;color:brown;' > 16</sup></a></li>
+  
+
+		 <li   ><a href="/Spring-Integration">Spring Integration <sup title="Number of questions and answers." style ='font-size:small; font-style: italic;color:brown;' > 4</sup></a></li>
+  
+
+		 <li   ><a href="/Web-services">Web services <sup title="Number of questions and answers." style ='font-size:small; font-style: italic;color:brown;' > 69</sup></a></li>
+  
+
+		 <li  class='selectedLi' ><a href="/Spring-Boot">Spring Boot <sup title="Number of questions and answers." style ='font-size:small; font-style: italic;color:brown;' > 15</sup></a></li>
+  
+
+		 <li   ><a href="/Java-Transactions-(JTA)">Java Transactions (JTA) <sup title="Number of questions and answers." style ='font-size:small; font-style: italic;color:brown;' > 18</sup></a></li>
+  
+
+		 <li   ><a href="/JMS">JMS <sup title="Number of questions and answers." style ='font-size:small; font-style: italic;color:brown;' > 36</sup></a></li>
+  
+  
+
+    </ul>
+    
+
+<div class="card" style="width: 19rem;">
+  <div class="card-block">
+    <h5 class="card-title">Recently added...</h5>
+    
+     
+    <p class="card-text"><a href = 'http://javapedia.net/XML#qanda2110'>What is XML namespace?</a></p>
+    
+    <p class="card-text"><a href = 'http://javapedia.net/Queue-and-its-implementations#qanda2109'>Difference between PriorityQueue and TreeSet in Java.</a></p>
+    
+    <p class="card-text"><a href = 'http://javapedia.net/XML#qanda2108'>Difference between DOM and SAX XML Parser in Java.</a></p>
+    
+    <p class="card-text"><a href = 'http://javapedia.net/XML#qanda2107'>What is XSLT?</a></p>
+    
+    <p class="card-text"><a href = 'http://javapedia.net/XML#qanda2106'>How to select elements in XPATH based on attribute and element value?</a></p>
+    
+    <p class="card-text"><a href = 'http://javapedia.net/XML#qanda2105'>What is XPath?
+</a></p>
+    
+    <p class="card-text"><a href = 'http://javapedia.net/XML#qanda2104'>Difference between DTD and XML Schema.</a></p>
+    
+    <p class="card-text"><a href = 'http://javapedia.net/XML#qanda2103'>What is XML?</a></p>
+    
+    <p class="card-text"><a href = 'http://javapedia.net/REDIS#qanda2102'>Mention few LIST operations in REDIS.</a></p>
+    
+    <p class="card-text"><a href = 'http://javapedia.net/REDIS#qanda2101'>What is SADD command in REDIS?</a></p>
+    
+    <p class="card-text"><a href = 'http://javapedia.net/REDIS#qanda2100'>Difference between Memcached and REDIS.</a></p>
+    
+    <p class="card-text"><a href = 'http://javapedia.net/REDIS#qanda2099'>REDIS is fast, but is it also durable?</a></p>
+    
+    <p class="card-text"><a href = 'http://javapedia.net/REDIS#qanda2098'>Limitations of REDIS.</a></p>
+    
+    <p class="card-text"><a href = 'http://javapedia.net/REDIS#qanda2097'>Explain LPUSH command in REDIS.</a></p>
+    
+    <p class="card-text"><a href = 'http://javapedia.net/REDIS#qanda2096'>Difference between SET and MSET command in REDIS.</a></p>
+    
+    <p class="card-text"><a href = 'http://javapedia.net/TOSCA-interview-questions#qanda2095'><bold>Join Robinhood and we'll both get a stock like Apple, Ford, or Sprint for free.</bold> Make sure you use my link. https://share.robinhood.com/johnwia</a></p>
+    
+    <p class="card-text"><a href = 'http://javapedia.net/REDIS#qanda2094'>In which language Redis is developed?</a></p>
+    
+    <p class="card-text"><a href = 'http://javapedia.net/REDIS#qanda2093'>Expand REDIS.</a></p>
+    
+    <p class="card-text"><a href = 'http://javapedia.net/REDIS#qanda2092'>Explain about REDIS security.</a></p>
+    
+    <p class="card-text"><a href = 'http://javapedia.net/REDIS#qanda2091'>Explain Replication in Redis.</a></p>
+    
+     
+  </div>
+</div>
+
+
+</span><!--  <div class="push"></div> -->
+<!--  </div> -->
+</div> 
+<!-- wrapper -->
+
+
+
+
+ <!--googleoff: all-->
+<div class="footer">
+<p></p>
+<table style="border:none;width:99%" id = 'footerTab'>
+<tr style="border:none;" >
+<td style="border:none;"  width = '3%'></td>
+<td style="border:none;"  width = '45%'>
+<p><strong>Interviews Questions</strong></p>
+<UL>
+ 
+ 		 <li class='active'> 
+		 <a href='/module/Java'><span>Java </span></a></li>
+  
+ 		 <li class='active'> 
+		 <a href='/module/Hibernate'><span>Hibernate </span></a></li>
+  
+ 		 <li class='active'> 
+		 <a href='/module/Spring'><span>Spring </span></a></li>
+  
+ 		 <li class='active'> 
+		 <a href='/module/Maven'><span>Maven </span></a></li>
+  
+ 		 <li class='active'> 
+		 <a href='/module/JUnit'><span>JUnit </span></a></li>
+  
+ 		 <li class='active'> 
+		 <a href='/module/TOSCA'><span>TOSCA </span></a></li>
+  
+ 		 <li class='active'> 
+		 <a href='/module/AngularJS'><span>AngularJS </span></a></li>
+  
+ 		 <li class='active'> 
+		 <a href='/module/BigData'><span>BigData </span></a></li>
+  
+ 		 <li class='active'> 
+		 <a href='/module/DataStructures'><span>DataStructures </span></a></li>
+  
+ 		 <li class='active'> 
+		 <a href='/module/MongoDB'><span>MongoDB </span></a></li>
+  
+ 		 <li class='active'> 
+		 <a href='/module/MuleESB'><span>MuleESB </span></a></li>
+  
+ 		 <li class='active'> 
+		 <a href='/module/Servlet'><span>Servlet </span></a></li>
+  
+  </UL>
+  </td>
+ 
+  <td style="border:none;"  width = '45%'><P><strong>About Javapedia.net</strong></P>
+  <p style='LINE-HEIGHT:20px;'>Javapedia.net is for Java and J2EE developers, technologist and college students who prepare of interview. Also this site includes many practical examples. </p>
+  <p style='LINE-HEIGHT:20px;'>This site is developed using J2EE technologies by Steve Antony, a senior Developer/lead at one of the logistics based company. </p>
+  <P></P>
+  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<div class="addthis_horizontal_follow_toolbox"></div>
+  </td>
+  
+  <td  style="border:none;" width = '5%'></td>
+  </tr>
+  <TR style="border:none;" > <td style="border:none;"  width = '3%'></td>
+   <td style="border:none;" COLSPAN=3> <p ><strong> contact: </strong>javatutorials2016[at]gmail[dot]com</p></td>
+  </TR>
+  <tr style="border:none;" >
+  <td style="border:none;"   width = '3%'></td>
+ <td style="border:none;"  colspan = 2>
+ 
+            <p>Copyright &copy; 2015, javapedia.net, all rights reserved. <a href= "/privacy">privacy policy.</a></p>
+            <a href="http://www.dmca.com/Protection/Status.aspx?ID=5c58e929-21b6-4036-a372-eec4810fcbfe" title="DMCA.com Protection Status" class="dmca-badge"> <img src="//images.dmca.com/Badges/dmca_protected_sml_120l.png?ID=5c58e929-21b6-4036-a372-eec4810fcbfe" alt="DMCA.com Protection Status"></a> <script src="//images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script> 
+           
+            </td>
+  <td style="border:none;"  width = '5%'></td>
+</tr>
+</table>
+        </div>
+         <!--googleon: all--><form id = "browserInfo" name="browserInfo" method="get" action="">
+<input type  = hidden name="scrHeight"/>
+<input type  = hidden name="scrWidth"/>
+<input type  = hidden name="httpUrl"/>
+</form>
+</div>
+</body>
+
+ <!--googleon: all-->   
+</html>

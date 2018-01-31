@@ -1,0 +1,555 @@
+ 
+<!DOCTYPE html>
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8">
+<link rel="SHORTCUT ICON" href="images/logo/icon.png" />
+<link rel="stylesheet" type="text/css" href="link.css" />
+<title>Spring Boot Interview Questions - javatpoint</title>
+<meta name="keywords" content="spring boot, interview, questions, beginners, professionals, basic, frequently, asked"/>
+<meta name="description" content="Spring Boot Interview Questions for beginners and professionals with a list of top frequently asked CouchDB interview questions and answers with java, .net, php, database, hr, spring, hibernate, android, oracle, sql, asp.net, c#, python, c, c++ etc."/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">						
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="canonical" href="https://www.javatpoint.com/spring-boot-interview-questions" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta name="twitter:title" property="og:title" content="Spring Boot Interview Questions - javatpoint" />
+<meta name="twitter:description" property="og:description" content="Spring Boot Interview Questions for beginners and professionals with a list of top frequently asked CouchDB interview questions and answers with java, .net, php, database, hr, spring, hibernate, android, oracle, sql, asp.net, c#, python, c, c++ etc." />
+<meta property="og:url" content="https://www.javatpoint.com/spring-boot-interview-questions" />
+<meta property="og:site_name" content="www.javatpoint.com" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:site" content="@pagejavatpoint"/>
+<meta name="twitter:domain" content="www.javatpoint.com"/>
+<meta name="twitter:creator" content="@pagejavatpoint"/>
+</head> 
+<body onload="highlightlink()"> 
+<button onclick="topFunction()" id="myBtn" title="Go to top">&#8679</button>
+
+<div id="page" style="margin:-8px;background-color:#f5f5f4">
+<div id="container" >
+
+ <div  class="header">
+<!--<p style="font-weight:bold;padding:7px;color:white;background-color:gray;margin:0px"><marquee>JavaTpoint will be down for 2 to 4 hours tonight. Sorry for inconvenience.</marquee></p>-->
+
+<table style="width:100%;margin-bottom:5px"><tr><td><div id="headerlink" style="padding:0px;margin:0px"><span style="margin-right:20px;width:45%px"></span><span style="float:right;margin-right:5px;width:45%"> 
+
+</span>
+
+
+</div> </td></tr><tr><td>
+<div style="clear:both;float:left;width:230px;margin-top:-5px;margin-left:20px"><a href="https://www.javatpoint.com"><img src="https://www.javatpoint.com/images/logo/jtp_logo.png" alt="Javatpoint Logo"/></a></div>
+
+<div style="float:left;width:60%;"><form class="navbar-search" method="get" action="https://www.google.com/search" target="_blank"> <input type="text" name="q" class="search-query span2" placeholder="Search on javatpoint..." title="Search on Javatpoint"/><input type="hidden" name="sitesearch" value="www.javatpoint.com"/></form><!--<span style="margin-left:100px;color:orange;font-size:20px;font-weight:bold;">Happy </span><span style="color:red;font-size:20px;font-weight:bold;">New </span><span style="color:#666600;font-size:20px;font-weight:bold;">Year</span><span style="color:#666600;font-size:30px;font-weight:bold;"> 2015</span>--></div>
+
+</td></tr></table>
+ </div>
+
+ <div class="headermobile">
+<div style="margin-top:10px;padding:0px;text-align:left;">
+<span style="float:left"><input type="image" src="images/menuhome64.png" onclick="showmenu()"/></span>
+<span style="float:left"><a href="https://www.javatpoint.com"><img src="https://www.javatpoint.com/images/logo/jtp_logo.png" alt="Javatpoint Logo"></a></span>
+</div>
+<div style="margin:0px;padding:0px;clear:both">
+<form class="navbar-search-m" method="get" action="https://www.google.com/search" target="_blank"> 
+<input type="text" name="q" class="search-query span2-m" placeholder="Search on javatpoint..."  title="Search on Javatpoint"/>
+<input type="hidden" name="sitesearch" value="www.javatpoint.com"/>
+</form>
+</div>
+</div>
+ 
+<div id="link" style="clear:both">
+ <div  class="ddsmoothmenu">
+<ul>
+<li><a href="http://www.javatpoint.com">Home</a></li>
+<li><a href="java-tutorial">Java</a></li>
+<li><a href="c-programming-language-tutorial">C</a></li>
+<li><a href="sql-tutorial">SQL</a></li>
+<li><a href="android-tutorial">Android</a></li>
+<li><a href="html-tutorial">HTML</a></li>
+<li><a href="xml-tutorial">XML</a></li>
+<li><a href="javascript-tutorial">JavaScript</a></li>
+<li><a href="ajax-tutorial">Ajax</a></li>
+<li><a href="cloud-computing-tutorial">Cloud</a></li>
+<li><a href="python-tutorial">Python</a></li>
+<li><a href="web-services-tutorial">Web Services</a></li>
+<li><a href="examaccess">Quiz</a></li>
+<li><a href="free-java-projects">Projects</a></li>
+<li><a href="interview-questions-and-answers"  class="selected">Interview Questions</a></li>
+<li><a href="comment.jsp">Comment</a></li>
+<li><a href="forum">Forum</a></li>
+<li><a href="training">Training</a></li>
+
+</ul>
+<br style="clear: left" />
+</div>
+</div>
+<div class="mobilemenu" style="clear:both">
+ <!--<button onclick="showmenu()">Content Menu</button>-->
+</div>
+
+
+<div id="menu">
+<a target="_blank" href="https://play.google.com/store/apps/details?id=my.example.javatpoint" style="padding-left:10px;color:blue;text-decoration:none"><img src="images/logo/androidhome.png" style="height:20px" alt="Javatpoint interview questions Android App"/> Download Android App</a> 
+
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">All Interview</span></h2>
+</div>
+<div class="leftmenu">
+<a href="interview-tips"><span>Interview Tips</span></a>
+<a href="job-interview-questions"><span>JOB/HR Interview</span></a>
+<a href="competency-based-interview-questions"><span>Competency Interview</span></a>
+<a href="business-analyst-interview-questions"><span>Business Analyst</span></a>
+<a href="behavioral-interview-questions"><span>Behavioral Interview</span></a>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Technical Interview</span></h2>
+</div>
+<a href="c-interview-questions"><span>C Interview</span></a>
+<a href="cpp-interview-questions"><span>C++ Interview</span></a>
+<a href="data-structure-interview-questions"><span>Data Structure Interview</span></a>
+<a href="linux-interview-questions"><span>Linux Interview</span></a>
+<a href="unix-interview-questions"><span>Unix Interview</span></a>
+<a href="shell-scripting-interview-questions"><span>Shell Scripting</span></a>
+<a href="networking-interview-questions"><span>Networking Interview</span></a>
+<a href="ccna-interview-questions"><span>CCNA Interview</span></a>
+<a href="android-interview-questions"><span>Android Interview</span></a>
+<a href="cloud-computing-interview-questions"><span>Cloud Computing</span></a>
+<a href="hadoop-interview-questions"><span>Hadoop Interview</span></a>
+<a href="software-testing-interview-questions"><span>Testing/QTP Interview</span></a>
+<a href="selenium-interview-questions"><span>Selenium Interview</span></a>
+<a href="web-services-interview-questions"><span>Web Services Interview</span></a>
+<a href="operating-system-interview-questions"><span>OS Interview</span></a>
+<a href="excel-interview-questions"><span>Excel Interview</span></a>
+<a href="seo-interview-questions"><span>SEO Interview</span></a>
+<a href="digital-marketing-interview-questions"><span>Digital Marketing</span></a>
+<a href="python-interview-questions"><span>Python Interview</span></a>
+<a href="django-interview-questions"><span>Django Interview</span></a>
+<a href="pascal-interview-questions"><span>Pascal Interview</span></a>
+<a href="ruby-interview-questions"><span>Ruby Interview</span></a>
+<a href="ruby-on-rails-interview-questions"><span>Ruby on Rails Interview</span></a>
+<a href="memcached-interview-questions"><span>Memcached Interview</span></a>
+<a href="go-programming-interview-questions"><span>Go Interview</span></a>
+<a href="openstack-interview-questions"><span>OpenStack Interview</span></a>
+<a href="scala-interview-questions"><span>Scala Interview</span></a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Web Interview</span></h2>
+</div>
+<div class="leftmenu">
+<a href="html-interview-questions"><span>HTML Interview</span></a>
+<a href="css-interview-questions"><span>CSS Interview</span></a>
+<a href="javascript-interview-questions"><span>JavaScript Interview</span></a>
+<a href="jquery-interview-questions"><span>jQuery Interview</span></a>
+<a href="angularjs-interview-questions"><span>AngularJS Interview</span></a>
+<a href="ajax-interview-questions"><span>AJAX Interview</span></a>
+<a href="xml-interview-questions"><span>XML Interview</span></a>
+<a href="dojo-interview-questions"><span>Dojo Interview</span></a>
+<a href="backbone-js-interview-questions"><span>Backbone.js Interview</span></a>
+<a href="ember-js-interview-questions"><span>Ember.js Interview</span></a>
+<a href="xhtml-interview-questions"><span>XHTML Interview</span></a>
+<a href="xslt-interview-questions"><span>XSLT Interview</span></a>
+<a href="xpath-interview-questions"><span>XPath Interview</span></a>
+<a href="xquery-interview-questions"><span>XQuery Interview</span></a>
+<a href="xforms-interview-questions"><span>XForms Interview</span></a>
+<a href="sass-interview-questions"><span>SASS Interview</span></a>
+<a href="coffeescript-interview-questions"><span>CoffeeScript Interview</span></a>
+<a href="less-interview-questions"><span>LESS Interview</span></a>
+<a href="perl-interview-questions"><span>Perl Interview</span></a>
+<a href="pure-css-interview-questions"><span>Pure.CSS Interview</span></a>
+<a href="materialize-css-interview-questions"><span>Materialize Interview</span></a>
+<a href="framework7-interview-questions"><span>Framework7 Interview</span></a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">PHP Interview</span></h2>
+</div>
+<div class="leftmenu">
+<a href="php-interview-questions"><span>PHP Interview</span></a>
+<a href="wordpress-interview-questions"><span>Wordpress Interview</span></a>
+<a href="joomla-interview-questions"><span>Joomla Interview</span></a>
+<a href="drupal-interview-questions"><span>Drupal Interview</span></a>
+<a href="magento-interview-questions"><span>Magento Interview</span></a>
+<a href="codeigniter-interview-questions"><span>CodeIgniter Interview</span></a>
+<a href="phalcon-interview-questions"><span>Phalcon Interview</span></a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">.Net Interview</span></h2>
+</div>
+<div class="leftmenu">
+<a href="dot-net-interview-questions"><span>.Net Interview</span></a>
+<a href="c-sharp-interview-questions"><span>C# Interview</span></a>
+<a href="asp-dot-net-interview-questions"><span>ASP.NET Interview</span></a>
+<a href="ado-dot-net-interview-questions"><span>ADO.NET Interview</span></a>
+<a href="wcf-interview-questions"><span>WCF Interview</span></a>
+<a href="wpf-interview-questions"><span>WPF Interview</span></a>
+<a href="silverlight-interview-questions"><span>Silverlight Interview</span></a>
+<a href="fsharp-interview-questions"><span>F# Interview</span></a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Java Interview</span></h2>
+</div>
+<div class="leftmenu">
+<a href="corejava-interview-questions"><span>Java 1 Interview</span></a>
+<a href="corejava-interview-questions-2"><span>Java 2 Interview</span></a>
+<a href="corejava-interview-questions-3"><span>Exception &amp; String</span></a>
+<a href="java-multithreading-interview-questions"><span>Multithreading </span></a>
+<a href="java-collections-interview-questions"><span>Collections Interview</span></a>
+<a href="jdbc-interview-questions"><span>JDBC Interview</span></a>
+<a href="servletinterview"><span>Servlet Interview</span></a>
+<a href="jspinterview"><span>JSP Interview</span></a>
+<a href="ejb-interview-questions"><span>EJB Interview</span></a>
+<a href="struts-interview-questions"><span>Struts Interview</span></a>
+<a href="hibernate-interview-questions"><span>Hibernate Interview</span></a>
+<a href="spring-interview-questions"><span>Spring Interview</span></a>
+<a href="spring-boot-interview-questions"><span>Spring Boot Interview</span></a>
+<a href="maven-interview-questions"><span>Maven Interview</span></a>
+<a href="junit-interview-questions"><span>JUnit Interview</span></a>
+<a href="jsf-interview-questions"><span>JSF Interview</span></a>
+<a href="primefaces-interview-questions"><span>PrimeFaces Interview</span></a>
+<a href="richfaces-interview-questions"><span>RichFaces Interview</span></a>
+<a href="gwt-interview-questions"><span>GWT Interview</span></a>
+
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Database Interview</span></h2>
+</div>
+<div class="leftmenu">
+<a href="dbms-interview-questions"><span>DBMS Interview</span></a>
+<a href="sql-interview-questions"><span>SQL Interview</span></a>
+<a href="pl-sql-interview-questions"><span>PL/SQL Interview</span></a>
+<a href="oracle-interview-questions"><span>Oracle Interview</span></a>
+<a href="mysql-interview-questions"><span>MySql Interview</span></a>
+<a href="sql-server-interview-questions"><span>SQL Server Interview</span></a>
+<a href="mongodb-interview-questions"><span>MongoDB Interview</span></a>
+<a href="cassandra-interview-questions"><span>Cassandra Interview</span></a>
+<a href="db2-interview-questions"><span>DB2 Interview</span></a>
+<a href="microsoft-access-interview-questions"><span>Access Interview</span></a>
+<a href="sqlite-interview-questions"><span>SQLite Interview</span></a>
+<a href="couchdb-interview-questions"><span>CouchDB Interview</span></a>
+<a href="neo4j-interview-questions"><span>Neo4j Interview</span></a>
+<a href="mariadb-interview-questions"><span>MariaDB Interview</span></a>
+<a href="pouchdb-interview-questions"><span>PouchDB Interview</span></a>
+</div>
+<table  id="leftad">
+<tr><td>
+<img src="images/wh.JPG" alt="space"/>
+</td></tr>
+<tr><td>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <ins class="adsbygoogle"
+        style="display:inline-block;width:160px;height:600px"
+        data-ad-client="ca-pub-4699858549023382"
+        data-ad-slot="4476401222"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+<br><br>
+</td></tr>
+</table>
+</div>
+
+<div class="onlycontent">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- CM_JTP_Leaderbaord -->
+<ins class="adsbygoogle cm_jtp_leaderbaord"
+style="display:inline-block"
+data-ad-client="ca-pub-4699858549023382"
+data-ad-slot="9201901915"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<div id="city">
+<table>
+<tr><td>
+
+<h1 class="h1">Spring Boot Interview Questions</h1>
+<hr/>
+<h3 class="h3">1) What is Spring Boot?</h3>
+<p>Spring Boot is a Spring module which provides RAD (Rapid Application Development) feature to Spring framework.</p>
+<p>It is used to create stand alone spring based application that you can just run because it needs very little spring configuration.</p>
+<p>For more information <a href="https://www.javatpoint.com/spring-boot-introduction">click here.</a></p>
+<h3 class="h3">2) What are the advantages of Spring Boot?</h3>
+<ul class="points">
+<li>Create stand-alone Spring applications that can be started using java -jar.</li>
+<li>Embed Tomcat, Jetty or Undertow directly. You don't need to deploy WAR files. </li>
+<li>It provides opinionated 'starter' POMs to simplify your Maven configuration. </li>
+<li>It automatically configure Spring whenever possible.</li>
+</ul>
+<p>For more information <a href="https://www.javatpoint.com/spring-boot-introduction">click here.</a></p>
+<h3 class="h3">3) What are the features of Spring Boot?</h3>
+<ul class="points">
+<li>Web Development </li>
+<li>SpringApplication </li>
+<li>Application events and listeners</li> 
+<li>Admin features</li>
+</ul>
+<p>For more information <a href="https://www.javatpoint.com/spring-boot-features">click here.</a></p>
+<h3 class="h3">4) How to create Spring Boot application using Maven?</h3>
+<p>There are multiple approaches to create Spring Boot project. We can use any of the following approach to create application.</p>
+<ul class="points">
+<li>Spring Maven Project</li> 
+<li>Spring Starter Project Wizard </li>
+<li>Spring Initializr</li> 
+<li>Spring Boot CLI </li>
+</ul>
+<p>For more information <a href="https://www.javatpoint.com/spring-maven-project">click here.</a></p>
+<h3 class="h3">5) How to create Spring Boot project using Spring Initializer?</h3>
+<p>It is a web tool which is provided by Spring on official site. You can create Spring Boot project by providing project details.</p>
+<p>For more information <a href="https://www.javatpoint.com/spring-initializr">click here.</a></p>
+<h3 class="h3">6) How to create Spring Boot project using boot CLI?</h3>
+<p>It is a tool which you can download from the official site of Spring Framework. Here, we are explaining steps.</p>
+<p>Download the CLI tool from official site and For more information <a href="https://www.javatpoint.com/spring-boot-cli">click here.</a></p>
+<h3 class="h3">7) How to create simple Spring Boot application?</h3>
+<p>To create an application. We are using STS (Spring Tool Suite) IDE and it includes the various steps that are explaining in steps.</p>
+<p>For more information <a href="https://www.javatpoint.com/spring-boot-application">click here.</a></p>
+<h3 class="h3">8) What are the Spring Boot Annotations?</h3>
+<p>The @RestController is a stereotype annotation. It adds @Controller and @ResponseBody annotations to the class. We need to import org.springframework.web.bind.annotation package in our file, in order to implement it.</p>
+<p>For more information <a href="https://www.javatpoint.com/spring-boot-annotations">click here.</a></p>
+<h3 class="h3">9) What is Spring Boot dependency management?</h3>
+<p>Spring Boot manages dependencies and configuration automatically. You don't need to specify version for any of that dependencies.</p>
+<p>Spring Boot upgrades all dependencies automatically when you upgrade Spring Boot.</p>
+<p>For more information <a href="https://www.javatpoint.com/spring-boot-dm">click here.</a></p>
+<h3 class="h3">10) What are the Spring Boot properties?</h3>
+<p>Spring Boot provides various properties which can be specified inside our project's <strong>application.properties</strong> file. These properties have default values and you can set that inside the properties file. Properties are used to set values like: server-port number, database connection configuration etc.</p>
+<p>For more information <a href="https://www.javatpoint.com/spring-boot-properties">click here.</a></p>
+<h3 class="h3">11) What are the Spring Boot Starters?</h3>
+<p>Starters are a set of convenient dependency descriptors which we can include in our application.</p>
+<p>Spring Boot provides built-in starters which makes development easier and rapid. For example, if we want to get started using Spring and JPA for database access, just include the <strong>spring-boot-starter-data-jpa</strong> dependency in your project.</p>
+<p>For more information <a href="https://www.javatpoint.com/spring-boot-starters">click here.</a></p>
+<h3 class="h3">12) What is Spring Boot Actuator?</h3>
+<p>Spring Boot provides actuator to monitor and manage our application. Actuator is a tool which has HTTP endpoints. when application is pushed to production, you can choose to manage and monitor your application using HTTP endpoints.</p>
+<p>For more information <a href="https://www.javatpoint.com/spring-boot-actuator">click here.</a></p>
+<h3 class="h3">13) What is thymeleaf?</h3>
+<p>It is a server side Java template engine for web application. It's main goal is to bring elegant natural templates to your web application.</p>
+<p>It can be integrate with Spring Framework and ideal for HTML5 Java web applications.</p>
+<p>For more information <a href="https://www.javatpoint.com/spring-boot-thymeleaf-view">click here.</a></p>
+<h3 class="h3">14) How to use thymeleaf?</h3>
+<p>In order to use Thymeleaf we must add it into our pom.xml file like:</p>
+<div class="codeblock"><textarea name="code" class="html">
+&lt;dependency&gt;  
+&lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;  
+&lt;artifactId&gt;spring-boot-starter-thymeleaf&lt;/artifactId&gt;  
+&lt;/dependency&gt;  
+</textarea></div>
+<p>For more information <a href="https://www.javatpoint.com/spring-boot-thymeleaf-view">click here.</a></p>
+<h3 class="h3">15) How to connect Spring Boot to the database using JPA?</h3>
+<p>Spring Boot provides <strong>spring-boot-starter-data-jpa</strong> starter to connect Spring application with relational database efficiently. You can use it into project POM (Project Object Model) file.</p>
+<p>For more information <a href="https://www.javatpoint.com/spring-boot-jpa">click here.</a></p>
+<h3 class="h3">16) How to connect Spring Boot application to database using JDBC?</h3>
+<p>Spring Boot provides starter and libraries for connecting to our application with JDBC. Here, we are creating an application which connects with Mysql database. It includes the following steps to create and setup JDBC with Spring Boot.</p>
+<p>For more information <a href="https://www.javatpoint.com/spring-boot-jdbc">click here.</a></p>
+<h3 class="h3">17) What is @RestController annotation in Spring Boot?</h3>
+<p>The @RestController is a stereotype annotation. It adds @Controller and @ResponseBody annotations to the class. We need to import org.springframework.web.bind.annotation package in our file, in order to implement it.</p>
+<p>For more information <a href="https://www.javatpoint.com/spring-boot-annotations">click here.</a></p>
+<h3 class="h3">18) What is @RequestMapping annotation in Spring Boot?</h3>
+<p>The <strong>@RequestMapping</strong> annotation is used to provide routing information. It tells to the Spring that any HTTP request should map to the corresponding method. We need to import org.springframework.web.annotation package in our file.</p>
+<p>For more information <a href="https://www.javatpoint.com/spring-boot-annotations">click here.</a></p>
+<h3 class="h3">19) How to create Spring Boot application using Spring Starter Project Wizard?</h3>
+<p>There is one more way to create Spring Boot project in STS (Spring Tool Suite). Creating project by using IDE is always a convenient way. Follow the following steps in order to create a Spring Boot Application by using this wizard.</p>
+<p>For more information <a href="https://www.javatpoint.com/spring-starter-project-wizard">click here.</a></p>
+<h3 class="h3">20) Spring Vs Spring Boot?</h3>
+<p>Spring is a web application framework based on Java. It provides tools and libraries to create a complete cutomized web application.</p>
+<p>Wheras Spring Boot is a spring module which is used to create spring application project that can just run.</p>
+
+<br/><br/>
+</td></tr></table>
+</div>
+<div style="margin-left:0%">
+
+<script async
+src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Cm_336x280_New -->
+<ins class="adsbygoogle"
+style="display:inline-block;width:336px;height:280px"
+data-ad-client="ca-pub-4699858549023382"
+data-ad-slot="5592503653"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+</div>
+</div>
+
+<div id="right" style="width:15%;float:left;margin-left:10px;margin-top:10px;">
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"     style="display:inline-block;width:160px;height:600px"     data-ad-client="ca-pub-4699858549023382"     data-ad-slot="3155368314"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script><br/><br/><br/>
+
+<br/><br/>
+
+<script async
+src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Cm_Sidebar_160x600_New -->
+<ins class="adsbygoogle"
+style="display:inline-block;width:160px;height:600px"
+data-ad-client="ca-pub-4699858549023382"
+data-ad-slot="5265076881"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<br/><br/>
+
+
+</div>
+
+<div class="right1024" style="float:left;margin-left:10px;margin-top:10px;">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- right1024only -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:120px;height:600px"
+     data-ad-client="ca-pub-4699858549023382"
+     data-ad-slot="2180118716"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/><br/><br/><br/>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- right1024only -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:120px;height:600px"
+     data-ad-client="ca-pub-4699858549023382"
+     data-ad-slot="2180118716"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+<div id="footer" style="clear:both;width:100%">
+<!--<div style="width:100%;float:center;margin-top:-20px;color:white;background-image: linear-gradient(145deg,#90715c,#523b1f);line-height:28px;">
+    <h2 style="padding:60px 0px 0px 20px">Summer Training</h2>
+    <p style="padding:0px 20px 60px 20px">JavaTpoint offers <strong>Summer Internship Training</strong> on Java, PHP, .Net, Hadoop, Data Analytics, R Programming, SAP, Android, Python, Oracle, Seleninum, Linux, C++ and many more technologies in Delhi/NCR, India. For more visit <a style="color:white" href="http://training.javatpoint.com"><img src="images/linkglobe12.png" alt="javatpoint training"/>training.javatpoint.com</a>
+    <br>
+    Course Fee: &#8377; 6000 Only<br>
+    Duration: 6 Week
+    </p>
+</div>
+-->
+<div style="width:100%;float:center;margin-top:10px;color:white;background-image: linear-gradient(145deg,#52a2fc,#480fcc);line-height:28px;">
+    <h2 style="padding:60px 0px 0px 20px">Website Development Services</h2>
+    <p style="padding:0px 20px 0px 20px">JavaTpoint (SSS IT Pvt Ltd) provides website development services in affordable cost. We develop websites on WordPress, Core PHP, CakePHP, CodeIgnitor, Open Cart, Servlet-JSP, Struts 2 and Spring technologies. Send us your requirement at hr@javatpoint.com. We will show you a free demo first, then we will proceed further.
+    </p>
+    <table style="width:400px;padding:0px 20px 60px 20px">
+        <tr><td>Personal Blog</td><td>$150 Only</td></tr>
+        <tr><td>School Website</td><td>$200 Only</td></tr>
+        <tr><td>Company Website</td><td>$300 Only</td></tr>
+        <tr><td>Showroom Website</td><td>$300 Only</td></tr>
+        <tr><td>News Portal</td><td>$400 Only</td></tr>
+        <tr><td>E-Commerce Website</td><td>$500 Only</td></tr>
+        <tr><td>Multivendor E-Commerce (PHP)</td><td>$3000 Only</td></tr>
+        <tr><td>Multivendor E-Commerce (Java)</td><td>$18000 Approx</td></tr>
+        
+        <tr><td></td><td></td></tr>
+    </table>
+</div>
+<div style="width:100%;float:center;margin-top:-20px;color:white;background-image: linear-gradient(145deg,#dc8140,#b16b15);line-height:28px;">
+    <h2 style="padding:60px 0px 0px 20px">Training For College Campus</h2>
+    <p style="padding:0px 20px 60px 20px">JavaTpoint offers college campus training on Core Java, Advance Java, .Net, Android, Hadoop, PHP, Web Technology and Python. Please mail your requirement at hr@javatpoint.com.
+    <br>
+    Course Fee: &#8377; 2000 Per Student<br>
+    </p>
+</div>
+
+<!--<div class="homebox2">
+<h2>Our Initiatives</h2>
+<marquee behavior="alternate">
+<a rel="nofollow" href="https://www.hindi100.com">
+<div class="box2">
+<img class="box2img" src="https://www.hindi100.com/resources/images/javatpoint.png" alt="javatpoint"/>
+<p>Hindi100</p>
+</div>
+</a>
+
+<a rel="nofollow" href="https://www.lyricsia.com">
+<div class="box2">
+<img class="box2img" src="https://www.hindi100.com/resources/images/lyrics.png" alt="lyrics"/>
+<p>Lyricsia</p>
+</div>
+</a>
+
+<a rel="nofollow" href="http://www.hindi-typing.com">
+<div class="box2">
+<img class="box2img" src="https://www.hindi100.com/resources/images/hindi-typing.png" alt="hindi-typing"/>
+<p>Hindi-Typing</p>
+</div>
+</a>
+</marquee>
+</div>
+-->
+<script type="text/javascript"> var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-24880427-1']); _gaq.push(['_trackPageview']); (function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();</script>
+<div style="margin-top:5px;text-align:center">
+    <sup style="font:16px arial;">Like/Subscribe us for latest updates or newsletter </sup>
+    <a target="_blank" href="https://feeds.feedburner.com/javatpointsonoo"><img src="https://www.javatpoint.com/images/social/rss1.png" alt="RSS Feed"/></a>
+    <a target="_blank" href="https://feedburner.google.com/fb/a/mailverify?uri=javatpointsonoo"><img src="https://www.javatpoint.com/images/social/mail1.png" alt="Subscribe to Get Email Alerts"/></a>
+    <a target="_blank" href="https://www.facebook.com/javatpoint"><img src="https://www.javatpoint.com/images/social/facebook1.jpg" alt="Facebook Page"/></a>
+    <a target="_blank" href="https://plus.google.com/u/0/+javatpoint"><img src="https://www.javatpoint.com/images/social/google1.png" alt="Google Page"/></a>
+    <a target="_blank" href="https://twitter.com/pagejavatpoint"><img src="https://www.javatpoint.com/images/social/twitter1.png" alt="Twitter Page"/></a>
+    <a target="_blank" href="https://www.youtube.com/channel/UCUnYvQVCrJoFWZhKK3O2xLg"><img src="https://www.javatpoint.com/images/youtube32.png" alt="YouTube"/></a>
+    <a target="_blank" href="https://javatpoint.blogspot.com"><img src="https://www.javatpoint.com/images/social/blog.png" alt="Blog Page"/></a>
+    <!--<a href="#" style="font:bold 18px arial;text-decoration:none;"><sup>&uarr;Top</sup></a>-->
+</div>
+
+<footer class="footer1">
+<div class="column4">
+<h3>Learn Tutorials</h3>
+<a href="java-tutorial">Learn Java Tutorial</a>
+<a href="c-programming-language-tutorial">Learn C Tutorial</a>
+<a href="cpp-tutorial">Learn C++ Tutorial</a>
+<a href="c-sharp-tutorial">Learn C# Tutorial</a>
+<a href="php-tutorial">Learn PHP Tutorial</a>
+<a href="html-tutorial">Learn HTML Tutorial</a>
+<a href="css-tutorial">Learn CSS Tutorial</a>
+<a href="javascript-tutorial">Learn JavaScript Tutorial</a>
+<a href="jquery-tutorial">Learn jQuery Tutorial</a>
+<a href="spring-tutorial">Learn Spring Tutorial</a>
+</div>
+<div class="column4">
+<h3>Our Websites</h3>
+<a rel="nofollow" target="_blank" href="https://www.javatpoint.com">Javatpoint.com</a>
+<a rel="nofollow" target="_blank" href="https://www.hindi100.com">Hindi100.com</a>
+<a rel="nofollow" target="_blank" href="https://www.lyricsia.com">Lyricsia.com</a>
+<a rel="nofollow" target="_blank" href="https://www.quoteperson.com">Quoteperson.com</a>
+<a rel="nofollow" target="_blank" href="http://www.hindi-typing.com">Hindi-typing.com</a>
+<a rel="nofollow" target="_blank" href="http://www.shayaree.com">Shayaree.com</a>
+<a rel="nofollow" target="_blank" href="https://www.wordcountee.com">Wordcountee.com</a>
+<a rel="nofollow" target="_blank" href="https://www.charactercountee.com">Charactercountee.com</a>
+<a rel="nofollow" target="_blank" href="https://www.jobandplacement.com">Jobandplacement.com</a>
+</div>
+<div class="column4">
+<h3>Our Services</h3>
+<p>Website Development</p>
+<p>Android Development</p>
+<p>Website Designing</p>
+<p>Digital Marketing</p>
+<p>Summer Training</p>
+<p>Industrial Training</p>
+<p>College Campus Training</p>
+</div>
+<div class="column4">
+<h3>Contact</h3>
+<p>Address: G-13, 2nd Floor, Sec-3</p>
+<p>Noida, UP, 201301, India</p>
+<p>Contact No: 0120-4256464, 9990449935</p>
+<a href="https://www.javatpoint.com/contact-us">Contact Us</a> 
+<a href="https://www.javatpoint.com/subscribe.jsp">Subscribe Us</a> 
+<a href="https://www.javatpoint.com/privacy-policy">Privacy Policy</a>
+
+</div>
+</footer>
+
+<footer class="footer2">
+<p>&copy; Copyright 2011-2017 www.javatpoint.com. All rights reserved.  <a rel="nofollow" target="_blank" href="https://www.sssit.org">Developed by SSS IT Pvt Ltd (JavaTpoint)</a> </p>
+</footer>
+
+
+</div>
+
+</div></div>
+
+<script src="js/shcoreandbrush.js"></script>
+<script type="text/javascript"> dp.SyntaxHighlighter.HighlightAll('code'); </script>
+
+</body> 
+</html>
+    

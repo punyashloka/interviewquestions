@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns#">
+<head itemscope itemtype="http://schema.org/WebSite">
+	<meta charset="UTF-8">
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<!--[if IE ]>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<![endif]-->
+	<link rel="profile" href="http://gmpg.org/xfn/11" />
+	
+                    <link rel="icon" href="https://www.dineshonjava.com/wp-content/uploads/2017/08/favicon.png" type="image/x-icon" />
+        
+                    <meta name="msapplication-TileImage" content="https://i1.wp.com/www.dineshonjava.com/wp-content/uploads/2017/08/favicon.png?fit=177%2C106&#038;ssl=1">        
+                    <link rel="apple-touch-icon-precomposed" href="https://i1.wp.com/www.dineshonjava.com/wp-content/uploads/2017/08/favicon.png?fit=177%2C106&#038;ssl=1">        
+                    <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta name="apple-mobile-web-app-capable" content="yes">
+            <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        
+        
+        <meta itemprop="name" content="Dinesh on Java" />
+        <meta itemprop="url" content="https://www.dineshonjava.com" />
+
+                                                <meta itemprop="creator accountablePerson" content="Dinesh Rajput" />
+                    	<link rel="pingback" href="https://www.dineshonjava.com/xmlrpc.php" />
+	<title>Spring Boot Interview Questions and Answers - Dinesh on Java</title>
+<script type="text/javascript">document.documentElement.className = document.documentElement.className.replace( /\bno-js\b/,'js' );</script>
+<!-- This site is optimized with the Yoast SEO plugin v6.2 - https://yoa.st/1yg?utm_content=6.2 -->
+<meta name="description" content="In this article, I have collected best top 20 most frequently asked spring boot interview questions and answers with explanation."/>
+<link rel="canonical" href="https://www.dineshonjava.com/spring-boot-interview-questions-and-answers/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Spring Boot Interview Questions and Answers - Dinesh on Java" />
+<meta property="og:description" content="In this article, I have collected best top 20 most frequently asked spring boot interview questions and answers with explanation." />
+<meta property="og:url" content="https://www.dineshonjava.com/spring-boot-interview-questions-and-answers/" />
+<meta property="og:site_name" content="Dinesh on Java" />
+<meta property="article:author" content="https://www.facebook.com/thedineshonjava/" />
+<meta property="article:section" content="interview questions" />
+<meta property="article:published_time" content="2017-04-11T14:51:00+00:00" />
+<meta property="article:modified_time" content="2017-10-14T04:02:57+00:00" />
+<meta property="og:updated_time" content="2017-10-14T04:02:57+00:00" />
+<meta property="og:image" content="https://www.dineshonjava.com/wp-content/uploads/2013/03/Spring-5-design-pattern-243x300.jpg" />
+<meta property="og:image:secure_url" content="https://www.dineshonjava.com/wp-content/uploads/2013/03/Spring-5-design-pattern-243x300.jpg" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="In this article, I have collected best top 20 most frequently asked spring boot interview questions and answers with explanation." />
+<meta name="twitter:title" content="Spring Boot Interview Questions and Answers - Dinesh on Java" />
+<meta name="twitter:image" content="https://www.dineshonjava.com/wp-content/uploads/2013/03/Spring-5-design-pattern-243x300.jpg" />
+<meta name="twitter:creator" content="@dineshonjava" />
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","@id":"#website","url":"https:\/\/www.dineshonjava.com\/","name":"Dinesh on Java","potentialAction":{"@type":"SearchAction","target":"https:\/\/www.dineshonjava.com\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"Person","url":"https:\/\/www.dineshonjava.com\/spring-boot-interview-questions-and-answers\/","sameAs":[],"@id":"#person","name":"Dinesh Rajput"}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Dinesh on Java &raquo; Feed" href="https://www.dineshonjava.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Dinesh on Java &raquo; Comments Feed" href="https://www.dineshonjava.com/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.dineshonjava.com\/wp-includes\/js\/wp-emoji-release.min.js"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56794,8205,9794,65039],[55358,56794,8203,9794,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='socialme-stylesheet-css'  href='https://www.dineshonjava.com/wp-content/themes/mts_socialme/style.css' type='text/css' media='all' />
+<style id='socialme-stylesheet-inline-css' type='text/css'>
+
+        body {background-color:#ffffff;background-image:url(https://www.dineshonjava.com/wp-content/themes/mts_socialme/images/nobg.png);}
+
+        #site-header .header-wrap, .navigation ul ul li, .mobile-menu-active .navigation.mobile-menu-wrapper, .mts-author-box-top { background: #4e9359; }
+
+        #site-footer { background: #333333; }
+
+        #primary-navigation .navigation a, .navigation ul ul { border-color: #4e9359; }
+
+        #commentform input#submit:hover, #load-posts a:hover, .owl-prev, .owl-next, .widget.widget_mts_users_count_widget { 
+            background-color: #63b175; 
+        }
+
+        a, .post-info a, .searchbox-open .searchbox-icon, .searchbox-open .searchbox-submit, .searchbox-icon:hover i, #comments .fn, .widget.widget_pages a:after, .copyrights a { 
+            color: #63b175; 
+        }
+        .navigation li.menu-item-has-children:hover > a:after, #primary-navigation li a:hover {
+            color: #63b175!important;    
+        }
+
+        .widget.widget_mts_users_count_widget { border-color: #63b175!important; }
+
+        .featured-stories-tabs .tabs .active a, .pagination .nav-previous a, .pagination .nav-next a, .widget li:before, #move-to-top:hover, #commentform input#submit, #load-posts a, .currenttext, #site-footer .widget .wpt_widget_content .tab_title.selected a, #site-footer .widget .wp_review_tab_widget_content .tab_title.selected a, .page-numbers.current, .pagination a:hover, .pagination .nav-previous a:hover, .pagination .nav-next a:hover, #wpmm-megamenu .review-total-only, #wpmm-megamenu.wpmm-light-scheme .wpmm-posts .wpmm-pagination a, .latestPost .review-type-circle.latestPost-review-wrapper, .latestPost-review-wrapper, .bypostauthor .fn:after, thead, .owl-prev:hover, .owl-next:hover, .widget-slider .slide-caption, .pace .pace-progress, .contact-form input[type='submit'], .widget.mts-post-new, .mts-login-form #wp-submit, .woocommerce a.button, .woocommerce-page a.button, .woocommerce button.button, .woocommerce-page button.button, .woocommerce input.button, .woocommerce-page input.button, .woocommerce #respond input#submit, .woocommerce-page #respond input#submit, .woocommerce #content input.button, .woocommerce-page #content input.button, .woocommerce .bypostauthor:after, #searchsubmit, .woocommerce nav.woocommerce-pagination ul li span.current, .woocommerce-page nav.woocommerce-pagination ul li span.current, .woocommerce #content nav.woocommerce-pagination ul li span.current, .woocommerce-page #content nav.woocommerce-pagination ul li span.current, .woocommerce a.button, .woocommerce-page a.button, .woocommerce button.button, .woocommerce-page button.button, .woocommerce input.button, .woocommerce-page input.button, .woocommerce #respond input#submit, .woocommerce-page #respond input#submit, .woocommerce #content input.button, .woocommerce-page #content input.button, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt { background-color:#1daf3f; color: #fff; 
+        }
+        a:hover, .latestPost .title a:hover, .widget_nav_menu li:hover > a, .widget li.active > .toggle-caret, .thumb-container .owl-prev:hover, .thumb-container .owl-next:hover, .featured-stories-tabs .tabs li a:hover, .copyrights nav li a:hover, .widget.widget_pages a:after, .post-footer .vote a:hover, .post-footer .vote.active a, .tags a:hover, .login-menu a:hover, .post-footer .mts-points a:hover, .widget .post-info .thecomment:hover, .widget li a:hover, .widget .wpt_widget_content a:hover, .widget .wp_review_tab_widget_content a:hover, .post-info a:hover, .thecategory a:hover, .article-footer a:hover, .tagcloud a:hover, .fn a, .woocommerce nav.woocommerce-pagination ul li a:hover, .woocommerce-page nav.woocommerce-pagination ul li a:hover, .woocommerce #content nav.woocommerce-pagination ul li a:hover, .woocommerce-page #content nav.woocommerce-pagination ul li a:hover { 
+            color:#1daf3f; 
+        }
+        .featured-stories-tabs .tabs li.active a, .post-footer .thecategory a:hover, .tags a:hover, .post-footer .vote a:hover, .post-footer .vote.active a, .tagcloud a:hover, .woocommerce nav.woocommerce-pagination ul li a:hover, .woocommerce-page nav.woocommerce-pagination ul li a:hover, .woocommerce #content nav.woocommerce-pagination ul li a:hover, .woocommerce-page #content nav.woocommerce-pagination ul li a:hover, .pagination .nav-previous a, .pagination .nav-next a, .widget.mts-post-new, .mts-login-form #wp-submit {
+            border: 1px solid #1daf3f;
+        }
+        .latestPost:hover, .article-footer .thecategory a:hover, .article-footer .readMore a:hover {
+            border: 1px solid rgba(29, 175, 63, 0.3);
+        }
+        #thumb .owl-item.active.current img, blockquote, .latestPost .quotes {
+            border-bottom: 4px solid #1daf3f;
+        }
+        
+        
+        .bypostauthor > div .fn:after { content: "Author"; padding: 1px 10px; color: #FFF; border-radius: 3px; font-size: 12px; margin: 0 4px; }
+        
+        
+        
+        #primary-navigation { bottom: 0!important; } header .searchbox { display: block!important; }
+        #header { float: right; } 
+        #primary-navigation { float: left; position: relative } 
+        
+        
+        
+            
+</style>
+<link rel='stylesheet' id='owl-carousel-css'  href='https://www.dineshonjava.com/wp-content/themes/mts_socialme/css/owl.carousel.css' type='text/css' media='all' />
+<link rel='stylesheet' id='fontawesome-css'  href='https://www.dineshonjava.com/wp-content/themes/mts_socialme/css/font-awesome.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='responsive-css'  href='https://www.dineshonjava.com/wp-content/themes/mts_socialme/css/responsive.css' type='text/css' media='all' />
+<link rel='stylesheet' id='social-logos-css'  href='https://www.dineshonjava.com/wp-content/plugins/jetpack/_inc/social-logos/social-logos.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='jetpack_css-css'  href='https://www.dineshonjava.com/wp-content/plugins/jetpack/css/jetpack.css' type='text/css' media='all' />
+<!-- This site uses the Google Analytics by MonsterInsights plugin v6.2.0 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+<script type="text/javascript" data-cfasync="false">
+	/* Function to detect opted out users */
+	function __gaTrackerIsOptedOut() {
+		return document.cookie.indexOf(disableStr + '=true') > -1;
+	}
+
+	/* Disable tracking if the opt-out cookie exists. */
+	var disableStr = 'ga-disable-UA-47157990-1';
+	if ( __gaTrackerIsOptedOut() ) {
+		window[disableStr] = true;
+	}
+
+	/* Opt-out function */
+	function __gaTrackerOptout() {
+	  document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+	  window[disableStr] = true;
+	}
+
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
+
+	__gaTracker('create', 'UA-47157990-1', 'auto');
+	__gaTracker('set', 'forceSSL', true);
+	__gaTracker('require', 'displayfeatures');
+	__gaTracker('require', 'linkid', 'linkid.js');
+	__gaTracker('send','pageview');
+</script>
+<!-- / Google Analytics by MonsterInsights -->
+<script type='text/javascript' src='https://www.dineshonjava.com/wp-includes/js/jquery/jquery.js'></script>
+<script type='text/javascript' src='https://www.dineshonjava.com/wp-includes/js/jquery/jquery-migrate.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","is_debug_mode":"false","download_extensions":"doc,exe,js,pdf,ppt,tgz,zip,xls","inbound_paths":"","home_url":"https:\/\/www.dineshonjava.com","track_download_as":"event","internal_label":"int","hash_tracking":"false"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.dineshonjava.com/wp-content/plugins/assets/js/frontend.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var mts_customscript = {"responsive":"1","nav_menu":"primary","ajax_url":"https:\/\/www.dineshonjava.com\/wp-admin\/admin-ajax.php","like":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' async="async" src='https://www.dineshonjava.com/wp-content/themes/mts_socialme/js/customscript.js'></script>
+<link rel='https://api.w.org/' href='https://www.dineshonjava.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.dineshonjava.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.dineshonjava.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.9.2" />
+<link rel='shortlink' href='https://wp.me/p94H1c-y' />
+<link rel="alternate" type="application/json+oembed" href="https://www.dineshonjava.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.dineshonjava.com%2Fspring-boot-interview-questions-and-answers%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.dineshonjava.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.dineshonjava.com%2Fspring-boot-interview-questions-and-answers%2F&#038;format=xml" />
+
+<link rel='dns-prefetch' href='//v0.wordpress.com'/>
+<link rel='dns-prefetch' href='//i0.wp.com'/>
+<link rel='dns-prefetch' href='//i1.wp.com'/>
+<link rel='dns-prefetch' href='//i2.wp.com'/>
+<style type='text/css'>img#wpstats{display:none}</style><link href="//fonts.googleapis.com/css?family=Signika+Negative:300|Signika+Negative:normal|Open+Sans:normal&amp;subset=latin" rel="stylesheet" type="text/css">
+<style type="text/css">
+#logo a { font-family: 'Signika Negative'; font-weight: 300; font-size: 26px; color: #ffffff; }
+#primary-navigation a, .login-menu a { font-family: 'Signika Negative', Courier, monospace; font-weight: 300; font-size: 16px; color: #ffffff; }
+.latestPost .title a { font-family: 'Signika Negative'; font-weight: normal; font-size: 25px; color: #000000; }
+.single-title { font-family: 'Signika Negative'; font-weight: normal; font-size: 30px; color: #000000; }
+body { font-family: 'Open Sans'; font-weight: normal; font-size: 14px; color: #000000; }
+.widget h3, .widget .wpt_widget_content .tab_title.selected a, .widget .wpt_widget_content .tab_title a { font-family: 'Signika Negative'; font-weight: normal; font-size: 19px; color: #1daf3f; }
+.widget { font-family: 'Open Sans'; font-weight: normal; font-size: 15px; color: #000000; }
+#site-footer .widget h3 { font-family: 'Signika Negative'; font-weight: normal; font-size: 22px; color: #000000; }
+#site-footer .widget, #site-footer { font-family: 'Open Sans'; font-weight: normal; font-size: 14px; color: #000000; }
+h1 { font-family: 'Signika Negative'; font-weight: normal; font-size: 30px; color: #000000; }
+h2 { font-family: 'Signika Negative'; font-weight: normal; font-size: 28px; color: #000000; }
+h3 { font-family: 'Signika Negative'; font-weight: normal; font-size: 26px; color: #000000; }
+h4 { font-family: 'Signika Negative'; font-weight: normal; font-size: 24px; color: #000000; }
+h5 { font-family: 'Signika Negative'; font-weight: normal; font-size: 22px; color: #000000; }
+h6 { font-family: 'Signika Negative'; font-weight: normal; font-size: 20px; color: #000000; }
+</style>
+		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+		<link rel="icon" href="https://i1.wp.com/www.dineshonjava.com/wp-content/uploads/2017/08/favicon.png?fit=32%2C19&#038;ssl=1" sizes="32x32" />
+<link rel="icon" href="https://i1.wp.com/www.dineshonjava.com/wp-content/uploads/2017/08/favicon.png?fit=177%2C106&#038;ssl=1" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://i1.wp.com/www.dineshonjava.com/wp-content/uploads/2017/08/favicon.png?fit=177%2C106&#038;ssl=1" />
+<meta name="msapplication-TileImage" content="https://i1.wp.com/www.dineshonjava.com/wp-content/uploads/2017/08/favicon.png?fit=177%2C106&#038;ssl=1" />
+			<style type="text/css" id="wp-custom-css">
+				/*
+You can add your own CSS here.
+
+Click the help icon above to learn more.
+*/
+
+
+			</style>
+		</head>
+<body id="blog" class="post-template-default single single-post postid-34 single-format-standard main" itemscope itemtype="http://schema.org/WebPage">       
+	<div class="main-container">
+	    <header id="site-header" role="banner" itemscope itemtype="http://schema.org/WPHeader">  
+	        	    	    <div class="clear" id="catcher"></div>
+	            <div class="header-wrap sticky-navigation">
+		        		            <div class="container">
+						<div id="header">
+										     				<div id="primary-navigation" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+								<a href="#" id="pull" class="toggle-mobile-menu"><i class="fa fa-bars"></i></a>
+																	<nav class="navigation clearfix mobile-menu-wrapper">
+																					<ul id="menu-header-menu" class="menu clearfix"><li id="menu-item-2662" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2662"><a href="https://www.dineshonjava.com/core-java-baby-step-to-be-best-java-ian/"><i class="fa fa-coffee"></i> Core Java</a>
+<ul class="sub-menu">
+	<li id="menu-item-2953" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2953"><a href="https://www.dineshonjava.com/core-java-baby-step-to-be-best-java-ian/">Core Java</a></li>
+	<li id="menu-item-2880" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2880"><a href="https://www.dineshonjava.com/category/ocpjp/">Java 8 Certification</a></li>
+	<li id="menu-item-2881" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2881"><a href="https://www.dineshonjava.com/core-java-interview-questions/">Interview Q/A</a></li>
+</ul>
+</li>
+<li id="menu-item-2866" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2866"><a href="https://www.dineshonjava.com/spring-boot-tutorial/">Spring Boot</a></li>
+<li id="menu-item-2668" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2668"><a href="https://www.dineshonjava.com/spring-tutorial/"><i class="fa fa-leaf"></i> Spring</a>
+<ul class="sub-menu">
+	<li id="menu-item-2683" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2683"><a href="https://www.dineshonjava.com/spring-tutorial/">Spring Core</a></li>
+	<li id="menu-item-2867" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2867"><a href="https://www.dineshonjava.com/spring-aop-tutorial-with-example-aspect-advice-pointcut-joinpoint/">Spring AOP</a></li>
+	<li id="menu-item-2868" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2868"><a href="https://www.dineshonjava.com/spring-web-mvc-framework-chapter-38/">Spring MVC</a></li>
+	<li id="menu-item-2869" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2869"><a href="https://www.dineshonjava.com/spring-security-take-baby-step-to-secure/">Spring Security</a></li>
+	<li id="menu-item-2684" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2684"><a href="https://www.dineshonjava.com/microservices-with-spring-boot/">Microservices</a></li>
+	<li id="menu-item-2870" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2870"><a href="https://www.dineshonjava.com/spring-4-tutorials-step-to-new-spring/">Spring 4</a></li>
+	<li id="menu-item-2871" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2871"><a href="https://www.dineshonjava.com/whats-new-in-spring-framework-5x/">Spring 5</a></li>
+	<li id="menu-item-2872" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2872"><a href="https://www.dineshonjava.com/spring-batch-process-with-example/">Spring Batch</a></li>
+	<li id="menu-item-2882" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2882"><a href="https://www.dineshonjava.com/spring-mobile-tutorial/">Spring Mobile</a></li>
+	<li id="menu-item-2883" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2883"><a href="https://www.dineshonjava.com/spring-hateoas-hypermedia-driven-restful-web-service/">Spring HATEOAS</a></li>
+</ul>
+</li>
+<li id="menu-item-2945" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2945"><a href="https://www.dineshonjava.com/hibernate-3-on-baby-steps/"><i class="fa fa-database"></i> Hibernate</a>
+<ul class="sub-menu">
+	<li id="menu-item-2952" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2952"><a href="https://www.dineshonjava.com/hibernate-search-api-hibernate-4-on/">Hibernate Search</a></li>
+</ul>
+</li>
+<li id="menu-item-2954" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children menu-item-2954"><a href="https://www.dineshonjava.com/"><i class="fa fa-list"></i> Tutorials</a>
+<ul class="sub-menu">
+	<li id="menu-item-2690" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2690"><a href="https://www.dineshonjava.com/design-patterns_25/">Design Patterns</a></li>
+	<li id="menu-item-2946" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2946"><a href="https://www.dineshonjava.com/web-service-introduction/">Web Services</a>
+	<ul class="sub-menu">
+		<li id="menu-item-2951" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2951"><a href="https://www.dineshonjava.com/rest-and-soap-web-service-interview/">WS Interview Questions</a></li>
+		<li id="menu-item-2947" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2947"><a href="https://www.dineshonjava.com/jax-ws-web-service-tutorial/">JAX-WS (SOAP)</a></li>
+		<li id="menu-item-2948" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2948"><a href="https://www.dineshonjava.com/jax-rs-web-service-tutorial/">JAX-RS (REST)</a></li>
+		<li id="menu-item-2949" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2949"><a href="https://www.dineshonjava.com/introduction-to-wsdl/">WSDL</a></li>
+		<li id="menu-item-2950" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2950"><a href="https://www.dineshonjava.com/what-is-soap/">SOAP</a></li>
+		<li id="menu-item-2969" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2969"><a href="https://www.dineshonjava.com/cloud-computing-tutorial/">Cloud Computing</a></li>
+	</ul>
+</li>
+	<li id="menu-item-2962" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2962"><a href="https://www.dineshonjava.com/struts-2-baby-step-to-learn/%20">Struts 2 Tutorial</a></li>
+	<li id="menu-item-2974" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2974"><a href="https://www.dineshonjava.com/java-servlets-overview/">J2EE Tutorial</a>
+	<ul class="sub-menu">
+		<li id="menu-item-2956" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2956"><a href="https://www.dineshonjava.com/java-servlets-overview/">Servlet Tutorial</a></li>
+		<li id="menu-item-2957" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2957"><a href="https://www.dineshonjava.com/jsp-tutorial-baby-step-to-server-pages/">JSP Tutorial</a></li>
+		<li id="menu-item-2958" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2958"><a href="https://www.dineshonjava.com/jsp-standard-tag-library-jstl-tutorial/">JSTL Tutorial</a></li>
+		<li id="menu-item-2959" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2959"><a href="https://www.dineshonjava.com/java-database-connectivityjdbc-tutorial/">JDBC Tutorial</a></li>
+		<li id="menu-item-2960" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2960"><a href="https://www.dineshonjava.com/jaxb-2x-tutorial/">JAX B Tutorial</a></li>
+		<li id="menu-item-2961" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2961"><a href="https://www.dineshonjava.com/java-mail-api-tutorial/">Java Mail API</a></li>
+	</ul>
+</li>
+	<li id="menu-item-2963" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2963"><a href="https://www.dineshonjava.com/hadoop-tutorial/">Hadoop Tutorial</a></li>
+	<li id="menu-item-2971" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2971"><a href="https://www.dineshonjava.com/ajax-tutorial/">AJAX Tutorial</a></li>
+	<li id="menu-item-2964" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2964"><a href="https://www.dineshonjava.com/maven-tutorial-for-beginners-eclipse/">Build Tools</a>
+	<ul class="sub-menu">
+		<li id="menu-item-2965" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2965"><a href="https://www.dineshonjava.com/maven-tutorial-for-beginners-eclipse/">Maven</a></li>
+		<li id="menu-item-2966" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2966"><a href="https://www.dineshonjava.com/how-to-install-gradle/">Gradle</a></li>
+		<li id="menu-item-2967" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2967"><a href="https://www.dineshonjava.com/apache-ant-tutorial/">ANT</a></li>
+	</ul>
+</li>
+	<li id="menu-item-2968" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2968"><a href="https://www.dineshonjava.com/introduction-to-mongodb/">Mongo DB</a></li>
+	<li id="menu-item-2970" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2970"><a href="https://www.dineshonjava.com/thymeleaf-vs-jsp-spring-mvc-view-layer/">Thymeleaf</a></li>
+	<li id="menu-item-2972" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2972"><a href="https://www.dineshonjava.com/what-is-github-and-creating-repository-and-branches-on-git/">Git</a></li>
+	<li id="menu-item-2973" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2973"><a href="https://www.dineshonjava.com/linux-crontab-cron-job-examples/">Linux</a></li>
+</ul>
+</li>
+<li id="menu-item-2884" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-2884"><a href="https://www.dineshonjava.com/interview-questions-on-spring/"><i class="fa fa-question-circle"></i> Interview Q/A</a>
+<ul class="sub-menu">
+	<li id="menu-item-2889" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2889"><a href="https://www.dineshonjava.com/interview-questions-on-spring/">Spring Interview</a></li>
+	<li id="menu-item-2885" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2885"><a href="https://www.dineshonjava.com/spring-aop-interview-questions-and-answers/">AOP Interview</a></li>
+	<li id="menu-item-2890" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2890"><a href="https://www.dineshonjava.com/spring-mvc-interview-questions-and-answers/">MVC Interview</a></li>
+	<li id="menu-item-2886" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-2886"><a href="https://www.dineshonjava.com/spring-boot-interview-questions-and-answers/">Spring Boot Interview</a></li>
+	<li id="menu-item-2887" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2887"><a href="https://www.dineshonjava.com/spring-boot-microservices-interview-questions-answers/">Microservices Interview</a></li>
+	<li id="menu-item-2888" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2888"><a href="https://www.dineshonjava.com/spring-security-interview-questions-and-answers/">Spring Security Interview</a></li>
+	<li id="menu-item-2891" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2891"><a href="https://www.dineshonjava.com/rest-and-soap-web-service-interview/">Web Service Interview</a></li>
+</ul>
+</li>
+<li id="menu-item-2895" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2895"><a href="https://www.dineshrajput.com/contact"><i class="fa fa-check-square-o"></i> Training</a>
+<ul class="sub-menu">
+	<li id="menu-item-2660" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2660"><a href="https://www.dineshrajput.com"><i class="fa fa-user-md"></i> Who I Am</a></li>
+</ul>
+</li>
+</ul>																			</nav>
+																</div>
+				    		
+							<div class="logo-wrap">
+																									  		<h2 id="logo" class="image-logo" itemprop="headline">
+											<a href="https://www.dineshonjava.com"><img src="https://www.dineshonjava.com/wp-content/uploads/2017/08/dinesh-on-java-logo-1.png" alt="Dinesh on Java"></a>
+										</h2><!-- END #logo -->
+																								</div>
+			 
+							
+	               			  
+
+						</div><!--#header-->
+					</div><!--.container-->
+				</div>
+			</header><div id="page" class="single">
+	<div class="sidebar-left-article ">
+		<article class="article">
+			<div id="content_box" >
+									<div id="post-34" class="g post post-34 type-post status-publish format-standard hentry category-interview-questions category-spring-boot">
+													<div class="breadcrumb" xmlns:v="http://rdf.data-vocabulary.org/#"><div><i class="fa fa-home"></i></div> <div typeof="v:Breadcrumb" class="root"><a rel="v:url" property="v:title" href="https://www.dineshonjava.com">Home</a></div><div><i class="fa fa-caret-right"></i></div><div typeof="v:Breadcrumb"><a href="https://www.dineshonjava.com/category/spring-framework/" rel="v:url" property="v:title">Spring Framework</a></div><div><i class="fa fa-caret-right"></i></div><div typeof="v:Breadcrumb"><a href="https://www.dineshonjava.com/category/spring-framework/spring-boot/" rel="v:url" property="v:title">Spring Boot</a></div><div><i class="fa fa-caret-right"></i></div><div><span>Spring Boot Interview Questions and Answers</span></div></div>
+															<div class="single_post">
+										<header>
+																		 			    	<div class="post-info">
+		                                      		<div class="post-info-left"> 
+				                                        				                                        <div class="author-info">
+					                                        					                                        					                                         <div class="thetime updated"><span>April 11, 2017</span></div>
+					                                        					                                    </div>
+				                                    </div> 
+				                                    				                                        <div class="thecomment">
+				                                            <a rel="nofollow" href="https://www.dineshonjava.com/spring-boot-interview-questions-and-answers/#respond" itemprop="interactionCount"><i class="fa fa-comment"></i> No Comments</a>
+				                                        </div>
+				                                    		                                    	</div>
+		                                                                            	<h1 class="title single-title entry-title">Spring Boot Interview Questions and Answers</h1>
+									  	</header><!--.headline_area-->
+										<div class="post-single-content box mark-links entry-content">
+																																				<div class="topad">
+														<script>
+var staticSizesEboundDynamicAdsDesktop = ["728x90"];
+var staticSizesEboundDynamicAdsTablet = ["728x90"];
+var staticSizesEboundDynamicAdsMobile = ["300x250"];
+</script>
+<script src='//publisher.eboundservices.com/dynamicAds/staticScript.js'></script> 													</div>
+																																			                                        											<div class="thecontent">
+												<div dir="ltr" style="text-align: justify;">
+<p>In this article, I have collected best top 20 most frequently asked spring boot interview questions and answers with explanation. You can find more detail about Spring Boot in my previous <a href="https://www.dineshonjava.com/introduction-to-spring-boot-a-spring-boot-complete-guide/"><b>Spring Boot tutorial</b></a> and also <a href="https://www.dineshonjava.com/microservices-with-spring-boot/"><b>microservices architecture with Spring Boot</b></a>.</p>
+<!-- WP QUADS Content Ad Plugin v. 1.7.6 -->
+<div class="quads-location quads-ad1" id="quads-ad1" style="float:none;margin:0px 0 0px 0;text-align:center;">
+<script>
+var staticSizesEboundDynamicAdsDesktop = ["336x280"];
+var staticSizesEboundDynamicAdsTablet = ["336x280"];
+var staticSizesEboundDynamicAdsMobile = ["336x280"];
+</script>
+<script src='//publisher.eboundservices.com/dynamicAds/staticScript.js'></script>
+</div>
+
+<div id="ads-id" align="center"></div>
+<div style="background-color: #f2f9fc; border-radius: 3px; border: 1px solid #c9e6f2; line-height: 1.45; padding: 16px;">
+<h2><b>Spring Boot Interview Questions</b></h2>
+<ol style="text-align: left;">
+<li><b><a href="https://www.dineshonjava.com/spring-boot-interview-questions-and-answers/#1">What is Spring Boot?</a></b></li>
+<li><b><a href="https://www.dineshonjava.com/spring-boot-interview-questions-and-answers/#2">What are the advantages of using Spring Boot?</a></b></li>
+<li><b><a href="https://www.dineshonjava.com/spring-boot-interview-questions-and-answers/#3">What are the disadvantages of using Spring Boot?</a></b></li>
+<li><b><a href="https://www.dineshonjava.com/spring-boot-interview-questions-and-answers/#4">Why is it &#8220;opinionated&#8221;?</a></b></li>
+<li><b><a href="https://www.dineshonjava.com/spring-boot-interview-questions-and-answers/#5">How does it work? How does it know what to configure?</a></b></li>
+<li><b><a href="https://www.dineshonjava.com/spring-boot-interview-questions-and-answers/#6">How are properties defined? Where?</a></b></li>
+<li><b><a href="https://www.dineshonjava.com/spring-boot-interview-questions-and-answers/#7">What is the difference between an embedded container and a WAR?</a></b></li>
+<li><b><a href="https://www.dineshonjava.com/spring-boot-interview-questions-and-answers/#8">What embedded containers does Spring Boot support?</a></b></li>
+<li><b><a href="https://www.dineshonjava.com/spring-boot-interview-questions-and-answers/#9">What does @EnableAutoConfiguration do? What about @SpringBootApplication?</a></b></li>
+<li><b><a href="https://www.dineshonjava.com/spring-boot-interview-questions-and-answers/#10">What is a Spring Boot starter POM? Why is it useful?</a></b></li>
+<li><b><a href="https://www.dineshonjava.com/spring-boot-interview-questions-and-answers/#11">Spring Boot supports both Java properties and YML files. Would you recognize and understand them if you saw them?</a></b></li>
+<li><b><a href="https://www.dineshonjava.com/spring-boot-interview-questions-and-answers/#12">Can you control logging with Spring Boot? How?</a></b></li>
+<li><b><a href="https://www.dineshonjava.com/spring-boot-interview-questions-and-answers/#13">How to reload my changes on Spring Boot without having to restart server?</a></b></li>
+<li><b><a href="https://www.dineshonjava.com/spring-boot-interview-questions-and-answers/#14">What is Actuator in Spring Boot?</a></b></li>
+<li><b><a href="https://www.dineshonjava.com/spring-boot-interview-questions-and-answers/#15">How to run Spring boot application to custom port?</a></b></li>
+<li><b><a href="https://www.dineshonjava.com/spring-boot-interview-questions-and-answers/#16">How to implement security for Spring boot application?</a></b></li>
+<li><b><a href="https://www.dineshonjava.com/spring-boot-interview-questions-and-answers/#17">What is the configuration file name used by Spring Boot?</a></b></li>
+<li><b><a href="https://www.dineshonjava.com/spring-boot-interview-questions-and-answers/#18">How to implement Spring web using Spring boot?</a></b></li>
+<li><b><a href="https://www.dineshonjava.com/spring-boot-interview-questions-and-answers/#19">How to configure database using Spring boot?</a></b></li>
+<li><b><a href="https://www.dineshonjava.com/spring-boot-interview-questions-and-answers/#20">What is YAML?</a></b></li>
+</ol>
+</div>
+<h2 dir="ltr">Spring 5 Design Pattern Book</h2>
+<div dir="ltr" style="color: #20124d; font-family: 'calibri' , sans-serif; font-size: 13pt; text-align: justify;">You could purchase my <strong>Spring 5 book</strong> that is with title name &#8220;<strong>Spring 5 Design Pattern</strong>&#8220;. This book is available on the <a href="https://www.amazon.in/Spring-Design-Patterns-Dinesh-Rajput/dp/1788299450/ref=sr_1_1?ie=UTF8&amp;qid=1507925340&amp;sr=8-1&amp;keywords=spring+5+design+pattern" target="_blank" rel="noopener"><strong>Amazon</strong></a> and <a href="https://www.packtpub.com/application-development/spring-5-design-patterns" target="_blank" rel="noopener"><strong>Packt</strong></a> publisher website. Learn various <strong>design patterns</strong> and <strong>best practices</strong> in Spring 5 and use them to solve common design problems. You could use author discount to purchase this book by using code- &#8220;<strong>AUTHDIS40</strong>&#8220;.</div>
+<div dir="ltr"></div>
+<div dir="ltr"><a href="https://www.packtpub.com/application-development/spring-5-design-patterns" target="_blank" rel="noopener"><img class="aligncenter wp-image-3053 size-medium" title="Spring-5-Design-Pattern" src="https://i0.wp.com/www.dineshonjava.com/wp-content/uploads/2013/03/Spring-5-design-pattern.jpg?resize=243%2C300&#038;ssl=1" alt="Spring-5-Design-Pattern" width="243" height="300" srcset="https://i0.wp.com/www.dineshonjava.com/wp-content/uploads/2013/03/Spring-5-design-pattern.jpg?resize=243%2C300&amp;ssl=1 243w, https://i0.wp.com/www.dineshonjava.com/wp-content/uploads/2013/03/Spring-5-design-pattern.jpg?resize=768%2C947&amp;ssl=1 768w, https://i0.wp.com/www.dineshonjava.com/wp-content/uploads/2013/03/Spring-5-design-pattern.jpg?resize=830%2C1024&amp;ssl=1 830w, https://i0.wp.com/www.dineshonjava.com/wp-content/uploads/2013/03/Spring-5-design-pattern.jpg?w=1103&amp;ssl=1 1103w" sizes="(max-width: 243px) 100vw, 243px" data-recalc-dims="1" /></a></div>
+<h2><b>Spring Boot Interview Questions and Answers</b><br />
+<b></b></h2>
+<p><b>1. What is Spring Boot?</b><br />
+First of all Spring Boot is not a framework, it is a way to ease to create stand-alone application with minimal or zero configurations. It is approach to develop spring based application with very less configuration. It provides defaults for code and annotation configuration to quick start new spring projects within no time. It leverages existing spring projects as well as Third party projects to develop production ready applications. It provides a set of Starter Pom’s or gradle build files which one can use to add required dependencies and also facilitate auto configuration.</p>
+<p>Spring Boot automatically configures required classes depending on the libraries on its classpath. Suppose your application want to interact with DB, if there are Spring Data libraries on class path then it automatically sets up connection to DB along with the Data Source class.</p>
+<p><b>2. What are the advantages of using Spring Boot?</b></p>
+<ul style="text-align: left;">
+<li>It is very easy to develop Spring Based applications with Java or Groovy.</li>
+<li>It reduces lots of development time and increases productivity.</li>
+<li>It avoids writing lots of boilerplate Code, Annotations and XML Configuration.</li>
+<li>It is very easy to integrate Spring Boot Application with its Spring Ecosystem like Spring JDBC, Spring ORM, Spring Data, Spring Security etc.</li>
+<li>It follows &#8220;Opinionated Defaults Configuration&#8221; Approach to reduce Developer effort</li>
+<li>It provides Embedded HTTP servers like Tomcat, Jetty etc. to develop and test our web applications very easily.</li>
+<li>It provides CLI (Command Line Interface) tool to develop and test Spring Boot (Java or Groovy) Applications from command prompt very easily and quickly.</li>
+<li>It provides lots of plugins to develop and test Spring Boot Applications very easily using Build Tools like Maven and Gradle</li>
+<li>It provides lots of plugins to work with embedded and in-memory Databases very easily.</li>
+</ul>
+<p><b>3. What are the disadvantages of using Spring Boot?</b><br />
+It is very tough and time consuming process to convert existing or legacy Spring Framework projects into Spring Boot Applications. It is applicable only for brand new/Greenfield Spring Projects.</p>
+<p><b>4. Why is it &#8220;opinionated&#8221;?</b><br />
+It follows &#8220;Opinionated Defaults Configuration&#8221; Approach to reduce Developer effort. Due to opinionated view of spring boot, what is required to get started but also we can get out if not suitable for application.<br />
+• Spring Boot uses sensible defaults, “opinions”, mostly based on the classpath contents.<br />
+• For example<br />
+– Sets up a JPA Entity Manager Factory if a JPA implementation is on the classpath.<br />
+– Creates a default Spring MVC setup, if Spring MVC is on the classpath.<br />
+• Everything can be overridden easily<br />
+– But most of the time not needed</p>
+<p><b>5. How does it work? How does it know what to configure?</b><br />
+• Auto-configuration works by analyzing the classpath<br />
+– If you forget a dependency, Spring Boot can&#8217;t configure it<br />
+– A dependency management tool is recommended<br />
+– Spring Boot parent and starters make it much easier<br />
+• Spring Boot works with Maven, Gradle, Ant/Ivy<br />
+– Our content here will show Maven</p>
+<p><b>6. How are properties defined? Where?</b><br />
+In spring boot, we have to define properties in the application.properties file exists in classpath of application as follow.<br />
+Example: configure default DataSource bean</p>
+<pre class="highlight">database.host=localhost
+database.user=admin
+</pre>
+<p><b>7. What is the difference between an embedded container and a WAR?</b><br />
+There is no force to go container less<br />
+– Embedded container is just one feature of Spring Boot<br />
+• Traditional WAR also benefits a lot from Spring Boot<br />
+– Automatic Spring MVC setup, including DispatcherServlet<br />
+– Sensible defaults based on the classpath content<br />
+– Embedded container can be used during development</p>
+<p><b>8. What embedded containers does Spring Boot support?</b><br />
+Spring Boot includes support for embedded Tomcat, Jetty, and Undertow servers.<br />
+By default the embedded server will listen for HTTP requests on port 8080.</p>
+<p><b>9. What does @EnableAutoConfiguration do? What about @SpringBootApplication?</b><br />
+<b>@EnableAutoConfiguration annotation</b> on a Spring Java configuration class<br />
+– Causes Spring Boot to automatically create beans it thinks you need<br />
+– Usually based on classpath contents, can easily override</p>
+<pre class="highlight">@Configuration
+@EnableAutoConfiguration
+public class MyAppConfig {
+public static void main(String[] args) {
+SpringApplication.run(MyAppConfig.class, args);
+}
+}
+</pre>
+<p><b>@SpringBootApplication </b>was available from Spring Boot 1.2<br />
+It is very common to use @EnableAutoConfiguration, @Configuration, and @ComponentScan together.</p>
+<pre class="highlight">@Configuration
+@ComponentScan
+@EnableAutoConfiguration
+public class MyAppConfig {
+...
+}
+</pre>
+<p><b>With @SpringBootApplication annotation</b></p>
+<pre class="highlight">@SpringBootApplication
+public class MyAppConfig {
+...
+}
+</pre>
+<p><b>10. What is a Spring Boot starter POM? Why is it useful?</b><br />
+Starters are a set of convenient dependency descriptors that you can include in your application. The starters contain a lot of the dependencies that you need to get a project up and running quickly and with a consistent, supported set of managed transitive dependencies.</p>
+<!-- WP QUADS Content Ad Plugin v. 1.7.6 -->
+<div class="quads-location quads-ad1" id="quads-ad1" style="float:none;margin:0px 0 0px 0;text-align:center;">
+<script>
+var staticSizesEboundDynamicAdsDesktop = ["336x280"];
+var staticSizesEboundDynamicAdsTablet = ["336x280"];
+var staticSizesEboundDynamicAdsMobile = ["336x280"];
+</script>
+<script src='//publisher.eboundservices.com/dynamicAds/staticScript.js'></script>
+</div>
+
+<p>The starter POMs are convenient dependency descriptors that can be added to your application’s Maven. In simple words, if you are developing a project that uses Spring Batch for batch processing, you just have to include spring-boot-starter-batch that will import all the required dependencies for the Spring Batch application. This reduces the burden of searching and configuring all the dependencies required for a framework.</p>
+<p><b>11. Spring Boot supports both Java properties and YML files. Would you recognize and understand them if you saw them?</b><br />
+spring boot application java property file name is application.properties<br />
+spring boot application YML file name is application.yml</p>
+<p><b>12. Can you control logging with Spring Boot? How?</b><br />
+Yes, we can control logging with spring boot.<br />
+<b><br />
+</b> <b>Customizing default Configuration for Logging:</b><br />
+By adding logback.xml file to the application we can override the default logging configuration providing by the Spring Boot. This file place in the classpath (src/main/resources) of the application for Spring Boot to pick the custom configuration.</p>
+<p><b>Spring Boot can control the logging level</b><br />
+– Just set it in application.properties<br />
+• Works with most logging frameworks<br />
+– Java Util Logging, Logback, Log4J, Log4J2</p>
+<pre class="highlight">logging.level.org.springframework=DEBUG
+logging.level.com.acme.your.code=INFO
+</pre>
+<p><b>13. How to reload my changes on Spring Boot without having to restart server?</b><br />
+Include following maven dependency in the application.</p>
+<pre class="highlight">&lt;dependency&gt;
+ &lt;groupId&gt;org.springframework&lt;/groupId&gt;
+ &lt;artifactId&gt;springloaded&lt;/artifactId&gt;
+ &lt;version&gt;1.2.6.RELEASE&lt;/version&gt;
+&lt;/dependency&gt;
+</pre>
+<p><b>Automatic restart</b><br />
+Applications that use spring-boot-devtools will automatically restart whenever files on the classpath change. This can be a useful feature when working in an IDE as it gives a very fast feedback loop for code changes. By default, any entry on the classpath that points to a folder will be monitored for changes.</p>
+<pre class="highlight">&lt;dependency&gt;
+&lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+&lt;artifactId&gt;spring-boot-devtools&lt;/artifactId&gt;
+&lt;optional&gt;true&lt;/optional&gt;
+&lt;/dependency&gt;
+</pre>
+<p>This can be achieved using DEV Tools. With this dependency any changes you save, the embedded tomcat will restart. Spring Boot has a Developer tools (DevTools) module which helps to improve the productivity of developers. One of the key challenge for the Java developers is to auto deploy the file changes to server and auto restart the server. Developers can reload changes on Spring Boot without having to restart my server. This will eliminates the need for manually deploying the changes every time. Spring Boot doesn’t have this feature when it has released it’s first version. This was a most requested features for the developers. The module DevTools does exactly what is needed for the developers. This module will be disabled in the production environment.</p>
+<p><b>14. What is Actuator in Spring Boot?</b><br />
+pring Boot Actuator is a sub-project of Spring Boot. It adds several production grade services to your application with little effort on your part. There are also has many features added to your application out-of-the-box for managing the service in a production (or other) environment. They’re mainly used to expose different types of information about the running application – health, metrics, info, dump, env etc.</p>
+<p><b>15. How to run Spring boot application to custom port ?</b><br />
+In application.properties, add following property.</p>
+<pre class="highlight">server.port = 8181
+</pre>
+<p><b>16. How to implement security for Spring boot application ?</b><br />
+Add spring security starter to the boot application</p>
+<pre class="highlight">&lt;dependency&gt;
+   &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+   &lt;artifactId&gt;spring-boot-starter-security&lt;/artifactId&gt;
+  &lt;/dependency&gt;
+</pre>
+<p><b>17. What is the configuration file name used by Spring Boot?</b><br />
+The configuration file used in spring boot projects is application.properties. This file is very important where we would over write all the default configurations. Normally we have to keep this file under the resources folder of the project.</p>
+<p><b>18. How to implement Spring web using Spring boot?</b><br />
+<b>Web Application Convenience </b><br />
+• Boot automatically configures<br />
+– A DispatcherServlet &amp; ContextLoaderListener<br />
+– Spring MVC using same defaults as @EnableWebMvc<br />
+• Plus many useful extra features:<br />
+– Static resources served from classpath<br />
+• /static, /public, /resources or /META-INF/resources<br />
+– Templates served from /templates<br />
+• If Velocity, Freemarker, Thymeleaf, or Groovy on classpath<br />
+– Provides default /error mapping<br />
+• Easily overridden<br />
+– Default MessageSource for I18N</p>
+<p><b>19. How to configure datasource using Spring boot?</b><br />
+• Use either spring-boot-starter-jdbc or spring-boot-starterdata-jpa and include a JDBC driver on classpath<br />
+• Declare properties</p>
+<pre class="highlight">spring.datasource.url=jdbc:mysql://localhost/test
+spring.datasource.username=dbuser
+spring.datasource.password=dbpass
+spring.datasource.driver-class-name=com.mysql.jdbc.Driver
+</pre>
+<p>– Spring Boot will create a DataSource with properties set<br />
+– Will even use a connection pool if the library is found on the classpath!</p>
+<p><b>20. What is YAML?</b><br />
+Yaml Ain&#8217;t a Markup Language<br />
+– Recursive acronym<br />
+• Created in 2001<br />
+• Alternative to .properties files<br />
+– Allows hierarchical configuration<br />
+• Java parser for YAML is called SnakeYAML<br />
+– Must be in the classpath<br />
+– Provided by spring-boot-starters</p>
+<p><b>YAML for Properties</b><br />
+• Spring Boot support YAML for Properties<br />
+– An alternative to properties files<br />
+application.properties</p>
+<pre class="highlight">database.host = localhost
+database.user = admin
+</pre>
+<p>application.yml</p>
+<pre class="highlight">database:
+    host: localhost
+    user: admin
+</pre>
+<p>• YAML is convenient for hierarchical configuration data<br />
+– Spring Boot properties are organized in groups<br />
+– Examples: server, database, etc</p>
+<div style="background-color: #f2f9fc; border-radius: 3px; border: 1px solid #c9e6f2; line-height: 1.45; padding: 16px;">
+<p><b>Spring Boot Related Topics</b></p>
+<ol style="text-align: left;">
+<li><b><a href="https://www.dineshonjava.com/introduction-to-spring-boot-a-spring-boot-complete-guide/">Introduction to Spring Boo</a>t</b></li>
+<li><a href="https://www.dineshonjava.com/essentials-key-components-and-internals-of-spring-boot-framework/"><b>Essentials and Key Components of Spring Boot</b></a></li>
+<li><a href="https://www.dineshonjava.com/spring-boot-cli-installation-and-hello-world-example/"><b>Spring Boot CLI Installation and Hello World Example</b></a></li>
+<li><a href="https://www.dineshonjava.com/spring-boot-initilizr-web-interface-and-examples/"><b>Spring Boot Initializr Web Interface</b></a></li>
+<li><a href="https://www.dineshonjava.com/spring-boot-initilizr-with-ides-via-spring-tool-suite/"><b>Spring Boot Initializr With IDEs</b></a></li>
+<li><a href="https://www.dineshonjava.com/spring-boot-initializr-with-spring-boot-cli/"><b>Spring Boot Initializr With Spring Boot CLI</b></a></li>
+<li><a href="https://www.dineshonjava.com/installing-spring-boot/"><b>Installing Spring Boot</b></a></li>
+<li><a href="https://www.dineshonjava.com/developing-your-first-spring-boot-application-hello-world/"><b>Developing your first Spring Boot application</b></a></li>
+<li><a href="https://www.dineshonjava.com/customizing-spring-boot-auto-configuration/"><b>External Configurations for Spring Boot Applications</b></a></li>
+<li><a href="https://www.dineshonjava.com/logging-configuration-in-spring-boot/"><b>Logging Configuration in Spring Boot</b></a></li>
+<li><a href="https://www.dineshonjava.com/spring-boot-with-spring-mvc-application/"><b>Spring Boot and Spring MVC</b></a></li>
+<li><a href="https://www.dineshonjava.com/working-with-sql-databases-in-spring-boot-application/"><b>Working with SQL Databases and Spring Boot</b></a></li>
+<li><a href="https://www.dineshonjava.com/mysql-configuration-with-spring-boot/"><b>MySQL Configurations</b></a></li>
+<li><a href="https://www.dineshonjava.com/spring-data-jpa-using-in-spring-boot-application/"><b>Spring Data JPA using Spring Boot Application</b></a></li>
+<li><a href="https://www.dineshonjava.com/spring-boot-with-nosql-technologies/"><b>Spring Boot with NoSQL technologies</b></a></li>
+<li><a href="https://www.dineshonjava.com/spring-cache-tutorial/"><b>Spring Cache Tutorial</b></a></li>
+<li><a href="https://www.dineshonjava.com/spring-security-tutorial-using-spring-boot/"><b>Spring Security Tutorial with Spring Boot</b></a></li>
+<li><a href="https://www.dineshonjava.com/spring-boot-and-mongodb-in-rest-application/"><b>Spring Boot and MongoDB in REST Application</b></a></li>
+<li><b><a href="https://www.dineshonjava.com/spring-boot-actuator-complete-guide/">Complete Guide for Spring Boot Actuator</a></b></li>
+<li><b><a href="https://www.dineshonjava.com/microservices-with-spring-boot/">Microservices with Spring Boot</a></b></li>
+</ol>
+</div>
+<p>&nbsp;</p>
+</div>
+
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+    $.post('https://www.dineshonjava.com/wp-admin/admin-ajax.php', {action: 'mts_view_count', id: '34'});
+});
+</script><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-34" class="share-facebook sd-button share-icon" href="https://www.dineshonjava.com/spring-boot-interview-questions-and-answers/?share=facebook" target="_blank" title="Click to share on Facebook"><span>Facebook</span></a></li><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-34" class="share-twitter sd-button share-icon" href="https://www.dineshonjava.com/spring-boot-interview-questions-and-answers/?share=twitter" target="_blank" title="Click to share on Twitter"><span>Twitter</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-34" class="share-google-plus-1 sd-button share-icon" href="https://www.dineshonjava.com/spring-boot-interview-questions-and-answers/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span>Google</span></a></li><li class="share-linkedin"><a rel="nofollow" data-shared="sharing-linkedin-34" class="share-linkedin sd-button share-icon" href="https://www.dineshonjava.com/spring-boot-interview-questions-and-answers/?share=linkedin" target="_blank" title="Click to share on LinkedIn"><span>LinkedIn</span></a></li><li class="share-jetpack-whatsapp"><a rel="nofollow" data-shared="" class="share-jetpack-whatsapp sd-button share-icon" href="whatsapp://send?text=Spring%20Boot%20Interview%20Questions%20and%20Answers https%3A%2F%2Fwww.dineshonjava.com%2Fspring-boot-interview-questions-and-answers%2F" target="_blank" title="Click to share on WhatsApp"><span>WhatsApp</span></a></li><li class="share-end"></li></ul></div></div></div>
+											</div>
+																																															<div class="bottomad">
+														<script>
+var staticSizesEboundDynamicAdsDesktop = ["728x90"];
+var staticSizesEboundDynamicAdsTablet = ["728x90"];
+var staticSizesEboundDynamicAdsMobile = ["300x250"];
+</script>
+<script src='//publisher.eboundservices.com/dynamicAds/staticScript.js'></script> 													</div>
+																							 
+											            <!-- Start Share Buttons -->
+            <div class="shareit share-social-icons bottom">
+                                <!-- Facebook -->
+                <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.dineshonjava.com%2Fspring-boot-interview-questions-and-answers%2F&t=Spring Boot Interview Questions and Answers&s=100&p[url]=https%3A%2F%2Fwww.dineshonjava.com%2Fspring-boot-interview-questions-and-answers%2F&p[images][0]=&p[title]=Spring Boot Interview Questions and Answers" class="facebook" rel="nofollow" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><i class="fa fa-facebook"></i><span>facebook</span></a>
+
+                            <!-- Twitter -->
+                 
+                <a href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fwww.dineshonjava.com%2Fspring-boot-interview-questions-and-answers%2F&text=Spring Boot Interview Questions and Answers&url=https%3A%2F%2Fwww.dineshonjava.com%2Fspring-boot-interview-questions-and-answers%2F&via=dineshonjava" class="twitter" rel="nofollow" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><i class="fa fa-twitter"></i><span>twitter</span></a>
+                            <!-- GPlus -->
+                <a href="//plus.google.com/share?url=https%3A%2F%2Fwww.dineshonjava.com%2Fspring-boot-interview-questions-and-answers%2F" class="google-plus" rel="nofollow"><i class="fa fa-google-plus" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"></i><span>Google+</span></a>
+                            <!--Linkedin -->              
+                <a href="//www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.dineshonjava.com%2Fspring-boot-interview-questions-and-answers%2F&title=Spring Boot Interview Questions and Answers&source=url" class="linkedin" rel="nofollow"><i class="fa fa-linkedin" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"></i><span>linkedin</span></a>
+                        </div>
+            <!-- end Share Buttons -->
+        										</div><!--.post-single-content-->
+									</div><!--.single_post-->
+																		<div class="post-footer">
+									                						<div class="thecategory"><a href="https://www.dineshonjava.com/category/interview-questions/" title="View all posts in interview questions">interview questions</a> <a href="https://www.dineshonjava.com/category/spring-framework/spring-boot/" title="View all posts in Spring Boot">Spring Boot</a></div>
+									    <div class="vote " data-postid="34">
+        <a href="#" title="Upvote this post"><i class="fa fa-angle-up"></i></a>
+    </div>
+    <div class="mts-points"><span class="like-count">92</span> <span class="points-text">Points</span></div>
+            							</div>     
+            <!-- Start Related Posts -->
+            <div class="related-posts"><h4>Related Posts</h4><div class="clear">
+                <article class="latestPost excerpt  ">
+                    <a href="https://www.dineshonjava.com/microservices-with-spring-boot/" title="Create Microservices Architecture Spring Boot" rel="nofollow" id="featured-thumbnail">
+                        <div class="featured-thumbnail"><img width="220" height="125" src="https://i0.wp.com/www.dineshonjava.com/wp-content/uploads/2017/01/monolith-application-archtecture.jpg?resize=220%2C125&amp;ssl=1" class="attachment-socialme-related size-socialme-related wp-post-image" alt="" title="" srcset="https://i0.wp.com/www.dineshonjava.com/wp-content/uploads/2017/01/monolith-application-archtecture.jpg?zoom=2&amp;resize=220%2C125&amp;ssl=1 440w, https://i0.wp.com/www.dineshonjava.com/wp-content/uploads/2017/01/monolith-application-archtecture.jpg?zoom=3&amp;resize=220%2C125&amp;ssl=1 660w" sizes="(max-width: 220px) 100vw, 220px" /></div>                                            </a>
+                    <header>
+                        <h2 class="title front-view-title"><a href="https://www.dineshonjava.com/microservices-with-spring-boot/" title="Create Microservices Architecture Spring Boot">Create Microservices Architecture Spring Boot</a></h2>
+                                            </header>
+                </article><!--.post.excerpt-->
+                
+                <article class="latestPost excerpt  ">
+                    <a href="https://www.dineshonjava.com/differences-between-string-stringbuffer-and-stringbuilder-in-java/" title="Differences between String, StringBuffer and StringBuilder in Java" rel="nofollow" id="featured-thumbnail">
+                        <div class="featured-thumbnail"><img width="220" height="125" src="https://i2.wp.com/www.dineshonjava.com/wp-content/uploads/2017/02/string-imutable.png?resize=220%2C125&amp;ssl=1" class="attachment-socialme-related size-socialme-related wp-post-image" alt="" title="" srcset="https://i2.wp.com/www.dineshonjava.com/wp-content/uploads/2017/02/string-imutable.png?zoom=2&amp;resize=220%2C125&amp;ssl=1 440w, https://i2.wp.com/www.dineshonjava.com/wp-content/uploads/2017/02/string-imutable.png?zoom=3&amp;resize=220%2C125&amp;ssl=1 660w" sizes="(max-width: 220px) 100vw, 220px" /></div>                                            </a>
+                    <header>
+                        <h2 class="title front-view-title"><a href="https://www.dineshonjava.com/differences-between-string-stringbuffer-and-stringbuilder-in-java/" title="Differences between String, StringBuffer and StringBuilder in Java">Differences between String, StringBuffer and StringBuilder in Java</a></h2>
+                                            </header>
+                </article><!--.post.excerpt-->
+                
+                <article class="latestPost excerpt  last">
+                    <a href="https://www.dineshonjava.com/spring-cache-tutorial/" title="Spring Cache Tutorial" rel="nofollow" id="featured-thumbnail">
+                        <div class="featured-thumbnail"><img width="220" height="125" src="https://i0.wp.com/www.dineshonjava.com/wp-content/uploads/2016/08/introduction-to-spring-framework-cache.jpg?resize=220%2C125&amp;ssl=1" class="attachment-socialme-related size-socialme-related wp-post-image" alt="" title="" srcset="https://i0.wp.com/www.dineshonjava.com/wp-content/uploads/2016/08/introduction-to-spring-framework-cache.jpg?zoom=2&amp;resize=220%2C125&amp;ssl=1 440w, https://i0.wp.com/www.dineshonjava.com/wp-content/uploads/2016/08/introduction-to-spring-framework-cache.jpg?zoom=3&amp;resize=220%2C125&amp;ssl=1 660w" sizes="(max-width: 220px) 100vw, 220px" /></div>                                            </a>
+                    <header>
+                        <h2 class="title front-view-title"><a href="https://www.dineshonjava.com/spring-cache-tutorial/" title="Spring Cache Tutorial">Spring Cache Tutorial</a></h2>
+                                            </header>
+                </article><!--.post.excerpt-->
+                </div></div>            <!-- .related-posts -->
+        									<div class="postauthor">
+										<h4>About The Author</h4>
+										<img alt='' src='https://secure.gravatar.com/avatar/60c61015076fd8f627850df184a331dd?s=100&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/60c61015076fd8f627850df184a331dd?s=200&#038;d=mm&#038;r=g 2x' class='avatar avatar-100 photo' height='100' width='100' />										<h5 class="vcard author"><a href="https://www.dineshonjava.com/author/dinesh-mca-jssgmail-com/" class="fn">Dinesh Rajput</a></h5>
+										<p>Dinesh Rajput is the chief editor of a website Dineshonjava, a technical blog dedicated to the Spring and Java technologies. It has a series of articles related to Java technologies. Dinesh has been a Spring enthusiast since 2008 and is a Pivotal Certified Spring Professional, an author of a book Spring 5 Design Pattern, and a blogger. He has more than 10 years of experience with different aspects of Spring and Java design and development. His core expertise lies in the latest version of Spring Framework, Spring Boot, Spring Security, creating REST APIs, Microservice Architecture, Reactive Pattern, Spring AOP, Design Patterns, Struts, Hibernate, Web Services, Spring Batch, Cassandra, MongoDB, and Web Application Design and Architecture.
+
+He is currently working as a technology manager at a leading product and web development company. He worked as a developer and tech lead at the Bennett, Coleman &amp; Co. Ltd and was the first developer in his previous company, Paytm. Dinesh is passionate about the latest Java technologies and loves to write technical blogs related to it. He is a very active member of the Java and Spring community on different forums. When it comes to the Spring Framework and Java, Dinesh tops the list!</p>
+									</div>
+														</div><!--.g post-->
+					<!-- You can start editing here. -->
+
+							</div>
+		</article>
+		<aside id="sidebar" class="sidebar c-4-12 sidebar-left" role="complementary" itemscope itemtype="http://schema.org/WPSideBar">
+	<div id="categories-5" class="widget widget_categories"><h3 class="widget-title">Categories</h3>		<ul>
+	<li class="cat-item cat-item-41"><a href="https://www.dineshonjava.com/category/ajax/" >AJAX</a>
+</li>
+	<li class="cat-item cat-item-28"><a href="https://www.dineshonjava.com/category/ant/" >Ant</a>
+</li>
+	<li class="cat-item cat-item-42"><a href="https://www.dineshonjava.com/category/cloud-computing/" >Cloud Computing</a>
+</li>
+	<li class="cat-item cat-item-4"><a href="https://www.dineshonjava.com/category/core-java/" >Core JAVA</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="https://www.dineshonjava.com/category/core-java-interview-questions/" >Core Java Interview Questions</a>
+</li>
+	<li class="cat-item cat-item-103"><a href="https://www.dineshonjava.com/category/design-pattern/" >Design Pattern</a>
+</li>
+	<li class="cat-item cat-item-32"><a href="https://www.dineshonjava.com/category/garbage-collection/" >Garbage Collection</a>
+</li>
+	<li class="cat-item cat-item-31"><a href="https://www.dineshonjava.com/category/github/" >GitHub</a>
+</li>
+	<li class="cat-item cat-item-36"><a href="https://www.dineshonjava.com/category/gradle/" >Gradle</a>
+</li>
+	<li class="cat-item cat-item-37"><a href="https://www.dineshonjava.com/category/hadoop/" >Hadoop</a>
+</li>
+	<li class="cat-item cat-item-23"><a href="https://www.dineshonjava.com/category/hibernate/" >Hibernate</a>
+</li>
+	<li class="cat-item cat-item-49"><a href="https://www.dineshonjava.com/category/hibernate4/" >Hibernate 4</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="https://www.dineshonjava.com/category/interview-questions/" >interview questions</a>
+</li>
+	<li class="cat-item cat-item-5"><a href="https://www.dineshonjava.com/category/java/" >Java</a>
+</li>
+	<li class="cat-item cat-item-94"><a href="https://www.dineshonjava.com/category/java-certification/" >Java Certification</a>
+</li>
+	<li class="cat-item cat-item-21"><a href="https://www.dineshonjava.com/category/java-code-best-practices/" >Java Code Best Practices</a>
+</li>
+	<li class="cat-item cat-item-9"><a href="https://www.dineshonjava.com/category/java-collections/" >Java Collections</a>
+</li>
+	<li class="cat-item cat-item-53"><a href="https://www.dineshonjava.com/category/java-multi-threading/" >Java Multi threading</a>
+</li>
+	<li class="cat-item cat-item-45"><a href="https://www.dineshonjava.com/category/javamail/" >JavaMail</a>
+</li>
+	<li class="cat-item cat-item-44"><a href="https://www.dineshonjava.com/category/jaxb/" >JAXB</a>
+</li>
+	<li class="cat-item cat-item-34"><a href="https://www.dineshonjava.com/category/jdbc/" >JDBC</a>
+</li>
+	<li class="cat-item cat-item-47"><a href="https://www.dineshonjava.com/category/jsp/" >JSP</a>
+</li>
+	<li class="cat-item cat-item-46"><a href="https://www.dineshonjava.com/category/jstl/" >JSTL</a>
+</li>
+	<li class="cat-item cat-item-101"><a href="https://www.dineshonjava.com/category/linux/" >Linux</a>
+</li>
+	<li class="cat-item cat-item-30"><a href="https://www.dineshonjava.com/category/logging/" >Logging</a>
+</li>
+	<li class="cat-item cat-item-27"><a href="https://www.dineshonjava.com/category/maven/" >Maven</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="https://www.dineshonjava.com/category/microservices/" >Microservices</a>
+</li>
+	<li class="cat-item cat-item-54"><a href="https://www.dineshonjava.com/category/mongodb/" >MongoDB</a>
+</li>
+	<li class="cat-item cat-item-2"><a href="https://www.dineshonjava.com/category/ocajp/" >OCAJP</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="https://www.dineshonjava.com/category/ocpjp/" >OCPJP</a>
+</li>
+	<li class="cat-item cat-item-17"><a href="https://www.dineshonjava.com/category/restful-web-services/rest/" >REST</a>
+</li>
+	<li class="cat-item cat-item-18"><a href="https://www.dineshonjava.com/category/restful-web-services/" >Restful Web Services</a>
+</li>
+	<li class="cat-item cat-item-29"><a href="https://www.dineshonjava.com/category/security/" >Security</a>
+</li>
+	<li class="cat-item cat-item-24"><a href="https://www.dineshonjava.com/category/servlet/" >Servlet</a>
+</li>
+	<li class="cat-item cat-item-50"><a href="https://www.dineshonjava.com/category/soap/" >SOAP</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="https://www.dineshonjava.com/category/spring-framework/spring-4/" >Spring 4</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="https://www.dineshonjava.com/category/spring-framework/spring-5/" >Spring 5</a>
+</li>
+	<li class="cat-item cat-item-19"><a href="https://www.dineshonjava.com/category/spring-framework/spring-aop/" >Spring AOP</a>
+</li>
+	<li class="cat-item cat-item-43"><a href="https://www.dineshonjava.com/category/spring-framework/spring-batch/" >Spring Batch</a>
+</li>
+	<li class="cat-item cat-item-38"><a href="https://www.dineshonjava.com/category/spring-framework/spring-batch3/" >Spring Batch3</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="https://www.dineshonjava.com/category/spring-framework/spring-boot/" >Spring Boot</a>
+</li>
+	<li class="cat-item cat-item-95"><a href="https://www.dineshonjava.com/category/spring-certification/" >Spring Certification</a>
+</li>
+	<li class="cat-item cat-item-96"><a href="https://www.dineshonjava.com/category/spring-framework/spring-core/" >Spring Core</a>
+</li>
+	<li class="cat-item cat-item-7"><a href="https://www.dineshonjava.com/category/spring-framework/" >Spring Framework</a>
+</li>
+	<li class="cat-item cat-item-26"><a href="https://www.dineshonjava.com/category/spring-framework/spring-hateoas/" >Spring HATEOAS</a>
+</li>
+	<li class="cat-item cat-item-97"><a href="https://www.dineshonjava.com/category/spring-framework/spring-jdbc/" >Spring JDBC</a>
+</li>
+	<li class="cat-item cat-item-25"><a href="https://www.dineshonjava.com/category/spring-framework/spring-mobile/" >Spring Mobile</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="https://www.dineshonjava.com/category/spring-framework/spring-mvc/" >Spring MVC</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="https://www.dineshonjava.com/category/spring-framework/spring-mvc-interview-questions/" >Spring MVC interview questions</a>
+</li>
+	<li class="cat-item cat-item-16"><a href="https://www.dineshonjava.com/category/spring-framework/spring-rest/" >Spring REST</a>
+</li>
+	<li class="cat-item cat-item-20"><a href="https://www.dineshonjava.com/category/spring-framework/spring-security/" >Spring Security</a>
+</li>
+	<li class="cat-item cat-item-98"><a href="https://www.dineshonjava.com/category/spring-framework/spring-transaction/" >Spring Transaction</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="https://www.dineshonjava.com/category/string-in-java/" >String in Java</a>
+</li>
+	<li class="cat-item cat-item-99"><a href="https://www.dineshonjava.com/category/struts-framework/" >Struts Framework</a>
+</li>
+	<li class="cat-item cat-item-48"><a href="https://www.dineshonjava.com/category/struts-framework/struts2/" >Struts2</a>
+</li>
+	<li class="cat-item cat-item-35"><a href="https://www.dineshonjava.com/category/thymeleaf/" >Thymeleaf</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="https://www.dineshonjava.com/category/tutorial/" >Tutorial</a>
+</li>
+	<li class="cat-item cat-item-51"><a href="https://www.dineshonjava.com/category/uddi/" >UDDI</a>
+</li>
+	<li class="cat-item cat-item-52"><a href="https://www.dineshonjava.com/category/wsdl/" >WSDL</a>
+</li>
+		</ul>
+</div><div id="custom_html-3" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><script>
+var staticSizesEboundDynamicAdsDesktop = ["120x600"];
+var staticSizesEboundDynamicAdsTablet = ["120x600"];
+var staticSizesEboundDynamicAdsMobile = ["300x250"];
+</script>
+<script src='//publisher.eboundservices.com/dynamicAds/staticScript.js'></script> 
+</div></div><div id="custom_html-10" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><div dir="ltr" style="color: #20124d; font-family: 'calibri' , sans-serif;font-size: 13pt; text-align: justify;">Learn various <strong>design patterns</strong> and <strong>best practices</strong> and use them to solve common design problems. </div>
+<div dir="ltr"></div>
+<div dir="ltr"><a href="https://www.amazon.in/Spring-Design-Patterns-Dinesh-Rajput/dp/1788299450/ref=sr_1_1?ie=UTF8&qid=1509502296&sr=8-1&keywords=dinesh+rajput" target="_blank" rel="noopener"><img class="aligncenter wp-image-3053 size-medium" title="Spring-5-Design-Pattern" src="https://i0.wp.com/www.dineshonjava.com/wp-content/uploads/2013/03/Spring-5-design-pattern.jpg?resize=243%2C300&#038;ssl=1" alt="Spring-5-Design-Pattern" width="243" height="300" data-recalc-dims="1" /></a></div></div></div></aside>
+	</div>
+	<aside id="sidebar" class="sidebar c-4-12" role="complementary" itemscope itemtype="http://schema.org/WPSideBar">
+	<div id="custom_html-9" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><div dir="ltr" style="color: #20124d; font-family: 'calibri' , sans-serif;font-size: 13pt; text-align: justify;">Learn various <strong>design patterns</strong> and <strong>best practices</strong> and use them to solve common design problems. </div>
+<div dir="ltr"></div>
+<div dir="ltr"><a href="https://www.amazon.in/Spring-Design-Patterns-Dinesh-Rajput/dp/1788299450/ref=sr_1_1?ie=UTF8&qid=1509502296&sr=8-1&keywords=dinesh+rajput" target="_blank" rel="noopener"><img class="aligncenter wp-image-3053 size-medium" title="Spring-5-Design-Pattern" src="https://i0.wp.com/www.dineshonjava.com/wp-content/uploads/2013/03/Spring-5-design-pattern.jpg?resize=243%2C300&#038;ssl=1" alt="Spring-5-Design-Pattern" width="243" height="300" data-recalc-dims="1" /></a></div></div></div><div id="custom_html-2" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><script>
+var staticSizesEboundDynamicAdsDesktop = ["300x600"];
+var staticSizesEboundDynamicAdsTablet = ["300x600"];
+var staticSizesEboundDynamicAdsMobile = ["300x250"];
+</script>
+<script src='//publisher.eboundservices.com/dynamicAds/staticScript.js'></script> </div></div><div id="search-4" class="widget widget_search"><form method="get" id="searchform" class="search-form" action="https://www.dineshonjava.com" _lpchecked="1">
+	<fieldset>
+		<input type="text" name="s" id="s" value="" placeholder="Search the site"  autocomplete="off" />
+		<button id="search-image" class="sbutton" type="submit" value="">
+	    		<i class="fa fa-search"></i>
+	    	</button>
+	</fieldset>
+</form></div><div id="facebook-like-widget-3" class="widget facebook_like"><h3 class="widget-title">Find us on Facebook</h3>			<div class="fb-page" data-href="https://www.facebook.com/thedineshonjava/" data-width="328" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"></div>
+		</div><div id="mts_popular_posts_widget-1" class="widget widget_mts_popular_posts_widget horizontal-small"><h3 class="widget-title">Popular Posts</h3><ul class="popular-posts"><li class="post-box horizontal-small horizontal-container"><div class="horizontal-container-inner">								<div class="post-img">
+					<a href="https://www.dineshonjava.com/spring-mvc-with-hibernate-crud-example/" title="Spring MVC Hibernate Integration CRUD Example Step by Step">
+													<img class="wp-post-image" src="https://www.dineshonjava.com/wp-content/themes/mts_socialme/images/nothumb-socialme-widgetthumb.png" alt="Spring MVC Hibernate Integration CRUD Example Step by Step"/>
+											</a>
+				</div>
+								<div class="post-data">
+					<div class="post-data-container">
+						<div class="post-title">
+							<a href="https://www.dineshonjava.com/spring-mvc-with-hibernate-crud-example/" title="Spring MVC Hibernate Integration CRUD Example Step by Step">Spring MVC Hibernate Integration CRUD&nbsp;&hellip;</a>
+						</div>
+																	</div>
+				</div>
+			</div></li>		<li class="post-box horizontal-small horizontal-container"><div class="horizontal-container-inner">								<div class="post-img">
+					<a href="https://www.dineshonjava.com/core-java-and-j2ee-training-and/" title="Core JAVA and J2EE Training and Development for Industrial Training">
+													<img width="65" height="50" src="https://i2.wp.com/www.dineshonjava.com/wp-content/uploads/2014/05/download.jpg?resize=65%2C50&amp;ssl=1" class="attachment-socialme-widgetthumb size-socialme-widgetthumb wp-post-image" alt="" title="" srcset="https://i2.wp.com/www.dineshonjava.com/wp-content/uploads/2014/05/download.jpg?zoom=2&amp;resize=65%2C50&amp;ssl=1 130w, https://i2.wp.com/www.dineshonjava.com/wp-content/uploads/2014/05/download.jpg?zoom=3&amp;resize=65%2C50&amp;ssl=1 195w" sizes="(max-width: 65px) 100vw, 65px" />											</a>
+				</div>
+								<div class="post-data">
+					<div class="post-data-container">
+						<div class="post-title">
+							<a href="https://www.dineshonjava.com/core-java-and-j2ee-training-and/" title="Core JAVA and J2EE Training and Development for Industrial Training">Core JAVA and J2EE Training&nbsp;&hellip;</a>
+						</div>
+																	</div>
+				</div>
+			</div></li>		<li class="post-box horizontal-small horizontal-container"><div class="horizontal-container-inner">								<div class="post-img">
+					<a href="https://www.dineshonjava.com/struts-2-hibernate-3-integration/" title="Struts Hibernate Integration Example with Spring">
+													<img width="65" height="50" src="https://i0.wp.com/www.dineshonjava.com/wp-content/uploads/2013/08/66666.png?resize=65%2C50&amp;ssl=1" class="attachment-socialme-widgetthumb size-socialme-widgetthumb wp-post-image" alt="" title="" srcset="https://i0.wp.com/www.dineshonjava.com/wp-content/uploads/2013/08/66666.png?zoom=2&amp;resize=65%2C50&amp;ssl=1 130w, https://i0.wp.com/www.dineshonjava.com/wp-content/uploads/2013/08/66666.png?zoom=3&amp;resize=65%2C50&amp;ssl=1 195w" sizes="(max-width: 65px) 100vw, 65px" />											</a>
+				</div>
+								<div class="post-data">
+					<div class="post-data-container">
+						<div class="post-title">
+							<a href="https://www.dineshonjava.com/struts-2-hibernate-3-integration/" title="Struts Hibernate Integration Example with Spring">Struts Hibernate Integration Example with&nbsp;&hellip;</a>
+						</div>
+																	</div>
+				</div>
+			</div></li>		<li class="post-box horizontal-small horizontal-container"><div class="horizontal-container-inner">								<div class="post-img">
+					<a href="https://www.dineshonjava.com/xmlhttprequest-object-in-ajax/" title="XMLHttpRequest Object in Ajax">
+													<img class="wp-post-image" src="https://www.dineshonjava.com/wp-content/themes/mts_socialme/images/nothumb-socialme-widgetthumb.png" alt="XMLHttpRequest Object in Ajax"/>
+											</a>
+				</div>
+								<div class="post-data">
+					<div class="post-data-container">
+						<div class="post-title">
+							<a href="https://www.dineshonjava.com/xmlhttprequest-object-in-ajax/" title="XMLHttpRequest Object in Ajax">XMLHttpRequest Object in Ajax</a>
+						</div>
+																	</div>
+				</div>
+			</div></li>		<li class="post-box horizontal-small horizontal-container"><div class="horizontal-container-inner">								<div class="post-img">
+					<a href="https://www.dineshonjava.com/these-incredible-portraits-werent-captured-with-a-camera-but-with-a-pencil/" title="These Incredible Portraits Weren&#8217;t Captured With A Camera, But With A Pencil.">
+													<img width="65" height="50" src="https://i2.wp.com/www.dineshonjava.com/wp-content/uploads/2015/04/pencil.jpg?resize=65%2C50&amp;ssl=1" class="attachment-socialme-widgetthumb size-socialme-widgetthumb wp-post-image" alt="" title="" srcset="https://i2.wp.com/www.dineshonjava.com/wp-content/uploads/2015/04/pencil.jpg?resize=65%2C50&amp;ssl=1 65w, https://i2.wp.com/www.dineshonjava.com/wp-content/uploads/2015/04/pencil.jpg?zoom=2&amp;resize=65%2C50&amp;ssl=1 130w, https://i2.wp.com/www.dineshonjava.com/wp-content/uploads/2015/04/pencil.jpg?zoom=3&amp;resize=65%2C50&amp;ssl=1 195w" sizes="(max-width: 65px) 100vw, 65px" />											</a>
+				</div>
+								<div class="post-data">
+					<div class="post-data-container">
+						<div class="post-title">
+							<a href="https://www.dineshonjava.com/these-incredible-portraits-werent-captured-with-a-camera-but-with-a-pencil/" title="These Incredible Portraits Weren&#8217;t Captured With A Camera, But With A Pencil.">These Incredible Portraits Weren&#8217;t Captured&nbsp;&hellip;</a>
+						</div>
+																	</div>
+				</div>
+			</div></li>		</ul>
+</div></aside><!--#sidebar-->
+	</div><!--#page-->
+	<footer id="site-footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
+                <div class="copyrights">
+            <div class="container">
+			    <!--start copyrights-->
+<div class="row" id="copyright-note">
+<span><a href="https://www.dineshonjava.com/" title="Learn Core and Advanced Java, Spring with us step by step for beginner" rel="nofollow">Dinesh on Java</a> Copyright &copy; 2018. </span>
+    <nav id="" class="">
+                    <ul id="menu-header-menu-1" class="menu clearfix"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2662"><a href="https://www.dineshonjava.com/core-java-baby-step-to-be-best-java-ian/"><i class="fa fa-coffee"></i> Core Java</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2953"><a href="https://www.dineshonjava.com/core-java-baby-step-to-be-best-java-ian/">Core Java</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2880"><a href="https://www.dineshonjava.com/category/ocpjp/">Java 8 Certification</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2881"><a href="https://www.dineshonjava.com/core-java-interview-questions/">Interview Q/A</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2866"><a href="https://www.dineshonjava.com/spring-boot-tutorial/">Spring Boot</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2668"><a href="https://www.dineshonjava.com/spring-tutorial/"><i class="fa fa-leaf"></i> Spring</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2683"><a href="https://www.dineshonjava.com/spring-tutorial/">Spring Core</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2867"><a href="https://www.dineshonjava.com/spring-aop-tutorial-with-example-aspect-advice-pointcut-joinpoint/">Spring AOP</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2868"><a href="https://www.dineshonjava.com/spring-web-mvc-framework-chapter-38/">Spring MVC</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2869"><a href="https://www.dineshonjava.com/spring-security-take-baby-step-to-secure/">Spring Security</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2684"><a href="https://www.dineshonjava.com/microservices-with-spring-boot/">Microservices</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2870"><a href="https://www.dineshonjava.com/spring-4-tutorials-step-to-new-spring/">Spring 4</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2871"><a href="https://www.dineshonjava.com/whats-new-in-spring-framework-5x/">Spring 5</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2872"><a href="https://www.dineshonjava.com/spring-batch-process-with-example/">Spring Batch</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2882"><a href="https://www.dineshonjava.com/spring-mobile-tutorial/">Spring Mobile</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2883"><a href="https://www.dineshonjava.com/spring-hateoas-hypermedia-driven-restful-web-service/">Spring HATEOAS</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2945"><a href="https://www.dineshonjava.com/hibernate-3-on-baby-steps/"><i class="fa fa-database"></i> Hibernate</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2952"><a href="https://www.dineshonjava.com/hibernate-search-api-hibernate-4-on/">Hibernate Search</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children menu-item-2954"><a href="https://www.dineshonjava.com/"><i class="fa fa-list"></i> Tutorials</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2690"><a href="https://www.dineshonjava.com/design-patterns_25/">Design Patterns</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2946"><a href="https://www.dineshonjava.com/web-service-introduction/">Web Services</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2951"><a href="https://www.dineshonjava.com/rest-and-soap-web-service-interview/">WS Interview Questions</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2947"><a href="https://www.dineshonjava.com/jax-ws-web-service-tutorial/">JAX-WS (SOAP)</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2948"><a href="https://www.dineshonjava.com/jax-rs-web-service-tutorial/">JAX-RS (REST)</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2949"><a href="https://www.dineshonjava.com/introduction-to-wsdl/">WSDL</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2950"><a href="https://www.dineshonjava.com/what-is-soap/">SOAP</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2969"><a href="https://www.dineshonjava.com/cloud-computing-tutorial/">Cloud Computing</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2962"><a href="https://www.dineshonjava.com/struts-2-baby-step-to-learn/%20">Struts 2 Tutorial</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2974"><a href="https://www.dineshonjava.com/java-servlets-overview/">J2EE Tutorial</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2956"><a href="https://www.dineshonjava.com/java-servlets-overview/">Servlet Tutorial</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2957"><a href="https://www.dineshonjava.com/jsp-tutorial-baby-step-to-server-pages/">JSP Tutorial</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2958"><a href="https://www.dineshonjava.com/jsp-standard-tag-library-jstl-tutorial/">JSTL Tutorial</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2959"><a href="https://www.dineshonjava.com/java-database-connectivityjdbc-tutorial/">JDBC Tutorial</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2960"><a href="https://www.dineshonjava.com/jaxb-2x-tutorial/">JAX B Tutorial</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2961"><a href="https://www.dineshonjava.com/java-mail-api-tutorial/">Java Mail API</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2963"><a href="https://www.dineshonjava.com/hadoop-tutorial/">Hadoop Tutorial</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2971"><a href="https://www.dineshonjava.com/ajax-tutorial/">AJAX Tutorial</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2964"><a href="https://www.dineshonjava.com/maven-tutorial-for-beginners-eclipse/">Build Tools</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2965"><a href="https://www.dineshonjava.com/maven-tutorial-for-beginners-eclipse/">Maven</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2966"><a href="https://www.dineshonjava.com/how-to-install-gradle/">Gradle</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2967"><a href="https://www.dineshonjava.com/apache-ant-tutorial/">ANT</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2968"><a href="https://www.dineshonjava.com/introduction-to-mongodb/">Mongo DB</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2970"><a href="https://www.dineshonjava.com/thymeleaf-vs-jsp-spring-mvc-view-layer/">Thymeleaf</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2972"><a href="https://www.dineshonjava.com/what-is-github-and-creating-repository-and-branches-on-git/">Git</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2973"><a href="https://www.dineshonjava.com/linux-crontab-cron-job-examples/">Linux</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-2884"><a href="https://www.dineshonjava.com/interview-questions-on-spring/"><i class="fa fa-question-circle"></i> Interview Q/A</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2889"><a href="https://www.dineshonjava.com/interview-questions-on-spring/">Spring Interview</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2885"><a href="https://www.dineshonjava.com/spring-aop-interview-questions-and-answers/">AOP Interview</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2890"><a href="https://www.dineshonjava.com/spring-mvc-interview-questions-and-answers/">MVC Interview</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-2886"><a href="https://www.dineshonjava.com/spring-boot-interview-questions-and-answers/">Spring Boot Interview</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2887"><a href="https://www.dineshonjava.com/spring-boot-microservices-interview-questions-answers/">Microservices Interview</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2888"><a href="https://www.dineshonjava.com/spring-security-interview-questions-and-answers/">Spring Security Interview</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2891"><a href="https://www.dineshonjava.com/rest-and-soap-web-service-interview/">Web Service Interview</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2895"><a href="https://www.dineshrajput.com/contact"><i class="fa fa-check-square-o"></i> Training</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2660"><a href="https://www.dineshrajput.com"><i class="fa fa-user-md"></i> Who I Am</a></li>
+</ul>
+</li>
+</ul>            </nav>
+ 
+</div>
+<!--end copyrights-->
+            </div>
+		</div> 
+	</footer><!--#site-footer-->
+</div><!--.main-container-->
+    	<div style="display:none">
+	<div class="grofile-hash-map-60c61015076fd8f627850df184a331dd">
+	</div>
+	</div>
+
+	<script type="text/javascript">
+		window.WPCOM_sharing_counts = {"https:\/\/www.dineshonjava.com\/spring-boot-interview-questions-and-answers\/":34};
+	</script>
+<script type='text/javascript' src='https://www.dineshonjava.com/wp-content/plugins/jetpack/_inc/build/photon/photon.min.js'></script>
+<script type='text/javascript' src='https://s0.wp.com/wp-content/js/devicepx-jetpack.js'></script>
+<script type='text/javascript' async="async" src='https://www.dineshonjava.com/wp-content/themes/mts_socialme/js/owl.carousel.min.js'></script>
+<script type='text/javascript' src='https://www.dineshonjava.com/wp-includes/js/wp-embed.min.js'></script>
+<script type='text/javascript' async="async" src='https://www.dineshonjava.com/wp-content/themes/mts_socialme/js/sticky.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var mts_ajax_search = {"url":"https:\/\/www.dineshonjava.com\/wp-admin\/admin-ajax.php","ajax_search":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' async="async" src='https://www.dineshonjava.com/wp-content/themes/mts_socialme/js/ajax.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var sharing_js_options = {"lang":"en","counts":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.dineshonjava.com/wp-content/plugins/jetpack/_inc/build/sharedaddy/sharing.min.js'></script>
+<script type='text/javascript'>
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-facebook', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+				return false;
+			});
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-twitter', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+				return false;
+			});
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-google-plus-1', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomgoogle-plus-1', 'menubar=1,resizable=1,width=480,height=550' );
+				return false;
+			});
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-linkedin', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomlinkedin', 'menubar=1,resizable=1,width=580,height=450' );
+				return false;
+			});
+</script>
+<script type='text/javascript' src='https://stats.wp.com/e-201805.js' async defer></script>
+<script type='text/javascript'>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:5.7.1',blog:'134105702',post:'34',tz:'5.5',srv:'www.dineshonjava.com'} ]);
+	_stq.push([ 'clickTrackerInit', '134105702', '34' ]);
+</script>
+</body>
+</html>

@@ -1,0 +1,605 @@
+<!DOCTYPE html><html
+lang="en-US" prefix="og: http://ogp.me/ns#"><head ><meta
+charset="UTF-8" /><title>Spring Boot Interview Questions - JournalDev</title><meta
+name="viewport" content="width=device-width, initial-scale=1" /><meta
+name="description" content="Spring Boot Interview Questions, Spring Boot Interview Questions and Answers for Experienced, FAQ, CLI, Actuator, Initializr, AutoConfigurator, Starter"/><link
+rel="canonical" href="https://www.journaldev.com/8611/spring-boot-interview-questions" /><meta
+property="og:locale" content="en_US" /><meta
+property="og:type" content="article" /><meta
+property="og:title" content="Spring Boot Interview Questions - JournalDev" /><meta
+property="og:description" content="Spring Boot Interview Questions, Spring Boot Interview Questions and Answers for Experienced, FAQ, CLI, Actuator, Initializr, AutoConfigurator, Starter" /><meta
+property="og:url" content="https://www.journaldev.com/8611/spring-boot-interview-questions" /><meta
+property="og:site_name" content="JournalDev" /><meta
+property="article:section" content="Spring" /><meta
+property="article:published_time" content="2015-07-23T06:18:23-08:00" /><meta
+property="article:modified_time" content="2017-10-15T23:51:13-08:00" /><meta
+property="og:updated_time" content="2017-10-15T23:51:13-08:00" /><meta
+property="og:image" content="https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot.png" /><meta
+property="og:image:secure_url" content="https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot.png" /><meta
+property="og:image" content="https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-2.png" /><meta
+property="og:image:secure_url" content="https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-2.png" /><meta
+property="og:image" content="https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-3.png" /><meta
+property="og:image:secure_url" content="https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-3.png" /><meta
+property="og:image" content="https://cdn.journaldev.com/wp-content/uploads/2015/07/why-we-need-springboot.png" /><meta
+property="og:image:secure_url" content="https://cdn.journaldev.com/wp-content/uploads/2015/07/why-we-need-springboot.png" /><meta
+property="og:image" content="https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-starter.png" /><meta
+property="og:image:secure_url" content="https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-starter.png" /><meta
+property="og:image" content="https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-configurator.png" /><meta
+property="og:image:secure_url" content="https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-configurator.png" /><meta
+property="og:image" content="https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-actuator.png" /><meta
+property="og:image:secure_url" content="https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-actuator.png" /><meta
+property="og:image" content="https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-cli.png" /><meta
+property="og:image:secure_url" content="https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-cli.png" /><meta
+property="og:image" content="https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-cli2.png" /><meta
+property="og:image:secure_url" content="https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-cli2.png" /><meta
+property="og:image" content="https://cdn.journaldev.com/wp-content/uploads/2015/07/trasitive-dependency.png" /><meta
+property="og:image:secure_url" content="https://cdn.journaldev.com/wp-content/uploads/2015/07/trasitive-dependency.png" /><meta
+name="twitter:card" content="summary" /><meta
+name="twitter:description" content="Spring Boot Interview Questions, Spring Boot Interview Questions and Answers for Experienced, FAQ, CLI, Actuator, Initializr, AutoConfigurator, Starter" /><meta
+name="twitter:title" content="Spring Boot Interview Questions - JournalDev" /><meta
+name="twitter:image" content="https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot.png" /> <script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","@id":"#website","url":"https:\/\/www.journaldev.com\/","name":"JournalDev - Java, Java EE, Android, Web Development Tutorials","potentialAction":{"@type":"SearchAction","target":"https:\/\/www.journaldev.com\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script> <script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"Person","url":"https:\/\/www.journaldev.com\/8611\/spring-boot-interview-questions","sameAs":[],"@id":"#person","name":"Pankaj Kumar"}</script> <link
+rel='dns-prefetch' href='//fonts.googleapis.com' /><link
+rel='dns-prefetch' href='//s.w.org' /><link
+rel="alternate" type="application/rss+xml" title="JournalDev &raquo; Feed" href="https://www.journaldev.com/feed" /><link
+rel="alternate" type="application/rss+xml" title="JournalDev &raquo; Comments Feed" href="https://www.journaldev.com/comments/feed" /><link
+rel="alternate" type="application/rss+xml" title="JournalDev &raquo; Spring Boot Interview Questions Comments Feed" href="https://www.journaldev.com/8611/spring-boot-interview-questions/feed" /> <script type="text/javascript">window._wpemojiSettings={"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.journaldev.com\/wp-includes\/js\/wp-emoji-release.min.js"}};!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56794,8205,9794,65039],[55358,56794,8203,9794,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);</script> <style type="text/css">img.wp-smiley,img.emoji{display:inline !important;border:none !important;box-shadow:none !important;height:1em !important;width:1em !important;margin:0
+.07em !important;vertical-align:-0.1em !important;background:none !important;padding:0
+!important}</style><link
+rel='stylesheet' id='wgs2-css'  href='https://cdn.journaldev.com/wp-content/plugins/wp-google-search/wgs2.css' type='text/css' media='all' /><link
+rel='stylesheet' id='news-pro-theme-css'  href='https://cdn.journaldev.com/wp-content/themes/news-pro/style.css' type='text/css' media='all' /><link
+rel='stylesheet' id='contact-form-7-css'  href='https://cdn.journaldev.com/wp-content/plugins/contact-form-7/includes/css/styles.css' type='text/css' media='all' /><link
+rel='stylesheet' id='dashicons-css'  href='https://cdn.journaldev.com/wp-includes/css/dashicons.min.css' type='text/css' media='all' /><link
+rel='stylesheet' id='thickbox-css'  href='https://cdn.journaldev.com/wp-includes/js/thickbox/thickbox.css' type='text/css' media='all' /><link
+rel='stylesheet' id='toc-screen-css'  href='https://cdn.journaldev.com/wp-content/plugins/table-of-contents-plus/screen.min.css' type='text/css' media='all' /><link
+rel='stylesheet' id='wpProQuiz_front_style-css'  href='https://cdn.journaldev.com/wp-content/plugins/wp-pro-quiz/css/wpProQuiz_front.min.css' type='text/css' media='all' /><link
+rel='stylesheet' id='google-fonts-css'  href='//fonts.googleapis.com/css?family=Raleway%3A400%2C700%7CPathway+Gothic+One' type='text/css' media='all' /><link
+rel='stylesheet' id='forget-about-shortcode-buttons-css'  href='https://cdn.journaldev.com/wp-content/plugins/forget-about-shortcode-buttons/public/css/button-styles.css' type='text/css' media='all' /> <script type='text/javascript' src='https://cdn.journaldev.com/wp-includes/js/jquery/jquery.js'></script> <script type='text/javascript' src='https://cdn.journaldev.com/wp-includes/js/jquery/jquery-migrate.min.js'></script> <script type='text/javascript' src='https://cdn.journaldev.com/wp-content/plugins/top-bar/js/jquery.cookie.js'></script> <script type='text/javascript'>var tpbr_settings={"fixed":"fixed","message":"{2018} - All Udemy Courses at $10.99\/INR 700 Only.","status":"active","yn_button":"button","color":"#E14938","button_text":"Check It Now!","button_url":"https:\/\/www.journaldev.com\/udemy-best-deal","close_image":null,"is_admin_bar":"no"};</script> <script type='text/javascript' src='https://cdn.journaldev.com/wp-content/plugins/top-bar/js/tpbr_front.min.js'></script> <!--[if lt IE 9]> <script type='text/javascript' src='https://cdn.journaldev.com/wp-content/themes/genesis/lib/js/html5shiv.js'></script> <![endif]--> <script type='text/javascript' src='https://cdn.journaldev.com/wp-content/themes/news-pro/js/responsive-menu.js'></script> <link
+rel='https://api.w.org/' href='https://www.journaldev.com/wp-json/' /><link
+rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.journaldev.com/xmlrpc.php?rsd" /><link
+rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://cdn.journaldev.com/wp-includes/wlwmanifest.xml" /><meta
+name="generator" content="WordPress 4.9.2" /><link
+rel='shortlink' href='https://www.journaldev.com/?p=8611' /><link
+rel="alternate" type="application/json+oembed" href="https://www.journaldev.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.journaldev.com%2F8611%2Fspring-boot-interview-questions" /><link
+rel="alternate" type="text/xml+oembed" href="https://www.journaldev.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.journaldev.com%2F8611%2Fspring-boot-interview-questions&#038;format=xml" /> <script language="JavaScript">jQuery(function(){jQuery('.wpdm-popup').click(function(){tb_show(jQuery(this).html(),this.href+'&modal=1&width=600&height=400');return false;});jQuery('.haspass').click(function(){var url=jQuery(this).attr('href');var id=jQuery(this).attr('rel');var password=jQuery('#pass_'+id).val();jQuery.post('https://www.journaldev.com/',{download:id,password:password},function(res){if(res=='error'){jQuery('#wpdm_file_'+id+' .perror').html('Wrong Password');setTimeout("jQuery('#wpdm_file_"+id+" .perror').html('');",3000);return false;}else{location.href='https://www.journaldev.com/?wpdmact=process&did='+res;}});return false;});})</script> <style type="text/css">.enews
+.screenread{height:1px;left:-1000em;overflow:hidden;position:absolute;top:-1000em;width:1px}</style><head
+profile="https://www.w3.org/2005/10/profile"><link
+rel="icon" type="image/png" href="https://cdn.journaldev.com/fav.png" /><link
+rel="pingback" href="https://www.journaldev.com/xmlrpc.php" /> <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-12171637-4','auto');ga('send','pageview');</script> <script type="text/javascript">window._mNHandle=window._mNHandle||{};window._mNHandle.queue=window._mNHandle.queue||[];medianet_versionId="121199";(function(){var sct=document.createElement("script"),sctHl=document.getElementsByTagName("script")[0],isSSL='https:'==document.location.protocol;sct.type="text/javascript";sct.src=(isSSL?'https:':'http:')+'//contextual.media.net/dmedianet.js?cid=8CUSP8IK6'+(isSSL?'&https=1':'')+'';sct.async="async";sctHl.parentNode.insertBefore(sct,sctHl);})();</script> <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script> <script>var googletag=googletag||{};googletag.cmd=googletag.cmd||[];</script> <script>googletag.cmd.push(function(){googletag.defineSlot('/14629573/jd_header_728x90',[[320,50],[728,90]],'div-gpt-ad-1514310993157-0').addService(googletag.pubads());googletag.defineSlot('/14629573/Journaldev_336x280',[336,280],'div-gpt-ad-1514310993157-1').addService(googletag.pubads());googletag.enableServices();});</script><style type="text/css">.site-title
+a{background:url(https://cdn.journaldev.com/wp-content/uploads/2014/05/cropped-Final-JD-Logo.png) no-repeat !important}</style><meta
+name="onesignal" content="wordpress-plugin"/><link
+rel="manifest"
+href="https://www.journaldev.com/wp-content/plugins/onesignal-free-web-push-notifications/sdk_files/manifest.json.php?gcm_sender_id="/> <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script> <script>window.OneSignal=window.OneSignal||[];OneSignal.push(function(){OneSignal.SERVICE_WORKER_UPDATER_PATH="OneSignalSDKUpdaterWorker.js.php";OneSignal.SERVICE_WORKER_PATH="OneSignalSDKWorker.js.php";OneSignal.SERVICE_WORKER_PARAM={scope:'/'};OneSignal.setDefaultNotificationUrl("https://www.journaldev.com");var oneSignal_options={};window._oneSignalInitOptions=oneSignal_options;oneSignal_options['wordpress']=true;oneSignal_options['appId']='bab8c5d5-918b-46f8-8634-2efa6c23e327';oneSignal_options['autoRegister']=true;oneSignal_options['welcomeNotification']={};oneSignal_options['welcomeNotification']['title']="";oneSignal_options['welcomeNotification']['message']="";oneSignal_options['path']="https://www.journaldev.com/wp-content/plugins/onesignal-free-web-push-notifications/sdk_files/";oneSignal_options['safari_web_id']="web.onesignal.auto.0818a4e7-118f-4fc1-b0e2-07892e811a2a";oneSignal_options['promptOptions']={};oneSignal_options['notifyButton']={};oneSignal_options['notifyButton']['enable']=true;oneSignal_options['notifyButton']['position']='bottom-left';oneSignal_options['notifyButton']['theme']='default';oneSignal_options['notifyButton']['size']='medium';oneSignal_options['notifyButton']['prenotify']=true;oneSignal_options['notifyButton']['displayPredicate']=function(){return OneSignal.isPushNotificationsEnabled().then(function(isPushEnabled){return!isPushEnabled;});};oneSignal_options['notifyButton']['showCredit']=false;oneSignal_options['notifyButton']['text']={};oneSignal_options['notifyButton']['text']['message.prenotify']='Stay Updated with us! Subscribe to our free notifications.';oneSignal_options['notifyButton']['text']['tip.state.subscribed']='Thanks for subscribing!';oneSignal_options['notifyButton']['text']['message.action.subscribed']='Thanks for subscribing!';OneSignal.init(window._oneSignalInitOptions);});function documentInitOneSignal(){var oneSignal_elements=document.getElementsByClassName("OneSignal-prompt");var oneSignalLinkClickHandler=function(event){OneSignal.push(['registerForPushNotifications']);event.preventDefault();};for(var i=0;i<oneSignal_elements.length;i++)
+oneSignal_elements[i].addEventListener('click',oneSignalLinkClickHandler,false);}
+if(document.readyState==='complete'){documentInitOneSignal();}
+else{window.addEventListener("load",function(event){documentInitOneSignal();});}</script> <link
+rel="amphtml" href="https://www.journaldev.com/8611/spring-boot-interview-questions/amp" /><style type="text/css" id="syntaxhighlighteranchor"></style><link
+rel="icon" href="https://cdn.journaldev.com/wp-content/uploads/2015/08/jd-site-img-150x150.png" sizes="32x32" /><link
+rel="icon" href="https://cdn.journaldev.com/wp-content/uploads/2015/08/jd-site-img-268x268.png" sizes="192x192" /><link
+rel="apple-touch-icon-precomposed" href="https://cdn.journaldev.com/wp-content/uploads/2015/08/jd-site-img-268x268.png" /><meta
+name="msapplication-TileImage" content="https://cdn.journaldev.com/wp-content/uploads/2015/08/jd-site-img-300x300.png" /></head><body
+class="post-template-default single single-post postid-8611 single-format-standard custom-header header-image content-sidebar" itemscope itemtype="https://schema.org/WebPage"><div
+class="site-container"><header
+class="site-header" itemscope itemtype="https://schema.org/WPHeader"><div
+class="wrap"><div
+class="title-area"><p
+class="site-title" itemprop="headline"><a
+href="https://www.journaldev.com/">JournalDev</a></p><p
+class="site-description" itemprop="description">Java, Java EE, Android, Python, Web Development Tutorials</p></div><div
+class="widget-area header-widget-area"><section
+id="adswidget2-quick-adsense" class="widget  lambda_15"><div
+class="widget-wrap"><div
+id='div-gpt-ad-1514310993157-0'> <script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1514310993157-0');});</script> </div></div></section></div></div></header><nav
+class="nav-primary" itemscope itemtype="https://schema.org/SiteNavigationElement"><div
+class="wrap"><ul
+id="menu-new-headermenu" class="menu genesis-nav-menu menu-primary"><li
+id="menu-item-17036" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17036"><a
+href="https://www.journaldev.com/java-tutorial-java-ee-tutorials?utm_source=website&#038;utm_medium=menubar&#038;utm_campaign=Top-Menu-Bar" itemprop="url"><span
+itemprop="name">Java Tutorial</span></a></li><li
+id="menu-item-7611" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7611"><a
+href="#" itemprop="url"><span
+itemprop="name">#Index Posts</span></a><ul
+class="sub-menu"><li
+id="menu-item-7612" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7612"><a
+href="https://www.journaldev.com/7153/core-java-tutorial?utm_source=website&#038;utm_medium=menubar&#038;utm_campaign=Top-Menu-Bar" itemprop="url"><span
+itemprop="name">Core Java Tutorial</span></a></li><li
+id="menu-item-7613" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7613"><a
+href="https://www.journaldev.com/1827/java-design-patterns-example-tutorial?utm_source=website&#038;utm_medium=menubar&#038;utm_campaign=Top-Menu-Bar" itemprop="url"><span
+itemprop="name">Java Design Patterns</span></a></li><li
+id="menu-item-7614" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7614"><a
+href="https://www.journaldev.com/2114/servlet-jsp-tutorial?utm_source=website&#038;utm_medium=menubar&#038;utm_campaign=Top-Menu-Bar" itemprop="url"><span
+itemprop="name">Servlet JSP Tutorial</span></a></li><li
+id="menu-item-7615" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7615"><a
+href="https://www.journaldev.com/2310/struts2-tutorial-with-example-projects?utm_source=website&#038;utm_medium=menubar&#038;utm_campaign=Top-Menu-Bar" itemprop="url"><span
+itemprop="name">Struts 2 Tutorial</span></a></li><li
+id="menu-item-7616" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7616"><a
+href="https://www.journaldev.com/2888/spring-tutorial-spring-core-tutorial?utm_source=website&#038;utm_medium=menubar&#038;utm_campaign=Top-Menu-Bar" itemprop="url"><span
+itemprop="name">Spring Tutorial</span></a></li><li
+id="menu-item-7638" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7638"><a
+href="https://www.journaldev.com/7635/jsf-tutorial?utm_source=website&#038;utm_medium=menubar&#038;utm_campaign=Top-Menu-Bar" itemprop="url"><span
+itemprop="name">JSF Tutorial</span></a></li><li
+id="menu-item-7620" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7620"><a
+href="https://www.journaldev.com/5516/primefaces-tutorial-with-example-projects?utm_source=website&#038;utm_medium=menubar&#038;utm_campaign=Top-Menu-Bar" itemprop="url"><span
+itemprop="name">Primefaces Tutorial</span></a></li><li
+id="menu-item-7619" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7619"><a
+href="https://www.journaldev.com/2681/jdbc-tutorial?utm_source=website&#038;utm_medium=menubar&#038;utm_campaign=Top-Menu-Bar" itemprop="url"><span
+itemprop="name">JDBC Tutorial</span></a></li><li
+id="menu-item-7617" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7617"><a
+href="https://www.journaldev.com/3793/hibernate-tutorial?utm_source=website&#038;utm_medium=menubar&#038;utm_campaign=Top-Menu-Bar" itemprop="url"><span
+itemprop="name">Hibernate Tutorial</span></a></li><li
+id="menu-item-7618" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7618"><a
+href="https://www.journaldev.com/6672/mongodb-tutorial-installation-example-projects-integration-with-servlet-spring-jsf?utm_source=website&#038;utm_medium=menubar&#038;utm_campaign=Top-Menu-Bar" itemprop="url"><span
+itemprop="name">MongoDB Tutorial</span></a></li></ul></li><li
+id="menu-item-7621" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7621"><a
+href="#" itemprop="url"><span
+itemprop="name">#Interview Questions</span></a><ul
+class="sub-menu"><li
+id="menu-item-7622" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7622"><a
+href="https://www.journaldev.com/java-interview-questions?utm_source=website&#038;utm_medium=menubar&#038;utm_campaign=Top-Menu-Bar" itemprop="url"><span
+itemprop="name">Java Interview Questions</span></a></li><li
+id="menu-item-7623" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7623"><a
+href="https://www.journaldev.com/2529/jdbc-interview-questions-and-answers?utm_source=website&#038;utm_medium=menubar&#038;utm_campaign=Top-Menu-Bar" itemprop="url"><span
+itemprop="name">JDBC Interview Questions</span></a></li><li
+id="menu-item-7624" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7624"><a
+href="https://www.journaldev.com/2015/servlet-interview-questions-and-answers?utm_source=website&#038;utm_medium=menubar&#038;utm_campaign=Top-Menu-Bar" itemprop="url"><span
+itemprop="name">Servlet Interview Questions</span></a></li><li
+id="menu-item-7625" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7625"><a
+href="https://www.journaldev.com/2110/jsp-interview-questions-and-answers?utm_source=website&#038;utm_medium=menubar&#038;utm_campaign=Top-Menu-Bar" itemprop="url"><span
+itemprop="name">JSP Interview Questions</span></a></li><li
+id="menu-item-7626" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7626"><a
+href="https://www.journaldev.com/2354/struts2-interview-questions-and-answers?utm_source=website&#038;utm_medium=menubar&#038;utm_campaign=Top-Menu-Bar" itemprop="url"><span
+itemprop="name">Struts2 Interview Questions</span></a></li><li
+id="menu-item-7627" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7627"><a
+href="https://www.journaldev.com/2696/spring-interview-questions-and-answers?utm_source=website&#038;utm_medium=menubar&#038;utm_campaign=Top-Menu-Bar" itemprop="url"><span
+itemprop="name">Spring Interview Questions</span></a></li><li
+id="menu-item-7628" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7628"><a
+href="https://www.journaldev.com/3633/hibernate-interview-questions-and-answers?utm_source=website&#038;utm_medium=menubar&#038;utm_campaign=Top-Menu-Bar" itemprop="url"><span
+itemprop="name">Hibernate Interview Questions</span></a></li><li
+id="menu-item-7629" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7629"><a
+href="https://www.journaldev.com/7261/jsf-interview-questions-and-answers?utm_source=website&#038;utm_medium=menubar&#038;utm_campaign=Top-Menu-Bar" itemprop="url"><span
+itemprop="name">JSF Interview Questions</span></a></li></ul></li><li
+id="menu-item-17037" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17037"><a
+href="https://www.journaldev.com/resources?utm_source=website&#038;utm_medium=menubar&#038;utm_campaign=Top-Menu-Bar" itemprop="url"><span
+itemprop="name">Resources</span></a></li><li
+id="menu-item-17772" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17772"><a
+href="https://www.journaldev.com/hire-me" itemprop="url"><span
+itemprop="name">Hire Me</span></a></li><li
+id="menu-item-18065" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18065"><a
+href="https://www.journaldev.com/android-app" itemprop="url"><span
+itemprop="name">Download Android App</span></a></li><li
+id="menu-item-18187" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18187"><a
+href="https://www.journaldev.com/write-for-us" itemprop="url"><span
+itemprop="name">Contribute</span></a></li></ul></div></nav><div
+class="site-inner"><div
+class="content-sidebar-wrap"><main
+class="content"><div
+class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList"><span
+xmlns:v="http://rdf.data-vocabulary.org/#"><span
+typeof="v:Breadcrumb"><a
+href="https://www.journaldev.com/" rel="v:url" property="v:title">Home</a> » <span
+rel="v:child" typeof="v:Breadcrumb"><a
+href="https://www.journaldev.com/spring" rel="v:url" property="v:title">Spring</a> » <span
+class="breadcrumb_last">Spring Boot Interview Questions</span></span></span></span></div><article
+class="post-8611 post type-post status-publish format-standard category-spring entry" itemscope itemtype="https://schema.org/CreativeWork"><header
+class="entry-header"><h1 class="entry-title" itemprop="headline">Spring Boot Interview Questions</h1><p
+class="entry-meta"><time
+class="entry-modified-time" itemprop="dateModified" datetime="2017-10-15T23:51:13+00:00">October 15, 2017</time> by <span
+class="entry-author" itemprop="author" itemscope itemtype="https://schema.org/Person"><a
+href="https://www.journaldev.com/author/rambabu" class="entry-author-link" itemprop="url" rel="author"><span
+class="entry-author-name" itemprop="name">Rambabu Posa</span></a></span> <span
+class="entry-comments-link"><a
+href="https://www.journaldev.com/8611/spring-boot-interview-questions#comments">9 Comments</a></span></p></header><div
+class="entry-content" itemprop="text"><div
+style="float:none;margin:10px 0 10px 0;text-align:center;"><ins
+class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-5143693538742787"
+data-ad-slot="7174295726"
+data-ad-format="auto"></ins> <script>(adsbygoogle=window.adsbygoogle||[]).push({});</script> </div><p>Today we will look into some spring boot interview questions and answers. So far, we have discussed some posts about <a
+href="https://www.journaldev.com/7969/spring-boot-tutorial">Spring Boot</a> Framework with some real-time examples. In this post, I&#8217;m going to give you brief or one shot answers to some Spring Boot Interview Questions. They are very useful when we want to face interview.</p><div
+id="toc_container" class="toc_light_blue no_bullets"><p
+class="toc_title">Table of Contents</p><ul
+class="toc_list"><li><a
+href="#spring-boot-interview-questions"><span
+class="toc_number toc_depth_1">1</span> Spring Boot Interview Questions</a><ul><li><a
+href="#what-is-spring-boot"><span
+class="toc_number toc_depth_2">1.1</span> What is Spring Boot?</a></li><li><a
+href="#why-we-need-spring-boot"><span
+class="toc_number toc_depth_2">1.2</span> Why we need Spring Boot?</a></li><li><a
+href="#spring-boot-components"><span
+class="toc_number toc_depth_2">1.3</span> Spring Boot Components</a></li><li><a
+href="#what-is-spring-boot-starter"><span
+class="toc_number toc_depth_2">1.4</span> What is Spring Boot Starter?</a></li><li><a
+href="#what-is-spring-boot-autoconfigurator"><span
+class="toc_number toc_depth_2">1.5</span> What is Spring Boot AutoConfigurator?</a></li><li><a
+href="#what-is-spring-boot-actuator"><span
+class="toc_number toc_depth_2">1.6</span> What is Spring Boot Actuator?</a></li><li><a
+href="#what-is-spring-boot-cli"><span
+class="toc_number toc_depth_2">1.7</span> What is Spring Boot CLI?</a></li><li><a
+href="#what-is-spring-boot-initilizr"><span
+class="toc_number toc_depth_2">1.8</span> What is Spring Boot Initilizr?</a></li><li><a
+href="#why-we-need-spring-boot-initilizr"><span
+class="toc_number toc_depth_2">1.9</span> Why we need Spring Boot Initilizr?</a></li><li><a
+href="#spring-boot-with-mavengradle"><span
+class="toc_number toc_depth_2">1.10</span> Spring Boot With Maven/Gradle?</a></li><li><a
+href="#what-is-8220transitively-dependency-resolution-management8221"><span
+class="toc_number toc_depth_2">1.11</span> What is &#8220;Transitively Dependency Resolution Management&#8221;?</a></li></ul></li></ul></div><h2><span
+id="spring-boot-interview-questions">Spring Boot Interview Questions</span></h2><p>Spring Boot is a one-stop Framework to develop Spring applications very easily. I have covered a lot of <a
+href="https://www.journaldev.com/2696/spring-interview-questions-and-answers" rel="noopener" target="_blank">spring interview questions</a> earlier, this is specifically for spring boot interview questions and answers.</p><p>These spring boot interview questions are good for experienced programmers as well as new to spring boot framework.</p><div
+style="float:none;margin:10px 0 10px 0;text-align:center;"><ins
+class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-5143693538742787"
+data-ad-slot="5697562523"
+data-ad-format="auto"></ins> <script>(adsbygoogle=window.adsbygoogle||[]).push({});</script> </div><h3><span
+id="what-is-spring-boot">What is Spring Boot?</span></h3><p>In simple words, Spring Boot Framework is Auto-Dependency Resolution, Auto-Configuration, Management EndPoints, Embedded HTTP Servers(Jetty/Tomcat etc.) and Spring Boot CLI</p><p><img
+src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-type="image" data-lazy-src="https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot.png" alt="spring boot interview questions, what is spring boot" width="1862" height="325" class="lazy lazy-hidden aligncenter size-full wp-image-8672" data-lazy-srcset="https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot.png 1862w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-450x79.png 450w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-1024x179.png 1024w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-700x122.png 700w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-150x26.png 150w" data-lazy-sizes="(max-width: 1862px) 100vw, 1862px" /><noscript><img
+src="https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot.png" alt="spring boot interview questions, what is spring boot" width="1862" height="325" class="aligncenter size-full wp-image-8672" srcset="https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot.png 1862w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-450x79.png 450w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-1024x179.png 1024w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-700x122.png 700w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-150x26.png 150w" sizes="(max-width: 1862px) 100vw, 1862px" /></noscript></p><p>In other words, Spring Boot Framework is Spring Boot Starter, Spring Boot Auto-Configurator, Spring Boot Actuator, Embedded HTTP Servers and Groovy.</p><div
+style="float:none;margin:10px 0 10px 0;text-align:center;"><div
+data-type="ad" data-publisher="journaldev.com" data-format="300x250" data-zone="jd_post_mid_300x250" ></div></div><p><img
+src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-type="image" data-lazy-src="https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-2.png" alt="Spring Boot interview questions and answers" width="2311" height="273" class="lazy lazy-hidden aligncenter size-full wp-image-8680" data-lazy-srcset="https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-2.png 2311w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-2-450x53.png 450w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-2-1024x121.png 1024w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-2-700x83.png 700w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-2-150x18.png 150w" data-lazy-sizes="(max-width: 2311px) 100vw, 2311px" /><noscript><img
+src="https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-2.png" alt="Spring Boot interview questions and answers" width="2311" height="273" class="aligncenter size-full wp-image-8680" srcset="https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-2.png 2311w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-2-450x53.png 450w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-2-1024x121.png 1024w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-2-700x83.png 700w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-2-150x18.png 150w" sizes="(max-width: 2311px) 100vw, 2311px" /></noscript></p><p>In other words, Spring Boot Framework is Spring Boot CLI.</p><p><img
+src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-type="image" data-lazy-src="https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-3.png" alt="what is Spring Boot CLI" width="737" height="194" class="lazy lazy-hidden aligncenter size-full wp-image-8681" data-lazy-srcset="https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-3.png 737w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-3-450x118.png 450w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-3-700x184.png 700w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-3-150x39.png 150w" data-lazy-sizes="(max-width: 737px) 100vw, 737px" /><noscript><img
+src="https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-3.png" alt="what is Spring Boot CLI" width="737" height="194" class="aligncenter size-full wp-image-8681" srcset="https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-3.png 737w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-3-450x118.png 450w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-3-700x184.png 700w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-3-150x39.png 150w" sizes="(max-width: 737px) 100vw, 737px" /></noscript></p><p><strong>NOTE:-</strong><br
+/>
+If you are confused about last two definitions, please read rest of the post to make it clear.</p><h3><span
+id="why-we-need-spring-boot">Why we need Spring Boot?</span></h3><ol><li><a
+href="https://www.journaldev.com/16922/spring-framework">Spring Framework</a> aims to simplify Java Applications Development.</li><li>Spring Boot Framework aims to simplify Spring Development.</li></ol><p><img
+src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-type="image" data-lazy-src="https://cdn.journaldev.com/wp-content/uploads/2015/07/why-we-need-springboot.png" alt="spring boot benefits" width="345" height="682" class="lazy lazy-hidden aligncenter size-full wp-image-8673" data-lazy-srcset="https://cdn.journaldev.com/wp-content/uploads/2015/07/why-we-need-springboot.png 345w, https://cdn.journaldev.com/wp-content/uploads/2015/07/why-we-need-springboot-228x450.png 228w, https://cdn.journaldev.com/wp-content/uploads/2015/07/why-we-need-springboot-76x150.png 76w" data-lazy-sizes="(max-width: 345px) 100vw, 345px" /><noscript><img
+src="https://cdn.journaldev.com/wp-content/uploads/2015/07/why-we-need-springboot.png" alt="spring boot benefits" width="345" height="682" class="aligncenter size-full wp-image-8673" srcset="https://cdn.journaldev.com/wp-content/uploads/2015/07/why-we-need-springboot.png 345w, https://cdn.journaldev.com/wp-content/uploads/2015/07/why-we-need-springboot-228x450.png 228w, https://cdn.journaldev.com/wp-content/uploads/2015/07/why-we-need-springboot-76x150.png 76w" sizes="(max-width: 345px) 100vw, 345px" /></noscript></p><h3><span
+id="spring-boot-components">Spring Boot Components</span></h3><p>Spring Boot Framework has the following components:</p><ol><li>Spring Boot Starter</li><li>Spring Boot AutoConfigurator</li><li>Spring Boot Actuator</li><li>Spring Boot CLI</li><li>Spring Boot Initilizr</li></ol><h3><span
+id="what-is-spring-boot-starter">What is Spring Boot Starter?</span></h3><p>Spring Boot Starters are just JAR Files. They are used by Spring Boot Framework to provide &#8220;Auto-Dependency Resolution&#8221;.</p><p><img
+src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-type="image" data-lazy-src="https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-starter.png" alt="spring boot starter" width="1044" height="180" class="lazy lazy-hidden aligncenter size-full wp-image-8674" data-lazy-srcset="https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-starter.png 1044w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-starter-450x78.png 450w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-starter-1024x177.png 1024w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-starter-700x121.png 700w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-starter-150x26.png 150w" data-lazy-sizes="(max-width: 1044px) 100vw, 1044px" /><noscript><img
+src="https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-starter.png" alt="spring boot starter" width="1044" height="180" class="aligncenter size-full wp-image-8674" srcset="https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-starter.png 1044w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-starter-450x78.png 450w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-starter-1024x177.png 1024w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-starter-700x121.png 700w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-starter-150x26.png 150w" sizes="(max-width: 1044px) 100vw, 1044px" /></noscript></p><h3><span
+id="what-is-spring-boot-autoconfigurator">What is Spring Boot AutoConfigurator?</span></h3><p>Spring Boot AutoConfigurator is used by Spring Boot Framework to provide &#8220;Auto-Configuration&#8221;.</p><div
+style="float:none;margin:10px 0 10px 0;text-align:center;"> <script id="mNCC" language="javascript">medianet_width="336";medianet_height="280";medianet_crid="625154765";medianet_versionId="3111299";</script> <script src="//contextual.media.net/nmedianet.js?cid=8CUSP8IK6"></script> </div><p><img
+src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-type="image" data-lazy-src="https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-configurator.png" alt="spring boot auto configurator" width="1047" height="186" class="lazy lazy-hidden aligncenter size-full wp-image-8675" data-lazy-srcset="https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-configurator.png 1047w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-configurator-450x80.png 450w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-configurator-1024x182.png 1024w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-configurator-700x124.png 700w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-configurator-150x27.png 150w" data-lazy-sizes="(max-width: 1047px) 100vw, 1047px" /><noscript><img
+src="https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-configurator.png" alt="spring boot auto configurator" width="1047" height="186" class="aligncenter size-full wp-image-8675" srcset="https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-configurator.png 1047w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-configurator-450x80.png 450w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-configurator-1024x182.png 1024w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-configurator-700x124.png 700w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-configurator-150x27.png 150w" sizes="(max-width: 1047px) 100vw, 1047px" /></noscript></p><h3><span
+id="what-is-spring-boot-actuator">What is Spring Boot Actuator?</span></h3><p>Spring Boot Actuator is used by Spring Boot Framework to provide &#8220;Management EndPoints&#8221; to see Application Internals, Metrics etc.</p><p><img
+src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-type="image" data-lazy-src="https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-actuator.png" alt="spring boot actuator" width="1046" height="187" class="lazy lazy-hidden aligncenter size-full wp-image-8677" data-lazy-srcset="https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-actuator.png 1046w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-actuator-450x80.png 450w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-actuator-1024x183.png 1024w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-actuator-700x125.png 700w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-actuator-150x27.png 150w" data-lazy-sizes="(max-width: 1046px) 100vw, 1046px" /><noscript><img
+src="https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-actuator.png" alt="spring boot actuator" width="1046" height="187" class="aligncenter size-full wp-image-8677" srcset="https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-actuator.png 1046w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-actuator-450x80.png 450w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-actuator-1024x183.png 1024w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-actuator-700x125.png 700w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-actuator-150x27.png 150w" sizes="(max-width: 1046px) 100vw, 1046px" /></noscript></p><h3><span
+id="what-is-spring-boot-cli">What is Spring Boot CLI?</span></h3><p>In simple words, Spring Boot CLI is Auto Dependency Resolution, Auto-Configuration, Management EndPoints, Embedded HTTP Servers(Jetty,Tomcat etc.) and (Groovy,Auto-Imports)</p><p><img
+src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-type="image" data-lazy-src="https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-cli.png" alt="spring boot cli" width="2311" height="273" class="lazy lazy-hidden aligncenter size-full wp-image-8678" data-lazy-srcset="https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-cli.png 2311w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-cli-450x53.png 450w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-cli-1024x121.png 1024w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-cli-700x83.png 700w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-cli-150x18.png 150w" data-lazy-sizes="(max-width: 2311px) 100vw, 2311px" /><noscript><img
+src="https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-cli.png" alt="spring boot cli" width="2311" height="273" class="aligncenter size-full wp-image-8678" srcset="https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-cli.png 2311w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-cli-450x53.png 450w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-cli-1024x121.png 1024w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-cli-700x83.png 700w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-cli-150x18.png 150w" sizes="(max-width: 2311px) 100vw, 2311px" /></noscript></p><p>In other words, Spring Boot CLI is Spring Boot Starter, Spring Boot Auto-Configurator, Spring Boot Actuator, Embedded HTTP Servers and Groovy.</p><p><img
+src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-type="image" data-lazy-src="https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-cli2.png" alt="what is spring boot cli" width="2311" height="273" class="lazy lazy-hidden aligncenter size-full wp-image-8679" data-lazy-srcset="https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-cli2.png 2311w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-cli2-450x53.png 450w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-cli2-1024x121.png 1024w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-cli2-700x83.png 700w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-cli2-150x18.png 150w" data-lazy-sizes="(max-width: 2311px) 100vw, 2311px" /><noscript><img
+src="https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-cli2.png" alt="what is spring boot cli" width="2311" height="273" class="aligncenter size-full wp-image-8679" srcset="https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-cli2.png 2311w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-cli2-450x53.png 450w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-cli2-1024x121.png 1024w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-cli2-700x83.png 700w, https://cdn.journaldev.com/wp-content/uploads/2015/07/what-is-springboot-cli2-150x18.png 150w" sizes="(max-width: 2311px) 100vw, 2311px" /></noscript></p><p>With Spring Boot CLI:</p><ul><li>No Semicolons</li><li>No Public and private access modifiers</li><li>No Imports(Most)</li><li>No &#8220;return&#8221; statement</li><li>No setters and getters</li><li>No Application class with main() method(It takes care by SpringApplication class).</li><li>No Gradle/Maven builds.</li><li>No separate HTTP Servers.</li></ul><h3><span
+id="what-is-spring-boot-initilizr">What is Spring Boot Initilizr?</span></h3><p>Spring Boot Initilizr is a Spring Boot tool to bootstrap Spring Boot or Spring Applications very easily.</p><p>Spring Boot Initilizr comes in the following forms:</p><ol><li>Spring Boot Initilizr With Web Interface</li><li>Spring Boot Initilizr With IDEs/IDE Plugins</li><li><a
+href="https://www.journaldev.com/8609/spring-boot-initilizr-with-spring-boot-cli">Spring Boot Initilizr With Spring Boot CLI</a></li><li><a
+href="https://www.journaldev.com/8650/spring-boot-initilizr-with-thirdparty-tools">Spring Boot Initilizr With ThirdParty Tools</a></li></ol><h3><span
+id="why-we-need-spring-boot-initilizr">Why we need Spring Boot Initilizr?</span></h3><p>Spring Boot Initilizr simplifies Spring Applications Development by providing initial project structure and build scripts.</p><ul><li>It reduces Development time</li><li>It increases Productivity</li></ul><h3><span
+id="spring-boot-with-mavengradle">Spring Boot With Maven/Gradle?</span></h3><p>Spring Boot Framework uses one of the greatest features of Maven/Gradle build tools: <strong>&#8220;Transitively Dependency Resolution Management&#8221;</strong>.</p><h3><span
+id="what-is-8220transitively-dependency-resolution-management8221">What is &#8220;Transitively Dependency Resolution Management&#8221;?</span></h3><p>&#8220;Transitively Dependency Resolution Management&#8221; means: If we define a &#8220;A&#8221; dependency in build scripts, &#8220;A&#8221; is dependent on &#8220;B&#8221; and &#8220;B&#8221; is dependent on &#8220;C&#8221;, That means  &#8220;A&#8221; is also dependent on &#8220;C&#8221;.<br
+/>
+Then Build Tools will download and add all Three Jar files &#8220;A&#8221;, &#8220;B&#8221; and &#8220;C&#8221; to our application classpath.</p><p><img
+src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-type="image" data-lazy-src="https://cdn.journaldev.com/wp-content/uploads/2015/07/trasitive-dependency.png" alt="transitive dependency resolution" width="984" height="388" class="lazy lazy-hidden aligncenter size-full wp-image-8683" data-lazy-srcset="https://cdn.journaldev.com/wp-content/uploads/2015/07/trasitive-dependency.png 984w, https://cdn.journaldev.com/wp-content/uploads/2015/07/trasitive-dependency-450x177.png 450w, https://cdn.journaldev.com/wp-content/uploads/2015/07/trasitive-dependency-700x276.png 700w, https://cdn.journaldev.com/wp-content/uploads/2015/07/trasitive-dependency-150x59.png 150w" data-lazy-sizes="(max-width: 984px) 100vw, 984px" /><noscript><img
+src="https://cdn.journaldev.com/wp-content/uploads/2015/07/trasitive-dependency.png" alt="transitive dependency resolution" width="984" height="388" class="aligncenter size-full wp-image-8683" srcset="https://cdn.journaldev.com/wp-content/uploads/2015/07/trasitive-dependency.png 984w, https://cdn.journaldev.com/wp-content/uploads/2015/07/trasitive-dependency-450x177.png 450w, https://cdn.journaldev.com/wp-content/uploads/2015/07/trasitive-dependency-700x276.png 700w, https://cdn.journaldev.com/wp-content/uploads/2015/07/trasitive-dependency-150x59.png 150w" sizes="(max-width: 984px) 100vw, 984px" /></noscript></p><p>That&#8217;s all about Spring Boot interview questions and answers. If you want to learn these concepts in depth, please go through my previous posts one by one. You should also go through <a
+href="https://projects.spring.io/spring-boot/" rel="noopener" target="_blank">official documentation</a>.</p><div
+style="float:none;margin:0px 0 0px 0;text-align:center;">
+<ins
+class="adsbygoogle"
+style="display:block"
+data-ad-format="autorelaxed"
+data-ad-client="ca-pub-5143693538742787"
+data-ad-slot="3941417857"></ins> <script>(adsbygoogle=window.adsbygoogle||[]).push({});</script> </div><div
+style="font-size:0px;height:0px;line-height:0px;margin:0;padding:0;clear:both"></div></div><footer
+class="entry-footer"><p
+class="entry-meta"><span
+class="entry-categories">Filed Under: <a
+href="https://www.journaldev.com/spring" rel="category tag">Spring</a></span></p></footer></article><section
+class="author-box" itemprop="author" itemscope itemtype="https://schema.org/Person"><h4 class="author-box-title">About <span
+itemprop="name">Rambabu Posa</span></h4><div
+class="author-box-content" itemprop="description"><p>Rambabu Posa have 12+ years of RICH experience as Sr Agile Lead Java/Scala/BigData/NoSQL Developer. Apart from Java, he is good at Spring4, Hibernate4, MEAN Stack, RESTful WebServices, NoSQL, BigData Hadoop Stack, Cloud, Scala, Groovy Grails, Play Framework, TDD, BDD,Agile,DevOps and much more. His hobbies are Developing software, Learning new technologies, Love Walking, Reading Books, Watching TV and obviously sharing his knowledge through writing articles on JournalDev.</p></div></section><div
+class="adjacent-entry-pagination pagination"><div
+class="pagination-previous alignleft"><a
+href="https://www.journaldev.com/8650/spring-boot-initilizr-with-thirdparty-tools" rel="prev">&#x000AB; Spring Boot Initilizr With ThirdParty Tools</a></div><div
+class="pagination-next alignright"><a
+href="https://www.journaldev.com/8669/spring-4-security" rel="next">Spring 4 Security &#x000BB;</a></div></div><div
+class="entry-comments" id="comments"><h3>Comments</h3><ol
+class="comment-list"><li
+class="comment even thread-even depth-1" id="comment-41932">
+<article
+itemprop="comment" itemscope itemtype="https://schema.org/Comment">
+<header
+class="comment-header"><p
+class="comment-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+<span
+itemprop="name"><a
+href="http://crbtech.in/Java-Training/best-10-spring-boot-interview-questions/" class="comment-author-link" rel="external nofollow" itemprop="url">pranit</a></span> <span
+class="says">says</span></p><p
+class="comment-meta"><time
+class="comment-time" datetime="2018-01-02T21:25:57+00:00" itemprop="datePublished"><a
+href="https://www.journaldev.com/8611/spring-boot-interview-questions#comment-41932" class="comment-time-link" itemprop="url">January 2, 2018 at 9:25 pm</a></time></p>		</header><div
+class="comment-content" itemprop="text"><p>Informative and very helpful article!<br
+/>
+I have been looking for some spring boot interview questions and answers and here i have found it so well so i can prepare for my next interview. Now after reading this article i am very much clear about all concepts related to spring boot. Thanks for sharing it!</p></div><div
+class="comment-reply"><a
+rel='nofollow' class='comment-reply-link' href='#comment-41932' onclick='return addComment.moveForm( "comment-41932", "41932", "respond", "8611" )' aria-label='Reply to pranit'>Reply</a></div>
+</article></li><li
+class="comment odd alt thread-odd thread-alt depth-1" id="comment-38663">
+<article
+itemprop="comment" itemscope itemtype="https://schema.org/Comment">
+<header
+class="comment-header"><p
+class="comment-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+<span
+itemprop="name">Mathi</span> <span
+class="says">says</span></p><p
+class="comment-meta"><time
+class="comment-time" datetime="2017-07-16T15:49:03+00:00" itemprop="datePublished"><a
+href="https://www.journaldev.com/8611/spring-boot-interview-questions#comment-38663" class="comment-time-link" itemprop="url">July 16, 2017 at 3:49 pm</a></time></p>		</header><div
+class="comment-content" itemprop="text"><p>Very well explained. Thank you and appreciated</p></div><div
+class="comment-reply"><a
+rel='nofollow' class='comment-reply-link' href='#comment-38663' onclick='return addComment.moveForm( "comment-38663", "38663", "respond", "8611" )' aria-label='Reply to Mathi'>Reply</a></div>
+</article></li><li
+class="comment even thread-even depth-1" id="comment-37526">
+<article
+itemprop="comment" itemscope itemtype="https://schema.org/Comment">
+<header
+class="comment-header"><p
+class="comment-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+<span
+itemprop="name"><a
+href="http://www.javaexamples4u.com" class="comment-author-link" rel="external nofollow" itemprop="url">laxman</a></span> <span
+class="says">says</span></p><p
+class="comment-meta"><time
+class="comment-time" datetime="2017-02-19T04:15:59+00:00" itemprop="datePublished"><a
+href="https://www.journaldev.com/8611/spring-boot-interview-questions#comment-37526" class="comment-time-link" itemprop="url">February 19, 2017 at 4:15 am</a></time></p>		</header><div
+class="comment-content" itemprop="text"><p>very good one.</p></div><div
+class="comment-reply"><a
+rel='nofollow' class='comment-reply-link' href='#comment-37526' onclick='return addComment.moveForm( "comment-37526", "37526", "respond", "8611" )' aria-label='Reply to laxman'>Reply</a></div>
+</article></li><li
+class="comment odd alt thread-odd thread-alt depth-1" id="comment-36903">
+<article
+itemprop="comment" itemscope itemtype="https://schema.org/Comment">
+<header
+class="comment-header"><p
+class="comment-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+<span
+itemprop="name">Mouli</span> <span
+class="says">says</span></p><p
+class="comment-meta"><time
+class="comment-time" datetime="2016-11-23T08:46:25+00:00" itemprop="datePublished"><a
+href="https://www.journaldev.com/8611/spring-boot-interview-questions#comment-36903" class="comment-time-link" itemprop="url">November 23, 2016 at 8:46 am</a></time></p>		</header><div
+class="comment-content" itemprop="text"><p>Thanks, it is a nice start up</p></div><div
+class="comment-reply"><a
+rel='nofollow' class='comment-reply-link' href='#comment-36903' onclick='return addComment.moveForm( "comment-36903", "36903", "respond", "8611" )' aria-label='Reply to Mouli'>Reply</a></div>
+</article></li><li
+class="comment even thread-even depth-1" id="comment-36373">
+<article
+itemprop="comment" itemscope itemtype="https://schema.org/Comment">
+<header
+class="comment-header"><p
+class="comment-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+<span
+itemprop="name">Sridhar</span> <span
+class="says">says</span></p><p
+class="comment-meta"><time
+class="comment-time" datetime="2016-09-21T22:33:46+00:00" itemprop="datePublished"><a
+href="https://www.journaldev.com/8611/spring-boot-interview-questions#comment-36373" class="comment-time-link" itemprop="url">September 21, 2016 at 10:33 pm</a></time></p>		</header><div
+class="comment-content" itemprop="text"><p>Really a fantastic way of definitions and explanations..I can easily understand all the topics very easily&#8230;.Very thanks&#8230;</p></div><div
+class="comment-reply"><a
+rel='nofollow' class='comment-reply-link' href='#comment-36373' onclick='return addComment.moveForm( "comment-36373", "36373", "respond", "8611" )' aria-label='Reply to Sridhar'>Reply</a></div>
+</article></li><li
+class="comment odd alt thread-odd thread-alt depth-1" id="comment-32875">
+<article
+itemprop="comment" itemscope itemtype="https://schema.org/Comment">
+<header
+class="comment-header"><p
+class="comment-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+<span
+itemprop="name">mashaoli</span> <span
+class="says">says</span></p><p
+class="comment-meta"><time
+class="comment-time" datetime="2015-07-30T00:00:38+00:00" itemprop="datePublished"><a
+href="https://www.journaldev.com/8611/spring-boot-interview-questions#comment-32875" class="comment-time-link" itemprop="url">July 30, 2015 at 12:00 am</a></time></p>		</header><div
+class="comment-content" itemprop="text"><p>Java Design Patterns 130</p></div><div
+class="comment-reply"><a
+rel='nofollow' class='comment-reply-link' href='#comment-32875' onclick='return addComment.moveForm( "comment-32875", "32875", "respond", "8611" )' aria-label='Reply to mashaoli'>Reply</a></div>
+</article></li><li
+class="comment even thread-even depth-1" id="comment-32859">
+<article
+itemprop="comment" itemscope itemtype="https://schema.org/Comment">
+<header
+class="comment-header"><p
+class="comment-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+<span
+itemprop="name"><a
+href="http://javadevnotes.com/java-split-string-into-array-of-integers-example" class="comment-author-link" rel="external nofollow" itemprop="url">Marcos Azevedo</a></span> <span
+class="says">says</span></p><p
+class="comment-meta"><time
+class="comment-time" datetime="2015-07-27T22:01:49+00:00" itemprop="datePublished"><a
+href="https://www.journaldev.com/8611/spring-boot-interview-questions#comment-32859" class="comment-time-link" itemprop="url">July 27, 2015 at 10:01 pm</a></time></p>		</header><div
+class="comment-content" itemprop="text"><p>Yes, I&#8217;ve been following too. Spring boot seems a good alternative to Grails</p></div><div
+class="comment-reply"><a
+rel='nofollow' class='comment-reply-link' href='#comment-32859' onclick='return addComment.moveForm( "comment-32859", "32859", "respond", "8611" )' aria-label='Reply to Marcos Azevedo'>Reply</a></div>
+</article><ul
+class="children"><li
+class="comment odd alt depth-2" id="comment-36371">
+<article
+itemprop="comment" itemscope itemtype="https://schema.org/Comment">
+<header
+class="comment-header"><p
+class="comment-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+<span
+itemprop="name">Rameshkumar Ramasamy</span> <span
+class="says">says</span></p><p
+class="comment-meta"><time
+class="comment-time" datetime="2016-09-21T14:53:56+00:00" itemprop="datePublished"><a
+href="https://www.journaldev.com/8611/spring-boot-interview-questions#comment-36371" class="comment-time-link" itemprop="url">September 21, 2016 at 2:53 pm</a></time></p>		</header><div
+class="comment-content" itemprop="text"><p>Spring boot is inspired by Groovy. IMHO, Pivotal Labs has remodeled it.</p></div><div
+class="comment-reply"><a
+rel='nofollow' class='comment-reply-link' href='#comment-36371' onclick='return addComment.moveForm( "comment-36371", "36371", "respond", "8611" )' aria-label='Reply to Rameshkumar Ramasamy'>Reply</a></div>
+</article></li></ul></li><li
+class="comment even thread-odd thread-alt depth-1" id="comment-32851">
+<article
+itemprop="comment" itemscope itemtype="https://schema.org/Comment">
+<header
+class="comment-header"><p
+class="comment-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+<span
+itemprop="name">Bala</span> <span
+class="says">says</span></p><p
+class="comment-meta"><time
+class="comment-time" datetime="2015-07-27T02:11:40+00:00" itemprop="datePublished"><a
+href="https://www.journaldev.com/8611/spring-boot-interview-questions#comment-32851" class="comment-time-link" itemprop="url">July 27, 2015 at 2:11 am</a></time></p>		</header><div
+class="comment-content" itemprop="text"><p>I read all Spring Boot Tutorial. They are really good useful for me. Waiting for some advanced concepts please.</p></div><div
+class="comment-reply"><a
+rel='nofollow' class='comment-reply-link' href='#comment-32851' onclick='return addComment.moveForm( "comment-32851", "32851", "respond", "8611" )' aria-label='Reply to Bala'>Reply</a></div>
+</article></li></ol></div><div
+id="respond" class="comment-respond"><h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a
+rel="nofollow" id="cancel-comment-reply-link" href="/8611/spring-boot-interview-questions#respond" style="display:none;">Cancel reply</a></small></h3><form
+action="https://www.journaldev.com/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate><p
+class="comment-notes"><span
+id="email-notes">Your email address will not be published.</span> Required fields are marked <span
+class="required">*</span></p><p
+class="comment-form-comment"><label
+for="comment">Comment</label><textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" aria-required="true" required="required"></textarea></p><p
+class="comment-form-author"><label
+for="author">Name <span
+class="required">*</span></label> <input
+id="author" name="author" type="text" value="" size="30" maxlength="245" aria-required='true' required='required' /></p><p
+class="comment-form-email"><label
+for="email">Email <span
+class="required">*</span></label> <input
+id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" aria-required='true' required='required' /></p><p
+class="comment-form-url"><label
+for="url">Website</label> <input
+id="url" name="url" type="url" value="" size="30" maxlength="200" /></p><p
+class="form-submit"><input
+name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input
+type='hidden' name='comment_post_ID' value='8611' id='comment_post_ID' />
+<input
+type='hidden' name='comment_parent' id='comment_parent' value='0' /></p><p
+style="display: none;"><input
+type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="f25157c9ca" /></p><p
+class="antispam-group antispam-group-q" style="clear: both;">
+<label>Current ye@r <span
+class="required">*</span></label>
+<input
+type="hidden" name="antspm-a" class="antispam-control antispam-control-a" value="2018" />
+<input
+type="text" name="antspm-q" class="antispam-control antispam-control-q" value="4.4" autocomplete="off" /></p><p
+class="antispam-group antispam-group-e" style="display: none;">
+<label>Leave this field empty</label>
+<input
+type="text" name="antspm-e-email-url-website" class="antispam-control antispam-control-e" value="" autocomplete="off" /></p><p
+style="display: none;"><input
+type="hidden" id="ak_js" name="ak_js" value="132"/></p></form></div>
+</main><aside
+class="sidebar sidebar-primary widget-area" role="complementary" aria-label="Primary Sidebar" itemscope itemtype="https://schema.org/WPSideBar"><section
+id="wgs_widget-2" class="widget widget_wgs_widget"><div
+class="widget-wrap"><div
+class="wgs_wrapper"><div
+class="gcse-searchbox-only" data-resultsUrl="https://www.journaldev.com/search_gcse"></div></div></div></section><section
+id="custom_html-7" class="widget_text widget widget_custom_html"><div
+class="widget_text widget-wrap"><h4 class="widget-title widgettitle">Download Android App</h4><div
+class="textwidget custom-html-widget"><a
+href="https://www.journaldev.com/android-app-play-store" target="_blank" rel="noopener"><img
+class="lazy lazy-hidden" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-type="image" data-lazy-src="https://cdn.journaldev.com/wp-content/uploads/ads_images/google-play-badge.png" width="336" height="130" alt="JournalDev Android App Play Store Link"/><noscript><img
+src="https://cdn.journaldev.com/wp-content/uploads/ads_images/google-play-badge.png" width="336" height="130" alt="JournalDev Android App Play Store Link"/></noscript></a></div></div></section><section
+id="adswidget3-quick-adsense" class="widget  lambda_16"><div
+class="widget-wrap"><div
+id='div-gpt-ad-1514310993157-1' style='height:280px; width:336px;'> <script>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1514310993157-1');});</script> </div></div></section><section
+id="text-4" class="widget widget_text"><div
+class="widget-wrap"><h4 class="widget-title widgettitle">Spring Framework</h4><div
+class="textwidget"><h3><a
+href="https://www.journaldev.com/2888/spring-tutorial-spring-core-tutorial?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=Spring-Sidebar-Widget" target="_blank" rel="noopener">Spring Tutorial</a></h3><h4>Spring Core</h4><ol><li><a
+href="https://www.journaldev.com/2410/spring-dependency-injection?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=Spring-Sidebar-Widget" target="_blank" rel="noopener">Spring Dependency Injection</a></li><li><a
+href="https://www.journaldev.com/2461/spring-ioc-bean-example-tutorial?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=Spring-Sidebar-Widget" target="_blank" rel="noopener">Spring IoC and Bean</a></li><li><a
+href="https://www.journaldev.com/2637/spring-bean-life-cycle?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=Spring-Sidebar-Widget" target="_blank" rel="noopener">Spring Bean Life Cycle</a></li><li><a
+href="https://www.journaldev.com/2552/spring-rest-example-tutorial-spring-restful-web-services?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=Spring-Sidebar-Widget" target="_blank" rel="noopener">Spring REST</a></li><li><a
+href="https://www.journaldev.com/8934/spring-rest-xml-and-json-example?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=Spring-Sidebar-Widget" target="_blank" rel="noopener">Spring REST XML</a></li><li><a
+href="https://www.journaldev.com/2583/spring-aop-example-tutorial-aspect-advice-pointcut-joinpoint-annotations?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=Spring-Sidebar-Widget" target="_blank" rel="noopener">Spring AOP</a></li><li><a
+href="https://www.journaldev.com/7801/spring-aop-method-profiling?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=Spring-Sidebar-Widget" target="_blank" rel="noopener">Spring AOP Method Profiling</a></li><li><a
+href="https://www.journaldev.com/2623/spring-autowired-annotation?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=Spring-Sidebar-Widget" target="_blank" rel="noopener">Spring @Autowired</a></li><li><a
+href="https://www.journaldev.com/3358/spring-requestmapping-requestparam-pathvariable-example?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=Spring-Sidebar-Widget" target="_blank" rel="noopener">Spring @RequestMapping</a></li></ol><h4>Spring MVC</h4><ol><li><a
+href="https://www.journaldev.com/14476/spring-mvc-example?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=Spring-Sidebar-Widget" target="_blank" rel="noopener">Spring MVC Example</a></li><li><a
+href="https://www.journaldev.com/2433/spring-mvc-tutorial?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=Spring-Sidebar-Widget" target="_blank" rel="noopener">Spring MVC Tutorial</a></li><li><a
+href="https://www.journaldev.com/2651/spring-mvc-exception-handling-controlleradvice-exceptionhandler-handlerexceptionresolver?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=Spring-Sidebar-Widget" target="_blank" rel="noopener">Spring MVC Exception Handling</a></li><li><a
+href="https://www.journaldev.com/2668/spring-validation-example-mvc-validator?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=Spring-Sidebar-Widget" target="_blank" rel="noopener">Spring MVC Validator</a></li><li><a
+href="https://www.journaldev.com/2676/spring-mvc-interceptor-example-handlerinterceptor-handlerinterceptoradapter?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=Spring-Sidebar-Widget" target="_blank" rel="noopener">Spring MVC Intercepter</a></li><li><a
+href="https://www.journaldev.com/2573/spring-mvc-file-upload-example-single-multiple-files?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=Spring-Sidebar-Widget" target="_blank" rel="noopener">Spring MVC File Upload</a></li><li><a
+href="https://www.journaldev.com/2610/spring-mvc-internationalization-i18n-and-localization-l10n-example?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=Spring-Sidebar-Widget" target="_blank" rel="noopener">Spring MVC i18n</a></li><li><a
+href="https://www.journaldev.com/3531/spring-mvc-hibernate-mysql-integration-crud-example-tutorial?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=Spring-Sidebar-Widget" target="_blank" rel="noopener">Spring MVC Hibernate MqSQL</a></li></ol><h4>Spring ORM</h4><ol><li><a
+href="https://www.journaldev.com/7655/spring-orm-example-jpa-hibernate-transaction?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=Spring-Sidebar-Widget" target="_blank" rel="noopener">Spring ORM</a></li><li><a
+href="https://www.journaldev.com/7772/spring-orm-example-with-jpa-hibernate-aop-transactions?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=Spring-Sidebar-Widget" target="_blank" rel="noopener">Spring ORM JPA</a></li><li><a
+href="https://www.journaldev.com/2603/spring-transaction-management-jdbc-example?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=Spring-Sidebar-Widget" target="_blank" rel="noopener">Spring Transaction</a></li></ol><h4>Spring Security</h4><ol><li><a
+href="https://www.journaldev.com/8669/introduction-to-spring-4-security?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=Spring-Sidebar-Widget" target="_blank" rel="noopener">Spring Security Overview</a></li><li><a
+href="https://www.journaldev.com/2715/spring-security-example-tutorial?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=Spring-Sidebar-Widget" target="_blank" rel="noopener">Spring Security Example Tutorial</a></li><li><a
+href="https://www.journaldev.com/2736/spring-security-example-userdetailsservice?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=Spring-Sidebar-Widget" target="_blank" rel="noopener">Spring Security UserDetailsService</a></li><li><a
+href="https://www.journaldev.com/8718/spring-4-security-mvc-login-logout-example?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=Spring-Sidebar-Widget" target="_blank" rel="noopener">Spring MVC Login Logout</a></li><li><a
+href="https://www.journaldev.com/8748/spring-4-mvc-security-managing-roles-example?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=Spring-Sidebar-Widget" target="_blank" rel="noopener">Spring Security Roles</a></li></ol><h4>Spring Boot</h4><ol><li><a
+href="https://www.journaldev.com/7969/spring-boot-tutorial?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=Spring-Sidebar-Widget" target="_blank" rel="noopener">Spring Boot Tutorial</a></li><li><a
+href="https://www.journaldev.com/7989/key-components-and-internals-of-spring-boot-framework?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=Spring-Sidebar-Widget" target="_blank" rel="noopener">Spring Boot Components</a></li><li><a
+href="https://www.journaldev.com/8195/spring-boot-cli-setup-and-helloworld-example?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=Spring-Sidebar-Widget" target="_blank" rel="noopener">Spring Boot CLI Hello World</a></li><li><a
+href="https://www.journaldev.com/8225/spring-boot-initilizr-web-interface?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=Spring-Sidebar-Widget" target="_blank" rel="noopener">Spring Boot Initilizr Web</a></li><li><a
+href="https://www.journaldev.com/8596/spring-boot-initilizr-with-ides-or-ide-plugins?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=Spring-Sidebar-Widget" target="_blank" rel="noopener">Spring Boot Initilizr IDE</a></li><li><a
+href="https://www.journaldev.com/8609/spring-boot-initilizr-with-spring-boot-cli?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=Spring-Sidebar-Widget" target="_blank" rel="noopener">Spring Boot Initilizr CLI</a></li><li><a
+href="https://www.journaldev.com/8650/spring-boot-initilizr-with-thirdparty-tools?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=Spring-Sidebar-Widget" target="_blank" rel="noopener">Spring Boot Initilizr Tools</a></li><li><a
+href="https://www.journaldev.com/8611/spring-boot-interview-questions?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=Spring-Sidebar-Widget" target="_blank" rel="noopener">Spring Boot Interview Questions</a></li></ol><h4>Spring AMQP</h4><ol><li><a
+href="https://www.journaldev.com/11643/spring-amqp?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=Spring-Sidebar-Widget" target="_blank" rel="noopener">Spring AMQP</a></li><li><a
+href="https://www.journaldev.com/11655/spring-rabbitmq?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=Spring-Sidebar-Widget" target="_blank" rel="noopener">Spring RabbitMQ</a></li><li><a
+href="https://www.journaldev.com/11713/spring-amqp-rabbitmq-example?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=Spring-Sidebar-Widget" target="_blank" rel="noopener">Spring AMQP RabbitMQ</a></li><li><a
+href="https://www.journaldev.com/11766/apache-activemq?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=Spring-Sidebar-Widget" target="_blank" rel="noopener">Apache ActiveMQ</a></li><li><a
+href="https://www.journaldev.com/12697/spring-amqp-activemq-tutorial?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=Spring-Sidebar-Widget" target="_blank" rel="noopener">Spring ActiveMQ Tutorial</a></li><li><a
+href="https://www.journaldev.com/12743/spring-activemq-example?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=Spring-Sidebar-Widget" target="_blank" rel="noopener">Spring ActiveMQ Example</a></li></ol><h4>Spring Integrations</h4><ol><li><a
+href="https://www.journaldev.com/2593/spring-jdbc-example?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=Spring-Sidebar-Widget" target="_blank" rel="noopener">Spring JDBC</a></li><li><a
+href="https://www.journaldev.com/2597/spring-datasource-jndi-with-tomcat-example?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=Spring-Sidebar-Widget" target="_blank" rel="noopener">Spring DataSource JNDI</a></li><li><a
+href="https://www.journaldev.com/3524/spring-hibernate-integration-example-tutorial?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=Spring-Sidebar-Widget" target="_blank" rel="noopener">Spring Hibernate</a></li><li><a
+href="https://www.journaldev.com/4058/primefaces-spring-4-with-jpa-hibernate-eclipselink-example-tutorial?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=Spring-Sidebar-Widget" target="_blank" rel="noopener">Spring Primefaces JPA</a></li><li><a
+href="https://www.journaldev.com/4061/primefaces-spring-eclipselink-nosql-mongodb-oracle-nosql-db?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=Spring-Sidebar-Widget" target="_blank" rel="noopener">Spring Primefaces MongoDB</a></li><li><a
+href="https://www.journaldev.com/4096/primefaces-spring-hibernate-integration-example-tutorial?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=Spring-Sidebar-Widget" target="_blank" rel="noopener">Spring Primefaces Hibernate</a></li><li><a
+href="https://www.journaldev.com/4260/primefaces-hibernate-and-springroo-integration?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=Spring-Sidebar-Widget" target="_blank" rel="noopener">SpringRoo Primefaces Hibernate</a></li><li><a
+href="https://www.journaldev.com/7112/jsf-spring-integration-example-tutorial?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=Spring-Sidebar-Widget" target="_blank" rel="noopener">Spring JSF</a></li><li><a
+href="https://www.journaldev.com/7122/jsf-spring-hibernate-integration-example-tutorial?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=Spring-Sidebar-Widget" target="_blank" rel="noopener">Spring JDF Hibernate</a></li></ol><h4>Miscellaneous</h4><ol><li><a
+href="https://www.journaldev.com/4144/spring-data-mongodb-example?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=Spring-Sidebar-Widget" target="_blank" rel="noopener">Spring Data MongoDB</a></li><li><a
+href="https://www.journaldev.com/2696/spring-interview-questions-and-answers?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=Spring-Sidebar-Widget" target="_blank" rel="noopener">Spring Interview Questions</a></li></ol></div></div></section><section
+id="text-11" class="widget widget_text"><div
+class="widget-wrap"><h4 class="widget-title widgettitle">Recommended Tutorials</h4><div
+class="textwidget"><h4>Java Tutorials</h4><ul><li><a
+href="https://www.journaldev.com/942/java-io-tutorial?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=RecommendedTutorials-Sidebar-Widget" target="_blank">Java IO</a></li><li><a
+href="https://www.journaldev.com/634/regular-expression-in-java-regex-example?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=RecommendedTutorials-Sidebar-Widget" target="_blank">Java Regular Expressions</a></li><li><a
+href="https://www.journaldev.com/1079/multithreading-in-java?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=RecommendedTutorials-Sidebar-Widget" target="_blank">Multithreading in Java</a></li><li><a
+href="https://www.journaldev.com/977/java-logging-api-tutorial-examples-logger-levels-handlers-formatters-filters?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=RecommendedTutorials-Sidebar-Widget" target="_blank">Java Logging</a></li><li><a
+href="https://www.journaldev.com/721/java-annotations-example-tutorial?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=RecommendedTutorials-Sidebar-Widget" target="_blank">Java Annotations</a></li><li><a
+href="https://www.journaldev.com/1240/java-xml-tutorial?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=RecommendedTutorials-Sidebar-Widget" target="_blank">Java XML</a></li><li><a
+href="https://www.journaldev.com/1260/collections-in-java-tutorial?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=RecommendedTutorials-Sidebar-Widget" target="_blank">Collections in Java</a></li><li><a
+href="https://www.journaldev.com/1663/java-generics-example-method-class-interface?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=RecommendedTutorials-Sidebar-Widget" target="_blank">Java Generics</a></li><li><a
+href="https://www.journaldev.com/1696/exception-handling-in-java?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=RecommendedTutorials-Sidebar-Widget" target="_blank">Exception Handling in Java</a></li><li><a
+href="https://www.journaldev.com/1789/java-reflection-example-tutorial?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=RecommendedTutorials-Sidebar-Widget" target="_blank">Java Reflection</a></li><li><a
+href="https://www.journaldev.com/1827/java-design-patterns-example-tutorial?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=RecommendedTutorials-Sidebar-Widget" target="_blank">Java Design Patterns</a></li><li><a
+href="https://www.journaldev.com/2681/jdbc-tutorial-with-example-projects-datasource-jndi-and-spring-integration?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=RecommendedTutorials-Sidebar-Widget" target="_blank">JDBC Tutorial</a></li><h4>Java EE Tutorials</h4><li><a
+href="https://www.journaldev.com/2114/servlet-jsp-tutorial?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=RecommendedTutorials-Sidebar-Widget" target="_blank">Servlet JSP Tutorial</a></li><li><a
+href="https://www.journaldev.com/2310/struts2-tutorial-with-example-projects?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=RecommendedTutorials-Sidebar-Widget" target="_blank">Struts2 Tutorial</a></li><li><a
+href="https://www.journaldev.com/2888/spring-tutorial-spring-core-tutorial?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=RecommendedTutorials-Sidebar-Widget" target="_blank">Spring Tutorial</a></li><li><a
+href="https://www.journaldev.com/3793/hibernate-tutorial?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=RecommendedTutorials-Sidebar-Widget" target="_blank">Hibernate Tutorial</a></li><li><a
+href="https://www.journaldev.com/5516/primefaces-tutorial-with-example-projects?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=RecommendedTutorials-Sidebar-Widget" target="_blank">Primefaces Tutorial</a></li><li><a
+href="https://www.journaldev.com/255/axis2-web-services-tutorial?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=RecommendedTutorials-Sidebar-Widget" target="_blank">Apache Axis 2</a></li><li><a
+href="https://www.journaldev.com/498/jax-rs-restful-web-service-using-jersey-example-tutorial?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=RecommendedTutorials-Sidebar-Widget" target="_blank">JAX-RS</a></li><li><a
+href="https://www.journaldev.com/1117/memcached-tutorial?utm_source=website&#038;utm_medium=sidebar&#038;utm_campaign=RecommendedTutorials-Sidebar-Widget" target="_blank">Memcached Tutorial</a></li></ul></div></div></section><section
+id="enews-ext-2" class="widget enews-widget"><div
+class="widget-wrap"><div
+class="enews"><h4 class="widget-title widgettitle">Stay Updated!</h4><form
+id="subscribeenews-ext-2" action="//journaldev.us8.list-manage.com/subscribe/post?u=612f3d966c86000f37699d8cf&amp;id=c64db63284" method="post"  target="_blank" onsubmit="if ( subbox1.value == 'Name') { subbox1.value = ''; } if ( subbox2.value == 'Last Name') { subbox2.value = ''; }" name="enews-ext-2">
+<label
+for="subbox1" class="screenread">Name</label><input
+type="text" id="subbox1" class="enews-subbox" value="" placeholder="Name" name="FNAME" />								<label
+for="subbox" class="screenread">E-Mail Address</label><input
+type="email" value="" id="subbox" placeholder="E-Mail Address" name="EMAIL" required="required" />
+<input
+type="submit" value="I AM IN!" id="subbutton" /></form></div></div></section>
+<section
+id="text-10" class="widget widget_text"><div
+class="widget-wrap"><div
+class="textwidget"><p><script id="mNCC" language="javascript">medianet_width="300";medianet_height="600";medianet_crid="382243897";medianet_versionId="3111299";</script><br
+/> <script src="//contextual.media.net/nmedianet.js?cid=8CUSP8IK6"></script></p></div></div></section>
+</aside></div></div><footer
+class="site-footer" itemscope itemtype="https://schema.org/WPFooter"><div
+class="wrap"><p>&#x000A9;&nbsp;2018 &middot; <a
+href="https://www.journaldev.com/privacy-policy">Privacy Policy</a> &middot; Don&#39;t copy, it&#39;s Bad Karma &middot; Powered by <a
+href="https://wordpress.org/" title="WordPress">WordPress</a></p></div></footer></div><script type='text/javascript'>var colomatduration='fast';var colomatslideEffect='slideFade';var colomatpauseInit='';var colomattouchstart='';</script><script src="https://apis.google.com/js/platform.js" async defer></script> <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> <script type='text/javascript'>function _dmBootstrap(file){var _dma=document.createElement('script');_dma.type='text/javascript';_dma.async=true;_dma.src=('https:'==document.location.protocol?'https://':'http://')+file;(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(_dma);}
+function _dmFollowup(file){if(typeof DMAds==='undefined')_dmBootstrap('cdn2.DeveloperMedia.com/a.min.js');}
+(function(){_dmBootstrap('cdn1.DeveloperMedia.com/a.min.js');setTimeout(_dmFollowup,2000);})();</script><script type='text/javascript'>var scriptParams={"google_search_engine_id":"partner-pub-5143693538742787:5127011729"};</script> <script type='text/javascript' src='https://cdn.journaldev.com/wp-content/plugins/wp-google-search/assets/js/google_cse_v2.js'></script> <script type='text/javascript' src='https://cdn.journaldev.com/wp-content/plugins/anti-spam/js/anti-spam-4.4.js'></script> <script type='text/javascript'>var wpcf7={"apiSettings":{"root":"https:\/\/www.journaldev.com\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}},"cached":"1"};</script> <script type='text/javascript' src='https://cdn.journaldev.com/wp-content/plugins/contact-form-7/includes/js/scripts.js'></script> <script type='text/javascript'>var thickboxL10n={"next":"Next >","prev":"< Prev","image":"Image","of":"of","close":"Close","noiframes":"This feature requires inline frames. You have iframes disabled or your browser does not support them.","loadingAnimation":"https:\/\/www.journaldev.com\/wp-includes\/js\/thickbox\/loadingAnimation.gif"};</script> <script type='text/javascript' src='https://cdn.journaldev.com/wp-includes/js/thickbox/thickbox.js'></script> <script type='text/javascript'>var tocplus={"smooth_scroll":"1","visibility_show":"show","visibility_hide":"hide","width":"Auto","smooth_scroll_offset":"60"};</script> <script type='text/javascript' src='https://cdn.journaldev.com/wp-content/plugins/table-of-contents-plus/front.min.js'></script> <script type='text/javascript' src='https://cdn.journaldev.com/wp-includes/js/comment-reply.min.js'></script> <script type='text/javascript'>var q2w3_sidebar_options=new Array();q2w3_sidebar_options[0]={"sidebar":"sidebar","margin_top":10,"margin_bottom":0,"stop_id":"","screen_max_width":1024,"screen_max_height":120,"width_inherit":false,"refresh_interval":1500,"window_load_hook":false,"disable_mo_api":false,"widgets":['text-10']};</script> <script type='text/javascript' src='https://cdn.journaldev.com/wp-content/plugins/q2w3-fixed-widget/js/q2w3-fixed-widget.min.js'></script> <script type='text/javascript' src='https://cdn.journaldev.com/wp-content/plugins/bj-lazy-load/js/bj-lazy-load.min.js'></script> <script type='text/javascript' src='https://cdn.journaldev.com/wp-includes/js/wp-embed.min.js'></script> <script async="async" type='text/javascript' src='https://cdn.journaldev.com/wp-content/plugins/akismet/_inc/form.js'></script> </body></html>
+<!--
+*** This site runs WP Super Minify plugin v1.5.1 - http://wordpress.org/plugins/wp-super-minify ***
+*** Total size saved: 4.488% | Size before compression: 92363 bytes | Size after compression: 88218 bytes. ***
+-->
